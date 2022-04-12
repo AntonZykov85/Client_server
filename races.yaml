@@ -1,0 +1,17 @@
+races:
+- humans
+- elfs
+- dwars
+- orcs
+- ogres
+- goblins
+- hobbits
+races_quantity: 7
+races_health:
+  humans: '@1000@'
+  elfs: '@900@'
+  dwars: '@1200@'
+  orcs: '@1500@'
+  ogres: '@5000@'
+  goblins: '@800@'
+  hobbits: '@800@'
