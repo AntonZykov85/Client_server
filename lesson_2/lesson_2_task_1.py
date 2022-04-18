@@ -1,6 +1,9 @@
 import string
 import csv
 
+from chardet import detect
+
+
 def get_data():
     list = ['Тип системы:', 'Название ОС:', 'Код продукта:', 'Изготовитель системы:']
     hh = []
@@ -8,11 +11,19 @@ def get_data():
 
     for i in range(1, 4):
         with open(f'info_{i}.txt') as f:
-            for line in f:
-                for el in list:
-                    if el in line:
-                        os_prod_item = line.partition(el)[2].strip()
-                        hh.append(os_prod_item)
+                data = open(f'info_{i}.txt', 'rb').read()
+                result = detect(data)
+                encode = result['encoding']
+                print(encode)
+                decode_text = data.decode(encode)
+                with open(f'info_{i}.txt', 'w', encoding='utf-8') as new_file:
+                    new_file.write(decode_text)
+
+                    for line in f:
+                            for el in list:
+                                if el in line:
+                                    os_prod_item = line.partition(el)[2].strip()
+                                    hh.append(os_prod_item)
 
     system_type_list = hh[3:12:4]
     OS_list = hh[0:11:4]
