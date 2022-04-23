@@ -29,7 +29,7 @@ class Test_client(unittest.TestCase):
     def test_answer_400(self):
         self.assertEqual(process_ans({RESPONSE: 400, ERROR: 'Bad Request'}), '400 : Bad Request')
 
-    def test_response_wasred(self):
+    def test_response_wasted(self):
         self.assertRaises(ValueError, process_ans, {ERROR: 'Bad Request'})
 
 if __name__ == '__main__':
