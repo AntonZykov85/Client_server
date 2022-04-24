@@ -4,10 +4,10 @@ import unittest
 import time
 
 sys.path.append(os.path.join(os.getcwd(), '..'))
-from Client_server.Lesson_3.general.constants import DEFAULT_PORT, DEFAULT_IP_ADDRESS, MAX_CONNECTIONS, MAX_PACKAGE_LENGTH, \
+from Client_server.CS_python_study.general.constants import DEFAULT_PORT, DEFAULT_IP_ADDRESS, MAX_CONNECTIONS, MAX_PACKAGE_LENGTH, \
 ENCODING, ACTION, TIME, USER, ACCOUNT_NAME, PRESENCE, RESPONSE, ERROR
 
-from Client_server.Lesson_3.client import process_ans
+from Client_server.CS_python_study.client import process_ans
 
 class Test_client(unittest.TestCase):
 
