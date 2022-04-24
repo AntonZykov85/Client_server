@@ -1,0 +1,15 @@
+2022-04-24 17:02:36,732 DEBUG client.py debbuging info from server {'response': 200}
+2022-04-24 17:02:36,733 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-04-24 17:02:36,733 DEBUG client.py debbuging info from server {'error': 'Bad Request'}
+2022-04-24 17:07:41,769 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-24 17:07:48,726 DEBUG client.py message {'action': 'presence', 'time': 'Sun Apr 24 17:07:41 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-24 17:07:48,726 DEBUG client.py debbuging info from server {'response': 200}
+2022-04-24 17:07:48,727 INFO client.py servers answer 200 : OK
+2022-04-24 17:09:12,565 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-24 17:09:17,477 DEBUG client.py message {'action': 'presence', 'time': 'Sun Apr 24 17:09:12 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-24 17:09:17,479 DEBUG client.py debbuging info from server {'response': 200}
+2022-04-24 17:09:17,479 INFO client.py servers answer 200 : OK
+2022-04-24 17:29:11,294 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-24 17:29:16,667 DEBUG client.py message {'action': 'presence', 'time': 'Sun Apr 24 17:29:11 2022', 'user': {'account_name': 'nm,.n'}} debuging
+2022-04-24 17:29:16,670 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-04-24 17:29:16,670 INFO client.py servers answer 400 : Bad Request

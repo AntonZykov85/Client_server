@@ -1,0 +1,5 @@
+2022-04-24 17:29:03,337 INFO server.py server is running with port: 7777, adress: 
+2022-04-24 17:29:11,298 INFO server.py connected with client ('127.0.0.1', 34758)
+2022-04-24 17:29:16,668 INFO server.py get clients message: {'action': 'presence', 'time': 'Sun Apr 24 17:29:11 2022', 'user': {'account_name': 'nm,.n'}}
+2022-04-24 17:29:16,668 DEBUG server.py Clients message {'action': 'presence', 'time': 'Sun Apr 24 17:29:11 2022', 'user': {'account_name': 'nm,.n'}} debugig
+2022-04-24 17:29:16,668 INFO server.py Post answer to client {'response': 400, 'error': 'Bad Request'}
