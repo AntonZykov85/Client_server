@@ -7,9 +7,11 @@ from general.constants import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
 from general.utilites import get_message, send_message
 import logging
 import log.client_log_config
+from decorators import logger
 
 client_logger = logging.getLogger('client')
 
+@logger
 def process_ans(message):
     client_logger.debug(f'debbuging info from server {message}')
     if RESPONSE in message:

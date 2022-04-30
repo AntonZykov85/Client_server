@@ -13,3 +13,50 @@
 2022-04-24 17:29:16,667 DEBUG client.py message {'action': 'presence', 'time': 'Sun Apr 24 17:29:11 2022', 'user': {'account_name': 'nm,.n'}} debuging
 2022-04-24 17:29:16,670 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
 2022-04-24 17:29:16,670 INFO client.py servers answer 400 : Bad Request
+2022-04-30 09:54:07,375 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 09:54:57,338 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 09:58:24,436 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:00:45,915 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:02:05,234 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:02:53,940 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:02:59,234 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:02:53 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-30 10:02:59,235 DEBUG client.py debbuging info from server {'response': 200}
+2022-04-30 10:02:59,235 INFO client.py servers answer 200 : OK
+2022-04-30 10:04:08,794 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:04:13,903 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:04:08 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-30 10:04:14,153 ERROR client.py Не удалось декодировать сообщение сервера
+2022-04-30 10:04:39,514 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:05:21,186 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:05:40,333 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:05:51,844 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:05:40 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-30 10:05:52,029 ERROR client.py Не удалось декодировать сообщение сервера
+2022-04-30 10:06:20,572 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:07:46,172 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:07:51,316 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:07:46 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-30 10:07:51,318 DEBUG client.py debbuging info from server {'response': 200}
+2022-04-30 10:07:51,318 INFO client.py servers answer 200 : OK
+2022-04-30 10:08:24,108 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:09:03,093 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:09:13,986 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:09:03 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-30 10:09:14,210 ERROR client.py Не удалось декодировать сообщение сервера
+2022-04-30 10:12:00,193 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:12:06,719 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:12:00 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-30 10:12:06,888 ERROR client.py Не удалось декодировать сообщение сервера
+2022-04-30 10:13:08,392 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:13:13,164 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:13:18,498 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:13:33,700 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:13:38,816 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:13:33 2022', 'user': {'account_name': 'Guesr'}} debuging
+2022-04-30 10:13:39,026 ERROR client.py Не удалось декодировать сообщение сервера
+2022-04-30 10:13:46,697 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:13:48,849 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:14:11,460 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:14:38,423 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:14:51,646 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:14:56,447 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:14:51 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-30 10:14:56,724 ERROR client.py Не удалось декодировать сообщение сервера
+2022-04-30 10:17:36,402 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:17:42,772 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:17:36 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-30 10:17:42,788 DEBUG client.py debbuging info from server {'response': 200}
+2022-04-30 10:17:42,794 DEBUG decorators.py <function process_ans at 0x7f10bda7c160> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-04-30 10:17:42,794 INFO client.py servers answer 200 : OK
