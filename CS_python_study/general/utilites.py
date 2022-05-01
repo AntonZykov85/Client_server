@@ -1,5 +1,8 @@
 import json
-from general.constants import MAX_PACKAGE_LENGTH, ENCODING
+import sys
+from constants import MAX_PACKAGE_LENGTH, ENCODING
+sys.path.append('../')
+
 
 def get_message(client):
     encoded_response = client.recv(MAX_PACKAGE_LENGTH)

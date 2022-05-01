@@ -24,13 +24,13 @@ def logger(logging_function):
 
 
 # class logger:
-#     def __init__(self, *args):
-#         self.args = args
+#     # def __init__(self, *args):
+#     #     self.args = args
 #
 #     def __call__(self, logging_function):
 #         def logging_writer(*args, **kwargs):
 #             return_log = logging_function(*args, **kwargs)
-#             LOGGER.debug(f'{logging_function} was running with {args}, {kwargs} parametres.'
+#             LOGGER.debug(f'{logging_function.__name__} was running with {args}, {kwargs} parametres.'
 #                          f'Running from module {logging_function.__module__}'
 #                          f' Running from function  {traceback.format_stack()[0].strip().split()[-1]}'
 #                          f' Running from function {inspect.stack()[1][3]}')

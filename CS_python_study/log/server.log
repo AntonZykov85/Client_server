@@ -1,54 +1,18 @@
-2022-04-30 10:02:46,458 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:02:53,941 INFO server.py connected with client ('127.0.0.1', 49324)
-2022-04-30 10:02:59,235 INFO server.py get clients message: {'action': 'presence', 'time': 'Sat Apr 30 10:02:53 2022', 'user': {'account_name': 'Guest'}}
-2022-04-30 10:02:59,235 DEBUG server.py Clients message {'action': 'presence', 'time': 'Sat Apr 30 10:02:53 2022', 'user': {'account_name': 'Guest'}} debugging
-2022-04-30 10:02:59,235 INFO server.py Post answer to client {'response': 200}
-2022-04-30 10:02:59,235 DEBUG server.py connection with client ('127.0.0.1', 49324) is close
-2022-04-30 10:03:26,477 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:04:01,119 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:04:08,803 INFO server.py connected with client ('127.0.0.1', 49328)
-2022-04-30 10:04:13,904 INFO server.py get clients message: {'action': 'presence', 'time': 'Sat Apr 30 10:04:08 2022', 'user': {'account_name': 'Guest'}}
-2022-04-30 10:04:13,904 INFO server.py Post answer to client <function logger.__call__.<locals>.logging_writer at 0x7f839d557940>
-2022-04-30 10:05:05,495 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:05:12,919 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:05:34,185 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:05:40,338 INFO server.py connected with client ('127.0.0.1', 49338)
-2022-04-30 10:05:51,844 INFO server.py get clients message: {'action': 'presence', 'time': 'Sat Apr 30 10:05:40 2022', 'user': {'account_name': 'Guest'}}
-2022-04-30 10:05:51,845 INFO server.py Post answer to client <function logger.__call__.<locals>.logging_writer at 0x7fe329c50940>
-2022-04-30 10:06:10,559 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:06:27,227 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:06:33,219 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:07:41,196 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:07:46,173 INFO server.py connected with client ('127.0.0.1', 49342)
-2022-04-30 10:07:51,317 INFO server.py get clients message: {'action': 'presence', 'time': 'Sat Apr 30 10:07:46 2022', 'user': {'account_name': 'Guest'}}
-2022-04-30 10:07:51,317 DEBUG server.py Clients message {'action': 'presence', 'time': 'Sat Apr 30 10:07:46 2022', 'user': {'account_name': 'Guest'}} debugging
-2022-04-30 10:07:51,317 INFO server.py Post answer to client {'response': 200}
-2022-04-30 10:07:51,317 DEBUG server.py connection with client ('127.0.0.1', 49342) is close
-2022-04-30 10:08:11,943 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:08:55,862 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:09:03,098 INFO server.py connected with client ('127.0.0.1', 49348)
-2022-04-30 10:09:13,987 INFO server.py get clients message: {'action': 'presence', 'time': 'Sat Apr 30 10:09:03 2022', 'user': {'account_name': 'Guest'}}
-2022-04-30 10:09:13,987 INFO server.py Post answer to client <function logger.__call__.<locals>.logging_writer at 0x7f4538020940>
-2022-04-30 10:11:54,188 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:12:00,196 INFO server.py connected with client ('127.0.0.1', 49350)
-2022-04-30 10:12:06,720 INFO server.py get clients message: {'action': 'presence', 'time': 'Sat Apr 30 10:12:00 2022', 'user': {'account_name': 'Guest'}}
-2022-04-30 10:12:06,720 INFO server.py Post answer to client <function logger.__call__.<locals>.logging_writer at 0x7fc0d2d76940>
-2022-04-30 10:13:28,274 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:13:33,708 INFO server.py connected with client ('127.0.0.1', 49358)
-2022-04-30 10:13:38,817 INFO server.py get clients message: {'action': 'presence', 'time': 'Sat Apr 30 10:13:33 2022', 'user': {'account_name': 'Guesr'}}
-2022-04-30 10:13:38,817 INFO server.py Post answer to client <function logger.__call__.<locals>.logging_writer at 0x7f8dc95d79d0>
-2022-04-30 10:13:56,049 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:14:00,830 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:14:19,062 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:14:27,924 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:14:46,157 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:14:51,650 INFO server.py connected with client ('127.0.0.1', 49370)
-2022-04-30 10:14:56,448 INFO server.py get clients message: {'action': 'presence', 'time': 'Sat Apr 30 10:14:51 2022', 'user': {'account_name': 'Guest'}}
-2022-04-30 10:14:56,448 INFO server.py Post answer to client <function logger.__call__.<locals>.logging_writer at 0x7f58e99109d0>
-2022-04-30 10:17:31,206 INFO server.py server is running with port: 7777, adress: 
-2022-04-30 10:17:36,412 INFO server.py connected with client ('127.0.0.1', 49372)
-2022-04-30 10:17:42,772 INFO server.py get clients message: {'action': 'presence', 'time': 'Sat Apr 30 10:17:36 2022', 'user': {'account_name': 'Guest'}}
-2022-04-30 10:17:42,772 DEBUG server.py Clients message {'action': 'presence', 'time': 'Sat Apr 30 10:17:36 2022', 'user': {'account_name': 'Guest'}} debugging
-2022-04-30 10:17:42,788 DEBUG decorators.py <function process_client_message at 0x7f327051d160> was running with ({'action': 'presence', 'time': 'Sat Apr 30 10:17:36 2022', 'user': {'account_name': 'Guest'}},), {} parametres.Running from module __main__ Running from function  main() Running from function main
-2022-04-30 10:17:42,788 INFO server.py Post answer to client {'response': 200}
-2022-04-30 10:17:42,792 DEBUG server.py connection with client ('127.0.0.1', 49372) is close
+2022-05-01 16:03:49,088 INFO server.py server is running with port: 7777, adress: 
+2022-05-01 16:04:02,210 INFO server.py connected with client ('127.0.0.1', 52792)
+2022-05-01 16:04:08,845 INFO server.py get clients message: {'action': 'presence', 'time': 'Sun May  1 16:04:02 2022', 'user': {'account_name': 'Guest'}}
+2022-05-01 16:04:08,845 INFO server.py Post answer to client <function logger.__call__.<locals>.logging_writer at 0x7f12bfb13940>
+2022-05-01 16:11:05,566 INFO server.py server is running with port: 7777, adress: 
+2022-05-01 21:33:20,617 INFO server.py connected with client ('127.0.0.1', 52954)
+2022-05-01 21:33:20,719 DEBUG server.py Clients message {'action': 'presence', 'time': 'Sun May  1 21:33:20 2022', 'user': {'account_name': 'Guest'}} debugging
+2022-05-01 21:33:20,723 DEBUG decorators.py <function process_client_message at 0x7f389d02f3a0> was running with ({'action': 'presence', 'time': 'Sun May  1 21:33:20 2022', 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:37:00,294 INFO server.py connected with client ('127.0.0.1', 52964)
+2022-05-01 21:37:00,395 DEBUG server.py Clients message {'action': 'presence', 'time': 'Sun May  1 21:37:00 2022', 'user': {'account_name': 'Guest'}} debugging
+2022-05-01 21:37:00,405 DEBUG decorators.py <function process_client_message at 0x7fc8bb4d23a0> was running with ({'action': 'presence', 'time': 'Sun May  1 21:37:00 2022', 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:46:53,799 INFO server.py connected with client ('127.0.0.1', 52980)
+2022-05-01 21:46:53,900 DEBUG server.py Clients message {'action': 'presence', 'time': 'Sun May  1 21:46:53 2022', 'user': {'account_name': 'Guest'}} debugging
+2022-05-01 21:46:53,906 DEBUG decorators.py <function process_client_message at 0x7f74ac6803a0> was running with ({'action': 'presence', 'time': 'Sun May  1 21:46:53 2022', 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:41:30,209 INFO server.py server run with , 7777
+2022-05-01 22:42:17,548 INFO server.py connected with client ('127.0.0.1', 53070)
+2022-05-01 22:42:17,649 DEBUG server.py Clients message {'action': 'presence', 'time': 1651434137.5483112, 'user': {'account_name': 'Guest'}} debugging
+2022-05-01 22:42:17,654 DEBUG decorators.py <function process_client_message at 0x7fbe6a4dc3a0> was running with ({'action': 'presence', 'time': 1651434137.5483112, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53070)>), {} parametres.Running from module __main__ Running from function  main() Running from function main

@@ -60,3 +60,69 @@
 2022-04-30 10:17:42,788 DEBUG client.py debbuging info from server {'response': 200}
 2022-04-30 10:17:42,794 DEBUG decorators.py <function process_ans at 0x7f10bda7c160> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
 2022-04-30 10:17:42,794 INFO client.py servers answer 200 : OK
+2022-05-01 16:04:02,204 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-05-01 16:04:08,845 DEBUG client.py message {'action': 'presence', 'time': 'Sun May  1 16:04:02 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-05-01 16:04:09,074 ERROR client.py Не удалось декодировать сообщение сервера
+2022-05-01 21:33:20,611 DEBUG decorators.py <function argument_parser at 0x7fcd18b6a700> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:36:18,941 DEBUG decorators.py <function argument_parser at 0x7fdd5a780670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:36:18,946 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 21:36:44,749 DEBUG decorators.py <function argument_parser at 0x7fe82bb65670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:36:44,763 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 21:36:47,560 DEBUG decorators.py <function argument_parser at 0x7fb0de7ae670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:36:47,561 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 21:37:00,288 DEBUG decorators.py <function argument_parser at 0x7fb015e4e670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:42:43,680 DEBUG decorators.py <function argument_parser at 0x7fb6bd3b3670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:42:43,682 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 21:43:56,128 DEBUG decorators.py <function argument_parser at 0x7f8922844700> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:43:56,128 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 21:44:54,140 DEBUG decorators.py <function argument_parser at 0x7fa7f87d7700> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:44:54,141 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 21:46:53,798 DEBUG decorators.py <function argument_parser at 0x7fc27bb2a700> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:51:50,791 DEBUG decorators.py <function argument_parser at 0x7f50f92f3670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:51:50,795 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 21:58:46,983 DEBUG decorators.py <function argument_parser at 0x7fb8c3101670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:58:46,985 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:01:44,728 DEBUG decorators.py <function argument_parser at 0x7f62f9f29670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:01:44,732 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:04:57,318 DEBUG decorators.py <function argument_parser at 0x7f44d9a56670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:04:57,322 INFO client.py server start with 7777, 127.0.0.1, listen
+2022-05-01 22:04:57,322 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:05:10,095 DEBUG decorators.py <function argument_parser at 0x7fea3ebdf670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:05:10,097 INFO client.py server start with 7777, 127.0.0.1, listen
+2022-05-01 22:05:10,098 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:05:26,570 DEBUG decorators.py <function argument_parser at 0x7fdbeea85670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:05:26,570 INFO client.py server start with 7777, 127.0.0.1, listen
+2022-05-01 22:05:26,570 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:05:35,566 DEBUG decorators.py <function argument_parser at 0x7f44a9f9a670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:05:35,566 INFO client.py server start with 7777, 127.0.0.1, send
+2022-05-01 22:05:35,566 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:05:37,805 DEBUG decorators.py <function argument_parser at 0x7f02a7514670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:05:37,805 INFO client.py server start with 7777, 127.0.0.1, listen
+2022-05-01 22:05:37,805 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:05:41,131 DEBUG decorators.py <function argument_parser at 0x7f8a9e2c9670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:05:41,131 INFO client.py server start with 7777, 127.0.0.1, send
+2022-05-01 22:05:41,131 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:07:42,299 DEBUG decorators.py <function argument_parser at 0x7faf784dc940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:08:10,008 INFO client.py server start with 7777, 127.0.0.1, send
+2022-05-01 22:09:00,847 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:12:55,027 DEBUG decorators.py <function argument_parser at 0x7fc1e4f03670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:12:55,031 INFO client.py server start with 7777, 127.0.0.1, send
+2022-05-01 22:12:55,031 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:16:42,469 DEBUG decorators.py <function argument_parser at 0x7fdc4abaf700> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:16:42,474 INFO client.py server start with 7777, 127.0.0.1, listen
+2022-05-01 22:16:42,475 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:22:02,349 DEBUG decorators.py <function argument_parser at 0x7f3ef79ba700> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:22:02,358 INFO client.py server start with 7777, 127.0.0.1, send
+2022-05-01 22:22:02,358 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:23:01,906 DEBUG decorators.py <function argument_parser at 0x7fae47592670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:23:01,908 INFO client.py server start with 7777, 127.0.0.1, listen
+2022-05-01 22:29:30,094 DEBUG decorators.py <function argument_parser at 0x7feb1a9c2670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:29:30,098 INFO client.py server start with 7777, 127.0.0.1, send
+2022-05-01 22:42:17,547 DEBUG decorators.py <function argument_parser at 0x7f25dccc4670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:42:17,547 INFO client.py server start with 7777, 127.0.0.1, listen
+2022-05-01 22:42:17,548 DEBUG client.py presence for Guest
+2022-05-01 22:42:17,650 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-01 22:42:17,650 DEBUG decorators.py <function process_ans at 0x7f25dccc4550> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:42:17,650 INFO client.py Connected with server 200 : OK
+2022-05-01 22:43:51,919 DEBUG decorators.py <function argument_parser at 0x7fe75af04670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:43:51,921 INFO client.py server start with 7777, 127.0.0.1, send
