@@ -10,7 +10,9 @@ sys.path.append(os.path.join(os.getcwd(), '..'))
 
 # PATH = os.path.join(PATH, 'client.log')
 p_list = []
-args = ['/home/anton/PycharmProjects/Client_server/Client_server/CS_python_study','python client.py']
+args_c = ['/home/anton/PycharmProjects/Client_server/Client_server/CS_python_study','python client.py']
+args_s = ['/home/anton/PycharmProjects/Client_server/Client_server/CS_python_study','python server.py']
+
 while True:
     action = input('Start 10 clients (s) / '
                  'close client (x) /'
@@ -19,10 +21,10 @@ while True:
     if action == 'q':
         break
     elif action == 's':
-        p_list.append(subprocess.Popen((args), shell=True))
+        p_list.append(subprocess.Popen((args_s), shell=True))
 
         for _ in range(10):
-            p_list.append(subprocess.Popen(args))
+            p_list.append(subprocess.Popen(args_c))
             print('10 clients are start')
     elif action == 'x':
         for p in p_list:
