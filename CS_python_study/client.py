@@ -105,12 +105,6 @@ def main():
     except json.JSONDecodeError:
         client_logger.error(f'Cannot decode JSON string')
         sys.exit(1)
-    # except ServerError as error:                                                      # в питоне 3.9. не хочет ставить модуль еррор, разбираюсь
-    #     client_logger.error(f'Error with starting server {error.text}')
-    #     sys.exit(1)
-    # except ConnectionRefusedError:
-    #     client_logger.error(f'Cannot connect with server {server_address} : {server_port}, client decline connection request')
-    #     sys.exit(1)
     else:
         if  cliend_mode  == 'send':
             print('Send message mode is activated')
