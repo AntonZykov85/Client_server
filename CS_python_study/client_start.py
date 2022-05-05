@@ -1,6 +1,7 @@
 import csv
 import random
 import subprocess
+import time
 import os
 import sys
 # from subprocess import Popen, CREATE_NEW_CONSOLE
@@ -13,23 +14,27 @@ import sys
 p_list = []
 # args_c = ['/home/anton/PycharmProjects/Client_server/Client_server/CS_python_study','python client.py']
 # args_s = ['/home/anton/PycharmProjects/Client_server/Client_server/CS_python_study','python server.py']
+def client_name(i):
+    return f'{random.getrandbits(128)}/{i}' # generate random 128-bit string
 
 
 while True:
-    action = input('Start 10 clients (s) / '
+    action = input('Start application (s) / '
                  'close client (x) /'
                  'Quit (q)')
 
     if action == 'q':
-        print('Aplication closed')
+        print('Application closed')
         break
     elif action == 's':
+        client_numbers = int(input('input quantity of clients'))
         p_list.append(subprocess.Popen(f'gnome-terminal -- python3 server.py', shell=True))
 
-        for _ in range(10):
-
-            p_list.append(subprocess.Popen(f'gnome-terminal -- python3 client.py -n', shell=True))
-        print('10 clients are start')
+        # time.sleep(0.5)
+        for i in range(client_numbers):
+            account = client_name(i)
+            p_list.append(subprocess.Popen(f'gnome-terminal -- python3 client.py -n Test{i}', shell=True))
+        print(f'{client_numbers} clients are start')
     elif action == 'x':
         for p in p_list:
             p.kill()
