@@ -30,11 +30,13 @@ while True:
         client_numbers = int(input('input quantity of clients'))
         p_list.append(subprocess.Popen(f'gnome-terminal -- python3 server.py', shell=True))
 
-        # time.sleep(0.5)
+        time.sleep(0.5)
         for i in range(client_numbers):
-            account = client_name(i)
+            # account = client_name(i)
             p_list.append(subprocess.Popen(f'gnome-terminal -- python3 client.py -n Test{i}', shell=True))
+            print(f'user Test{i} enter chat')
         print(f'{client_numbers} clients are start')
+
     elif action == 'x':
         for p in p_list:
             p.kill()

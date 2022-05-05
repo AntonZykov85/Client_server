@@ -126,3 +126,347 @@
 2022-05-01 22:42:17,650 INFO client.py Connected with server 200 : OK
 2022-05-01 22:43:51,919 DEBUG decorators.py <function argument_parser at 0x7fe75af04670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
 2022-05-01 22:43:51,921 INFO client.py server start with 7777, 127.0.0.1, send
+2022-05-05 14:31:54,582 DEBUG decorators.py <function argument_parser at 0x7f1ef7a54940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:31:54,586 INFO client.py server start with 7777, 127.0.0.1, Test2
+2022-05-05 14:31:54,586 DEBUG client.py presence for Guest
+2022-05-05 14:31:54,622 DEBUG decorators.py <function argument_parser at 0x7f7fb85c9940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:31:54,622 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:31:54,624 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:31:54,624 DEBUG decorators.py <function process_ans at 0x7f1ef7a54820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:31:54,625 INFO client.py Connected with server 200 : OK
+2022-05-05 14:31:54,625 INFO client.py Processes started
+2022-05-05 14:31:54,635 DEBUG client.py presence for Guest
+2022-05-05 14:31:54,632 DEBUG decorators.py <function argument_parser at 0x7fb6ec0ed940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:31:54,636 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:31:54,637 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:31:54,637 DEBUG decorators.py <function process_ans at 0x7f7fb85c9820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:31:54,637 INFO client.py Connected with server 200 : OK
+2022-05-05 14:31:54,638 INFO client.py Processes started
+2022-05-05 14:31:54,639 DEBUG client.py presence for Guest
+2022-05-05 14:31:54,738 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:31:54,738 DEBUG decorators.py <function process_ans at 0x7fb6ec0ed820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:31:54,738 INFO client.py Connected with server 200 : OK
+2022-05-05 14:31:54,739 INFO client.py Processes started
+2022-05-05 14:32:41,972 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test0', 'to': 'Test1', 'time': 'Thu May  5 14:32:41 2022', 'message_text': 'u is loh'}
+2022-05-05 14:32:41,972 INFO client.py message send to userTest1 
+2022-05-05 14:32:42,010 DEBUG decorators.py <function message_new at 0x7f7fb85c9550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39014), raddr=('127.0.0.1', 7777)>, 'Test0'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:33:11,841 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test0', 'to': 'Test2', 'time': 'Thu May  5 14:33:11 2022', 'message_text': 'jn,nmnnknlkn'}
+2022-05-05 14:33:11,841 INFO client.py message send to userTest2 
+2022-05-05 14:33:11,842 DEBUG decorators.py <function message_new at 0x7f7fb85c9550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39014), raddr=('127.0.0.1', 7777)>, 'Test0'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:34:38,983 DEBUG decorators.py <function last_message at 0x7f7fb912e0d0> was running with ('Test0',), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:34:38,984 INFO client.py Connection finished by users command
+2022-05-05 14:34:46,704 DEBUG decorators.py <function last_message at 0x7f1ef85b90d0> was running with ('Test2',), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:34:46,705 INFO client.py Connection finished by users command
+2022-05-05 14:34:46,731 ERROR client.py incorrect server message {'response': 400, 'error': 'Bad Request'}
+2022-05-05 14:34:51,548 DEBUG decorators.py <function last_message at 0x7fb6ecc520d0> was running with ('Test1',), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:34:51,549 INFO client.py Connection finished by users command
+2022-05-05 14:34:51,552 ERROR client.py incorrect server message {'response': 400, 'error': 'Bad Request'}
+2022-05-05 14:35:08,486 DEBUG decorators.py <function argument_parser at 0x7fbaf8677940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:35:08,490 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:35:08,491 DEBUG client.py presence for Guest
+2022-05-05 14:35:08,503 DEBUG decorators.py <function argument_parser at 0x7f551cd72940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:35:08,503 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:35:08,507 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:35:08,508 DEBUG decorators.py <function process_ans at 0x7fbaf8677820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:35:08,508 INFO client.py Connected with server 200 : OK
+2022-05-05 14:35:08,508 INFO client.py Processes started
+2022-05-05 14:35:08,512 DEBUG client.py presence for Guest
+2022-05-05 14:35:08,609 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:35:08,609 DEBUG decorators.py <function process_ans at 0x7f551cd72820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:35:08,609 INFO client.py Connected with server 200 : OK
+2022-05-05 14:35:08,609 INFO client.py Processes started
+2022-05-05 14:35:59,427 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test1', 'to': 'Test1', 'time': 'Thu May  5 14:35:59 2022', 'message_text': 'dcvvxv'}
+2022-05-05 14:35:59,427 INFO client.py message send to userTest1 
+2022-05-05 14:35:59,429 DEBUG decorators.py <function message_new at 0x7f551cd72550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39022), raddr=('127.0.0.1', 7777)>, 'Test1'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:36:20,761 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test1', 'to': 'Test2', 'time': 'Thu May  5 14:36:20 2022', 'message_text': 'dsfgddff'}
+2022-05-05 14:36:20,762 INFO client.py message send to userTest2 
+2022-05-05 14:36:20,763 DEBUG decorators.py <function message_new at 0x7f551cd72550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39022), raddr=('127.0.0.1', 7777)>, 'Test1'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:37:10,792 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test1', 'to': 'client_name2', 'time': 'Thu May  5 14:37:10 2022', 'message_text': 'sazcxx'}
+2022-05-05 14:37:10,792 INFO client.py message send to userclient_name2 
+2022-05-05 14:37:10,793 DEBUG decorators.py <function message_new at 0x7f551cd72550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39022), raddr=('127.0.0.1', 7777)>, 'Test1'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:38:03,327 DEBUG decorators.py <function argument_parser at 0x7fbc17fe9940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:38:03,327 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:38:03,329 DEBUG client.py presence for Guest
+2022-05-05 14:38:03,428 CRITICAL client.py Connection lost
+2022-05-05 14:38:03,429 DEBUG decorators.py <function get_message_from_server at 0x7f551cdae940> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39022)>, 'Test1'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function run
+2022-05-05 14:38:03,429 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:38:03,429 DEBUG decorators.py <function process_ans at 0x7fbc17fe9820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:38:03,429 INFO client.py Connected with server 200 : OK
+2022-05-05 14:38:03,430 INFO client.py Processes started
+2022-05-05 14:38:03,665 DEBUG decorators.py <function argument_parser at 0x7fe06cb84940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:38:03,668 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:38:03,668 DEBUG client.py presence for Guest
+2022-05-05 14:38:03,770 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:38:03,770 DEBUG decorators.py <function process_ans at 0x7fe06cb84820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:38:03,770 INFO client.py Connected with server 200 : OK
+2022-05-05 14:38:03,771 INFO client.py Processes started
+2022-05-05 14:38:08,615 CRITICAL client.py Connection lost
+2022-05-05 14:38:08,619 DEBUG decorators.py <function get_message_from_server at 0x7fe06cbc0940> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39028), raddr=('127.0.0.1', 7777)>, 'Test0'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function run
+2022-05-05 14:38:20,081 DEBUG decorators.py <function argument_parser at 0x7f73f60d8940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:38:20,081 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:38:20,097 DEBUG decorators.py <function argument_parser at 0x7f84feef4940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:38:20,098 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:38:42,888 DEBUG decorators.py <function argument_parser at 0x7fcf12c04940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:38:42,904 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:38:42,927 DEBUG decorators.py <function argument_parser at 0x7f5bb1587940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:38:42,928 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:39:10,224 DEBUG decorators.py <function argument_parser at 0x7f462b40f940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:39:10,230 DEBUG decorators.py <function argument_parser at 0x7f2b522a1940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:39:10,230 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:39:10,233 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:43:20,675 DEBUG decorators.py <function argument_parser at 0x7fd6bd191940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:43:20,675 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:43:20,677 DEBUG decorators.py <function argument_parser at 0x7fce074dc940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:43:20,677 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:43:20,678 DEBUG client.py presence for Guest
+2022-05-05 14:43:20,679 DEBUG client.py presence for Guest
+2022-05-05 14:43:20,781 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:43:20,782 DEBUG decorators.py <function process_ans at 0x7fd6bd191820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:43:20,782 INFO client.py Connected with server 200 : OK
+2022-05-05 14:43:20,783 INFO client.py Processes started
+2022-05-05 14:43:20,791 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:43:20,791 DEBUG decorators.py <function process_ans at 0x7fce074dc820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:43:20,791 INFO client.py Connected with server 200 : OK
+2022-05-05 14:43:20,791 INFO client.py Processes started
+2022-05-05 14:43:38,280 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test1', 'to': 'Test2', 'time': 'Thu May  5 14:43:38 2022', 'message_text': 'qwerty'}
+2022-05-05 14:43:38,280 INFO client.py message send to userTest2 
+2022-05-05 14:43:38,319 DEBUG decorators.py <function message_new at 0x7fd6bd191550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33502), raddr=('127.0.0.1', 7777)>, 'Test1'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:43:55,127 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test1', 'to': 'Test1', 'time': 'Thu May  5 14:43:55 2022', 'message_text': 'sfdsfsfds'}
+2022-05-05 14:43:55,128 INFO client.py message send to userTest1 
+2022-05-05 14:43:55,128 DEBUG decorators.py <function message_new at 0x7fd6bd191550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33502), raddr=('127.0.0.1', 7777)>, 'Test1'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:52:32,266 DEBUG decorators.py <function argument_parser at 0x7fae84c31940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:52:32,266 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:52:32,267 DEBUG client.py presence for Guest
+2022-05-05 14:52:32,300 DEBUG decorators.py <function argument_parser at 0x7f16de389940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:52:32,300 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:52:32,302 CRITICAL client.py Connection lost
+2022-05-05 14:52:32,302 DEBUG decorators.py <function get_message_from_server at 0x7fd6bd1cd940> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33502)>, 'Test1'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function run
+2022-05-05 14:52:32,303 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:52:32,303 DEBUG decorators.py <function process_ans at 0x7fae84c31820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:52:32,303 INFO client.py Connected with server 200 : OK
+2022-05-05 14:52:32,303 INFO client.py Processes started
+2022-05-05 14:52:32,309 DEBUG client.py presence for Guest
+2022-05-05 14:52:32,403 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:52:32,403 DEBUG decorators.py <function process_ans at 0x7f16de389820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:52:32,403 INFO client.py Connected with server 200 : OK
+2022-05-05 14:52:32,404 INFO client.py Processes started
+2022-05-05 14:53:09,044 DEBUG decorators.py <function argument_parser at 0x7fb0686f9940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:53:09,044 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:53:09,034 DEBUG decorators.py <function argument_parser at 0x7fdd277e8940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:53:09,045 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:53:09,045 DEBUG client.py presence for Guest
+2022-05-05 14:53:09,046 DEBUG client.py presence for Guest
+2022-05-05 14:54:20,083 DEBUG decorators.py <function argument_parser at 0x7f48aaeaa940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:54:20,087 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:54:20,096 DEBUG client.py presence for Guest
+2022-05-05 14:54:20,099 DEBUG decorators.py <function argument_parser at 0x7f74a2570940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:54:20,099 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:54:20,099 DEBUG client.py presence for Guest
+2022-05-05 14:55:06,494 DEBUG decorators.py <function argument_parser at 0x7f055674a940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:55:06,497 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:55:06,501 DEBUG client.py presence for Guest
+2022-05-05 14:55:06,538 DEBUG decorators.py <function argument_parser at 0x7f9ceb2d9940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:55:06,538 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:55:06,542 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:55:06,542 DEBUG decorators.py <function process_ans at 0x7f055674a820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:55:06,542 INFO client.py Connected with server 200 : OK
+2022-05-05 14:55:06,542 INFO client.py Processes started
+2022-05-05 14:55:06,543 DEBUG client.py presence for Guest
+2022-05-05 14:55:24,638 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test0', 'to': 'Test2', 'time': 'Thu May  5 14:55:24 2022', 'message_text': 'sdfsfdfs'}
+2022-05-05 14:55:24,638 INFO client.py message send to userTest2 
+2022-05-05 14:55:24,639 DEBUG decorators.py <function message_new at 0x7f055674a550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33534), raddr=('127.0.0.1', 7777)>, 'Test0'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 15:01:45,944 DEBUG decorators.py <function argument_parser at 0x7f9b09931940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:01:45,944 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 15:01:45,950 DEBUG decorators.py <function argument_parser at 0x7ff01da6a940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:01:45,950 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 15:01:45,951 DEBUG client.py presence for Guest
+2022-05-05 15:01:45,951 DEBUG client.py presence for Guest
+2022-05-05 15:05:40,314 DEBUG decorators.py <function argument_parser at 0x7f2e2f6e8940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:05:40,318 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 15:05:40,319 DEBUG client.py presence for Guest
+2022-05-05 15:10:08,696 DEBUG decorators.py <function argument_parser at 0x7fa1f8c85940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:10:08,696 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 15:10:08,699 DEBUG client.py presence for Guest
+2022-05-05 15:10:08,737 DEBUG decorators.py <function argument_parser at 0x7f79ee9e7940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:10:08,737 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 15:10:08,739 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 15:10:08,740 DEBUG decorators.py <function process_ans at 0x7fa1f8c85820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:10:08,740 INFO client.py Connected with server 200 : OK
+2022-05-05 15:10:08,740 INFO client.py Processes started
+2022-05-05 15:10:08,743 DEBUG client.py presence for Guest
+2022-05-05 15:10:41,567 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test1', 'to': 'Test1', 'time': 'Thu May  5 15:10:41 2022', 'message_text': 'qwrtfcngcv'}
+2022-05-05 15:10:41,567 INFO client.py message send to userTest1 
+2022-05-05 15:10:41,606 DEBUG decorators.py <function message_new at 0x7fa1f8c85550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 41488), raddr=('127.0.0.1', 7777)>, 'Test1'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 15:12:04,554 DEBUG decorators.py <function argument_parser at 0x7f7ea9051940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:12:04,555 DEBUG decorators.py <function argument_parser at 0x7f7953e00940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:12:04,556 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 15:12:04,556 DEBUG client.py presence for Guest
+2022-05-05 15:12:04,559 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 15:12:04,563 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 15:12:04,564 DEBUG decorators.py <function process_ans at 0x7f7953e00820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:12:04,564 INFO client.py Connected with server 200 : OK
+2022-05-05 15:12:04,564 INFO client.py Processes started
+2022-05-05 15:12:04,564 DEBUG client.py presence for Guest
+2022-05-05 15:12:04,667 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 15:12:04,667 DEBUG decorators.py <function process_ans at 0x7f7ea9051820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:12:04,667 INFO client.py Connected with server 200 : OK
+2022-05-05 15:12:04,668 INFO client.py Processes started
+2022-05-05 15:12:55,421 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test0', 'to': 'Test1', 'time': 'Thu May  5 15:12:55 2022', 'message_text': 'saddsadsd'}
+2022-05-05 15:12:55,422 INFO client.py message send to userTest1 
+2022-05-05 15:12:55,424 DEBUG decorators.py <function message_new at 0x7f7ea9051550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 41498), raddr=('127.0.0.1', 7777)>, 'Test0'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 15:13:25,090 DEBUG decorators.py <function last_message at 0x7f79549650d0> was running with ('Test1',), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 15:13:25,091 INFO client.py Connection finished by users command
+2022-05-05 15:13:25,166 ERROR client.py incorrect server message {'response': 400, 'error': 'Bad Request'}
+2022-05-05 15:13:29,973 DEBUG decorators.py <function last_message at 0x7f7ea9bb60d0> was running with ('Test0',), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 15:13:29,973 INFO client.py Connection finished by users command
+2022-05-05 16:03:10,937 DEBUG decorators.py <function argument_parser at 0x7fe6377bc940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:03:10,937 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 16:03:10,940 DEBUG decorators.py <function argument_parser at 0x7ff3790a2940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:03:10,940 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 16:03:10,940 DEBUG client.py presence for Test1
+2022-05-05 16:03:10,941 DEBUG client.py presence for Test0
+2022-05-05 16:03:11,043 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:03:11,047 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:07:03,600 DEBUG decorators.py <function argument_parser at 0x7f4f7f862940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:07:03,601 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 16:07:03,601 DEBUG decorators.py <function argument_parser at 0x7fa1996cc940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:07:03,602 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 16:07:03,604 DEBUG client.py presence for Test1
+2022-05-05 16:07:03,605 DEBUG client.py presence for Test0
+2022-05-05 16:07:03,707 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:07:03,719 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:12:22,455 DEBUG decorators.py <function argument_parser at 0x7f1852b45940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:12:22,455 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 16:12:22,456 DEBUG client.py presence for Guest
+2022-05-05 16:12:22,557 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 16:12:22,557 DEBUG decorators.py <function process_ans at 0x7f1852b45820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:12:22,557 INFO client.py Connected with server 200 : OK
+2022-05-05 16:12:22,558 INFO client.py Processes started
+2022-05-05 16:12:22,891 DEBUG decorators.py <function argument_parser at 0x7f8b89b4d940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:12:22,895 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 16:12:22,896 DEBUG client.py presence for Guest
+2022-05-05 16:12:22,997 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 16:12:22,997 DEBUG decorators.py <function process_ans at 0x7f8b89b4d820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:12:22,997 INFO client.py Connected with server 200 : OK
+2022-05-05 16:12:22,998 INFO client.py Processes started
+2022-05-05 16:17:19,213 DEBUG decorators.py <function argument_parser at 0x7ff295225940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:19,222 INFO client.py server start with 7777, 127.0.0.1, Test4
+2022-05-05 16:17:19,223 DEBUG client.py presence for Test4
+2022-05-05 16:17:19,334 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,082 DEBUG decorators.py <function argument_parser at 0x7f90487dd940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,138 INFO client.py server start with 7777, 127.0.0.1, Test13
+2022-05-05 16:17:23,142 DEBUG client.py presence for Test13
+2022-05-05 16:17:23,240 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,257 DEBUG decorators.py <function argument_parser at 0x7fd22c749940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,257 INFO client.py server start with 7777, 127.0.0.1, Test6
+2022-05-05 16:17:23,305 DEBUG decorators.py <function argument_parser at 0x7fe1c888b940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,305 INFO client.py server start with 7777, 127.0.0.1, Test9
+2022-05-05 16:17:23,324 DEBUG client.py presence for Test6
+2022-05-05 16:17:23,335 DEBUG client.py presence for Test9
+2022-05-05 16:17:23,346 DEBUG decorators.py <function argument_parser at 0x7fe69a5b3940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,346 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 16:17:23,347 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,351 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,405 DEBUG client.py presence for Test1
+2022-05-05 16:17:23,411 DEBUG decorators.py <function argument_parser at 0x7f6cef258940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,411 INFO client.py server start with 7777, 127.0.0.1, Test14
+2022-05-05 16:17:23,412 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,426 DEBUG client.py presence for Test14
+2022-05-05 16:17:23,514 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,601 DEBUG decorators.py <function argument_parser at 0x7fedadba7940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,601 INFO client.py server start with 7777, 127.0.0.1, Test5
+2022-05-05 16:17:23,629 DEBUG decorators.py <function argument_parser at 0x7f735b613940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,629 INFO client.py server start with 7777, 127.0.0.1, Test12
+2022-05-05 16:17:23,650 DEBUG client.py presence for Test5
+2022-05-05 16:17:23,666 DEBUG client.py presence for Test12
+2022-05-05 16:17:23,731 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,734 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,780 DEBUG decorators.py <function argument_parser at 0x7f7b62dfc940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,780 INFO client.py server start with 7777, 127.0.0.1, Test7
+2022-05-05 16:17:23,783 DEBUG decorators.py <function argument_parser at 0x7f77ac5f6940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,784 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 16:17:23,784 DEBUG decorators.py <function argument_parser at 0x7f848433e940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,784 INFO client.py server start with 7777, 127.0.0.1, Test8
+2022-05-05 16:17:23,800 DEBUG client.py presence for Test8
+2022-05-05 16:17:23,807 DEBUG client.py presence for Test7
+2022-05-05 16:17:23,811 DEBUG client.py presence for Test0
+2022-05-05 16:17:23,816 DEBUG decorators.py <function argument_parser at 0x7f82e4f59940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,816 INFO client.py server start with 7777, 127.0.0.1, Test16
+2022-05-05 16:17:23,818 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,823 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,826 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,855 DEBUG client.py presence for Test16
+2022-05-05 16:17:23,920 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,966 DEBUG decorators.py <function argument_parser at 0x7fd4ca329940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,966 INFO client.py server start with 7777, 127.0.0.1, Test11
+2022-05-05 16:17:23,968 DEBUG decorators.py <function argument_parser at 0x7f99690cc940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,968 INFO client.py server start with 7777, 127.0.0.1, Test15
+2022-05-05 16:17:23,978 DEBUG decorators.py <function argument_parser at 0x7f26b9257940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,978 INFO client.py server start with 7777, 127.0.0.1, Test2
+2022-05-05 16:17:23,991 DEBUG client.py presence for Test15
+2022-05-05 16:17:23,991 DEBUG client.py presence for Test2
+2022-05-05 16:17:24,027 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:24,031 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:24,038 DEBUG client.py presence for Test11
+2022-05-05 16:17:24,092 DEBUG decorators.py <function argument_parser at 0x7fda4b50a940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:24,114 INFO client.py server start with 7777, 127.0.0.1, Test10
+2022-05-05 16:17:24,115 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:24,128 DEBUG client.py presence for Test10
+2022-05-05 16:17:24,130 DEBUG decorators.py <function argument_parser at 0x7f4a0b8e5940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:24,166 INFO client.py server start with 7777, 127.0.0.1, Test3
+2022-05-05 16:17:24,167 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:24,173 DEBUG client.py presence for Test3
+2022-05-05 16:17:24,268 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 17:04:15,927 DEBUG decorators.py <function argument_parser at 0x7fcba44ea940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:04:15,929 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 17:04:15,927 DEBUG decorators.py <function argument_parser at 0x7fec32340940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:04:15,929 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 17:04:15,930 DEBUG client.py presence for Test0
+2022-05-05 17:04:15,930 DEBUG client.py presence for Test1
+2022-05-05 17:04:16,131 ERROR client.py Cannot decode JSON string
+2022-05-05 17:04:51,030 ERROR client.py Cannot decode JSON string
+2022-05-05 17:22:21,080 DEBUG decorators.py <function argument_parser at 0x7f70e8faa940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:22:21,085 DEBUG decorators.py <function argument_parser at 0x7fe3f05fe940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:22:21,085 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 17:22:21,086 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 17:22:21,086 DEBUG client.py presence for Test0
+2022-05-05 17:22:21,086 DEBUG client.py presence for Test1
+2022-05-05 17:22:21,288 ERROR client.py Cannot decode JSON string
+2022-05-05 17:26:49,496 DEBUG decorators.py <function argument_parser at 0x7f3514d3f9d0> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:26:55,307 INFO client.py server start with 7777, 127.0.0.1, Anton
+2022-05-05 17:26:55,307 DEBUG client.py presence for Anton
+2022-05-05 17:29:50,068 ERROR client.py Cannot decode JSON string
+2022-05-05 17:34:06,087 DEBUG decorators.py <function argument_parser at 0x7fa4183989d0> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:34:26,458 DEBUG decorators.py <function argument_parser at 0x7f362edc1940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:34:26,458 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 17:34:26,487 DEBUG decorators.py <function argument_parser at 0x7fc5e33c2940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:34:26,487 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 17:35:47,804 DEBUG decorators.py <function argument_parser at 0x7f635db72940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:35:47,804 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 17:35:47,808 DEBUG decorators.py <function argument_parser at 0x7f4bcaad8940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:35:47,808 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 17:35:47,809 DEBUG client.py presence for Test1
+2022-05-05 17:35:47,814 DEBUG client.py presence for Test0
+2022-05-05 17:35:48,010 ERROR client.py Cannot decode JSON string
+2022-05-05 17:41:46,725 DEBUG decorators.py <function argument_parser at 0x7f5747181940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:41:46,728 DEBUG decorators.py <function argument_parser at 0x7f3540945940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:41:46,728 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 17:41:46,728 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 17:41:46,730 DEBUG client.py presence for Test1
+2022-05-05 17:41:46,732 DEBUG client.py presence for Test0
+2022-05-05 17:41:47,231 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 17:41:47,231 DEBUG decorators.py <function process_ans at 0x7f3540945820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:41:47,231 INFO client.py Connected with server 200 : OK
+2022-05-05 17:41:47,232 INFO client.py Processes started
+2022-05-05 17:41:47,239 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 17:41:47,239 DEBUG decorators.py <function process_ans at 0x7f5747181820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:41:47,239 INFO client.py Connected with server 200 : OK
+2022-05-05 17:41:47,240 INFO client.py Processes started
+2022-05-05 17:42:00,088 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test0', 'to': 'Test0', 'time': 'Thu May  5 17:42:00 2022', 'message_text': 'sdvxvcxvc'}
+2022-05-05 17:42:00,088 INFO client.py message send to user Test0 
+2022-05-05 17:42:00,090 DEBUG decorators.py <function message_new at 0x7f3540945550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39224), raddr=('127.0.0.1', 7777)>, 'Test0'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 17:42:00,258 INFO client.py Get message from user Test0  :  sdvxvcxvc
+2022-05-05 17:42:25,489 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test0', 'to': 'Test1', 'time': 'Thu May  5 17:42:25 2022', 'message_text': 'qwerty88'}
+2022-05-05 17:42:25,490 INFO client.py message send to user Test1 
+2022-05-05 17:42:25,491 DEBUG decorators.py <function message_new at 0x7f3540945550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39224), raddr=('127.0.0.1', 7777)>, 'Test0'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 17:42:25,796 INFO client.py Get message from user Test0  :  qwerty88

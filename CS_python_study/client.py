@@ -21,7 +21,7 @@ client_logger = logging.getLogger('client')
 def last_message(account_name):
     return {
         ACTION: EXIT,
-        TIME: time.ctime(),
+        TIME: time.time(),
         ACCOUNT_NAME: account_name
     }
 
@@ -31,19 +31,19 @@ def get_message_from_server(socket, sender_username):
     while True:
         try:
             message = get_message(socket)
-            if ACTION in message and message[ACTION] == MESSAGE and SENDER in message and MESSAGE_TEXT in message\
-                    and DESTINATION in message and message[DESTINATION] == sender_username:
+            if ACTION in message and message[ACTION] == MESSAGE and SENDER in message and DESTINATION in message and MESSAGE_TEXT in message\
+                    and message[DESTINATION] == sender_username:
                 print(f'Get message from Client {message[SENDER]}:  {message[MESSAGE_TEXT]}')
                 client_logger.info(f'Get message from user {message[SENDER]}  :  {message[MESSAGE_TEXT]}')
             else:
                 client_logger.error(f'incorrect server message {message}')
-        except (OSError, ConnectionError, ConnectionAbortedError, ConnectionResetError, json.JSONDecodeError)^
+        except (OSError, ConnectionError, ConnectionAbortedError, ConnectionResetError, json.JSONDecodeError):
             client_logger.critical(f'Connection lost')
             break
 
 @logger
 def message_new(sock, account_name='Guest'):
-    addresse = input('Please input destination username')
+    addresse = input('Please input destination username ')
     message = input('Please input message for send to the chat or \'quit\' for close application ')
     if message == 'quit':
         sock.close()
@@ -60,7 +60,7 @@ def message_new(sock, account_name='Guest'):
     client_logger.debug(f'New message dictory formed: {new_message}')
     try:
         send_message(sock, new_message)
-        client_logger.info(f'message send to user{addresse} ')
+        client_logger.info(f'message send to user {addresse} ')
     except:
         client_logger.critical(f'Connection lost')
         sys.exit(1)
@@ -69,12 +69,12 @@ def print_help():
     print('Commands: \n'
           '"message" - send message; \n'
           '"help" - display command advises \n'
-          '"exit" - close application' )
+          '"exit" - close application')
 
 def user_interface(socket, username):
     print_help()
     while True:
-        cmd = input('input command')
+        cmd = input('input command ')
         if cmd == 'message':
             message_new(socket, username)
         elif cmd == 'help':
@@ -141,6 +141,7 @@ def main():
     print('this is client interface')
 
     server_address, server_port, client_username = argument_parser()
+
     if not client_username:
         client_username = input('Input your name')
 
@@ -149,7 +150,7 @@ def main():
     try:
         cargo = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         cargo.connect((server_address, server_port))
-        send_message(cargo, create_pref())
+        send_message(cargo, create_pref(client_username))
         answer = process_ans(get_message(cargo))
         client_logger.info(f'Connected with server {answer}')
         print(f'Connected with server')
@@ -157,25 +158,17 @@ def main():
         client_logger.error(f'Cannot decode JSON string')
         sys.exit(1)
     else:
-        if  cliend_mode  == 'send':
-            print('Send message mode is activated')
-        else:
-            print('Send write mode is activated')
+        handler = threading.Thread(target=get_message_from_server, args=(cargo, client_username), daemon=True)
+        handler.start()
+        user_interface_var = threading.Thread(target=user_interface, args=(cargo, client_username), daemon=True)
+        user_interface_var.start()
+        client_logger.info(f'Processes started')
 
         while True:
-            if cliend_mode == 'send':
-                try:
-                    send_message(cargo, message_new(cargo))
-                except (ConnectionResetError, ConnectionError, ConnectionAbortedError):
-                    client_logger.error(f'Connection to server  {server_address} : {server_port} failed')
-                    sys.exit(1)
-
-            if cliend_mode == 'listen':
-                try:
-                    get_message_from_server(get_message(cargo))
-                except (ConnectionResetError, ConnectionError, ConnectionAbortedError):
-                    client_logger.error(f'Connection to server  {server_address} : {server_port} failed')
-                    sys.exit(1)
+            time.sleep(1)
+            if handler.is_alive() and user_interface_var.is_alive():
+                continue
+            break
 
 
 if __name__ == '__main__':
