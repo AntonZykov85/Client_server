@@ -3,7 +3,6 @@ import sys
 import json
 import logging
 import time
-
 import log.server_log_config
 from general.constants import *
 from general.utilites import get_message, send_message

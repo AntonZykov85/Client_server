@@ -6,6 +6,7 @@ MAX_CONNECTIONS = 5
 MAX_PACKAGE_LENGTH = 1024
 ENCODING = 'utf-8'
 LOGGING_LEVEL = logging.DEBUG
+SERVER_DATABASE = 'sqlite:///server_base.db3'
 
 ACTION = 'action'
 TIME = 'time'
