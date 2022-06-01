@@ -13,13 +13,18 @@ import log.client_log_config
 from decorators import logger
 import random
 from metaclasses import ClientVerifer
+from client_db import ClientDB
 
 client_logger = logging.getLogger('client')
+socket_locker = threading.Lock()
+database_locker = threading.Lock()
+
 
 class ClientSender(threading.Thread, metaclass=ClientVerifer):
-        def __init__(self, account_name, socket):
+        def __init__(self, account_name, socket, database):
             self.account_name = account_name
             self.socket = socket
+            self.database = database
             super().__init__()
 
         def last_message(self):
@@ -32,11 +37,18 @@ class ClientSender(threading.Thread, metaclass=ClientVerifer):
         def message_new(self):
             addresse = input('Please input destination username ')
             message = input('Please input message for send to the chat or \'quit\' for close application ')
+
             if message == 'quit':
                 self.socket.close()
                 client_logger.info(f'App closed by user command')
                 print('THX for using our application CYA')
                 sys.exit(0)
+
+            with database_locker:
+                if not self.database.check_user(addresse):
+                    client_logger.error(f'Попытка отправить сообщение незарегистрированому получателю: {addresse}')
+                    return
+
             new_message = {
                 ACTION: MESSAGE,
                 SENDER: self.account_name,
@@ -45,59 +57,159 @@ class ClientSender(threading.Thread, metaclass=ClientVerifer):
                 MESSAGE_TEXT: message
                 }
             client_logger.debug(f'New message dictory formed: {new_message}')
-            try:
-                send_message(self.socket, new_message)
-                client_logger.info(f'message send to user {addresse} ')
-            except:
-                client_logger.critical(f'Connection lost')
-                sys.exit(1)
+
+            with database_locker:
+                self.database.save_message(self.account_name, addresse, message)
+
+            with socket_locker:
+                try:
+                    send_message(self.socket, new_message)
+                    client_logger.info(f'message send to user {addresse} ')
+                except:
+                    client_logger.critical(f'Connection lost')
+                    sys.exit(1)
 
         def print_help(self):
             print('Commands: \n'
                   '"message" - send message; \n'
                   '"help" - display command advises \n'
-                  '"exit" - close application')
+                  '"exit" - close application \n'
+                  '"history" - messages history \n'
+                  '"edit" - edit contact list\n'
+                  '"contacts" - show contact list')
+
+
+
 
         def user_interface(self):
             self.print_help()
             while True:
-                cmd = input('input command ')
-                if cmd == 'message':
+                command = input('input command: ')
+                if command == 'message':
                     self.message_new()
-                elif cmd == 'help':
+
+                elif command == 'help':
                     self.print_help()
-                elif cmd == 'exit':
-                    try:
-                        send_message(self.socket, self.last_message())
-                    except:
-                        pass
-                        print('Finish connection')
-                        client_logger.info('Connection finished by users command')
-                        time.sleep(1)
+
+                elif command == 'exit':
+                    with socket_locker:
+                        try:
+                            send_message(self.socket, self.last_message())
+                        except:
+                            pass
+                        print('Connection finish')
+                        client_logger.info('Connection finish by user command.')
+                    time.sleep(0.5)
                     break
+
+                elif command == 'contacts':
+                    with database_locker:
+                        contacts_list = self.database.get_contacts()
+                    for contact in contacts_list:
+                        print(contact)
+
+                elif command == 'edit':
+                    self.edit_contacts()
+
+
+                elif command == 'history':
+                    self.print_history()
+
                 else:
-                    print('Unknown command, try again. Input help for advises')
+                    print('Unknown command, try again. help - show user manual.')
+
+
+
+
+        def print_history(self):
+            ask = input('Sho income messages - in, outcome - out, all - Enter: ')
+            with database_locker:
+                if ask == 'in':
+                    history_list = self.database.get_history(to_who=self.account_name)
+                    for message in history_list:
+                        print(f'\nMessage from user: {message[0]} from {message[3]}:\n{message[2]}')
+                elif ask == 'out':
+                    history_list = self.database.get_history(from_who=self.account_name)
+                    for message in history_list:
+                        print(f'\nMessage to user: {message[1]} from {message[3]}:\n{message[2]}')
+                else:
+                    history_list = self.database.get_history()
+                    for message in history_list:
+                        print(
+                            f'\nMessage from user: {message[0]}, to user {message[1]} from {message[3]}\n{message[2]}')
+
+
+
+        def edit_contacts(self):
+            ans = input('For delete all input del, for add input - add: ')
+            if ans == 'del':
+                edit = input('input delete user name: ')
+                with database_locker:
+                    if self.database.check_contact(edit):
+                        self.database.del_contact(edit)
+                    else:
+                        client_logger.error('trying to delete unknown contact.')
+            elif ans == 'add':
+
+                edit = input('Enter created contact name: ')
+                if self.database.check_user(edit):
+                    with database_locker:
+                        self.database.add_contact(edit)
+                    with socket_locker:
+                        try:
+                            add_contact(self.socket, self.account_name, edit)
+                        except ServerError:
+                            client_logger.error('Connot send packet to server.')
 
 
 class ClientReader(threading.Thread, metaclass=ClientVerifer):
-    def __init__(self, account_name, socket):
+    def __init__(self, account_name, socket, database):
         self.account_name = account_name
         self.socket = socket
+        self.database = database
         super().__init__()
 
-    def get_message_from_server(self):
-            while True:
+    # def get_message_from_server(self):
+    #         while True:
+    #             try:
+    #                 message = get_message(self.socket)
+    #                 if ACTION in message and message[ACTION] == MESSAGE and SENDER in message and DESTINATION in message and MESSAGE_TEXT in message\
+    #                         and message[DESTINATION] == self.account_name:
+    #                     print(f'Get message from Client {message[SENDER]}:  {message[MESSAGE_TEXT]}')
+    #                     client_logger.info(f'Get message from user {message[SENDER]}  :  {message[MESSAGE_TEXT]}')
+    #                 else:
+    #                     client_logger.error(f'incorrect server message {message}')
+    #             except (OSError, ConnectionError, ConnectionAbortedError, ConnectionResetError, json.JSONDecodeError):
+    #                 client_logger.critical(f'Connection lost')
+    #                 break
+
+    def run(self):
+        while True:
+            time.sleep(1)
+            with socket_locker:
                 try:
                     message = get_message(self.socket)
-                    if ACTION in message and message[ACTION] == MESSAGE and SENDER in message and DESTINATION in message and MESSAGE_TEXT in message\
-                            and message[DESTINATION] == self.account_name:
-                        print(f'Get message from Client {message[SENDER]}:  {message[MESSAGE_TEXT]}')
-                        client_logger.info(f'Get message from user {message[SENDER]}  :  {message[MESSAGE_TEXT]}')
-                    else:
-                        client_logger.error(f'incorrect server message {message}')
-                except (OSError, ConnectionError, ConnectionAbortedError, ConnectionResetError, json.JSONDecodeError):
-                    client_logger.critical(f'Connection lost')
+                except OSError as err:
+                    if err.errno:
+                        client_logger.critical(f'Connection lost.')
+                        break
+                except (ConnectionError, ConnectionAbortedError, ConnectionResetError, json.JSONDecodeError):
+                    client_logger.critical(f'Connection lost.')
                     break
+                else:
+                    if ACTION in message and message[ACTION] == MESSAGE and SENDER in message and DESTINATION in message \
+                            and MESSAGE_TEXT in message and message[DESTINATION] == self.account_name:
+                        print(f'\nMessage frome user {message[SENDER]}:\n{message[MESSAGE_TEXT]}')
+                        with database_locker:
+                            try:
+                                self.database.save_message(message[SENDER], self.account_name, message[MESSAGE_TEXT])
+                            except:
+                                client_logger.error('Database error')
+
+                        client_logger.info(f'Message from user {message[SENDER]}:\n{message[MESSAGE_TEXT]}')
+                    else:
+                        client_logger.error(f'Uncorrect message frome server: {message}')
+
 
 @logger
 def process_ans(message):
@@ -146,7 +258,87 @@ def argument_parser():
 
     return server_address, server_port, client_username
 
+def contacts_list_request(sock, name):
+    client_logger.debug(f'request contact list fo user {name}')
+    req = {
+        ACTION: GET_CONTACTS,
+        TIME: time.time(),
+        USER: name
+    }
+    client_logger.debug(f'Request formed {req}')
+    send_message(sock, req)
+    ans = get_message(sock)
+    client_logger.debug(f'Get answer {ans}')
+    if RESPONSE in ans and ans[RESPONSE] == 202:
+        return ans[LIST_INFO]
+    else:
+        raise ServerError
 
+
+def add_contact(sock, username, contact):
+    client_logger.debug(f'Creating contact {contact}')
+    req = {
+        ACTION: ADD_CONTACT,
+        TIME: time.time(),
+        USER: username,
+        ACCOUNT_NAME: contact
+    }
+    send_message(sock, req)
+    ans = get_message(sock)
+    if RESPONSE in ans and ans[RESPONSE] == 200:
+        pass
+    else:
+        raise ServerError('Creating contact error')
+    print('Contact creation successful')
+
+
+def user_list_request(sock, username):
+    client_logger.debug(f'Get request known users {username}')
+    req = {
+        ACTION: USERS_REQUEST,
+        TIME: time.time(),
+        ACCOUNT_NAME: username
+    }
+    send_message(sock, req)
+    ans = get_message(sock)
+    if RESPONSE in ans and ans[RESPONSE] == 202:
+        return ans[LIST_INFO]
+    else:
+        raise ServerError
+
+
+def remove_contact(sock, username, contact):
+    client_logger.debug(f'delete contact {contact}')
+    req = {
+        ACTION: REMOVE_CONTACT,
+        TIME: time.time(),
+        USER: username,
+        ACCOUNT_NAME: contact
+    }
+    send_message(sock, req)
+    ans = get_message(sock)
+    if RESPONSE in ans and ans[RESPONSE] == 200:
+        pass
+    else:
+        raise ServerError('delete contact error')
+    print('delete successful')
+
+
+def database_load(sock, database, username):
+    try:
+        users_list = user_list_request(sock, username)
+    except ServerError:
+        client_logger.error('request known urs error.')
+    else:
+        database.add_users(users_list)
+
+    try:
+        contacts_list = contacts_list_request(sock, username)
+    except ServerError:
+        client_logger.error('request known urs error.')
+    else:
+        for contact in contacts_list:
+            database.add_contact(contact)
 
 def main():
     print('this is client interface')
@@ -171,6 +363,8 @@ def main():
         client_logger.error(f'Cannot decode JSON string')
         sys.exit(1)
     else:
+        database = ClientDB(client_username)
+        database_load(cargo, database, client_username)
         handler = ClientReader(client_username, cargo)
         handler.daemon = True
         handler.start()
