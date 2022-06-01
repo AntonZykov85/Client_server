@@ -2,6 +2,7 @@ import socket
 import sys
 import json
 import logging
+import threading
 import time
 import log.server_log_config
 from general.constants import *
@@ -11,14 +12,16 @@ import argparse
 import select
 from metaclasses import ServerVerifier
 from descriptor import Port
+from server_db import ServerStorage
 
 server_logger = logging.getLogger('server')
+
 
 def argument_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('-port', default=DEFAULT_PORT, type=int, nargs='?')
     parser.add_argument('-adress', default='', nargs='?')
-    namespace = parser.parse_args(sys.argv[1:]) # get everything after scriptname
+    namespace = parser.parse_args(sys.argv[1:])  # get everything after scriptname
     listen_address = namespace.adress
     listen_port = namespace.port
     # if listen_port < 1024 or listen_port > 65535:
@@ -28,20 +31,22 @@ def argument_parser():
     return listen_address, listen_port
 
 
-class Serv(metaclass=ServerVerifier):
+class Serv(threading.Thread, metaclass=ServerVerifier):
     port = Port()
 
-    def __init__(self, listen_adress, listen_port):
-        self.listen_adress = listen_adress
+    def __init__(self, listen_address, listen_port, database):
+        self.listen_address = listen_address
         self.listen_port = listen_port
+        self.database = database
         self.clients_list = []
         self.messages_list = []
         self.names = dict()
+        super().__init__()
 
     def init_socket(self):
-        server_logger.info(f'server run with {self.listen_adress}, {self.listen_port}')
+        server_logger.info(f'server run with {self.listen_address}, {self.listen_port}')
         cargo = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        cargo.bind((self.listen_adress, self.listen_port))
+        cargo.bind((self.listen_address, self.listen_port))
         cargo.listen(MAX_CONNECTIONS)
         cargo.settimeout(0.5)
         self.sock = cargo
@@ -57,7 +62,7 @@ class Serv(metaclass=ServerVerifier):
                 pass
             else:
                 server_logger.info(f'connected with client {client_address}')
-                self. clients_list.append(client)
+                self.clients_list.append(client)
 
             # finally:
             read = []
@@ -76,10 +81,11 @@ class Serv(metaclass=ServerVerifier):
                     except:
                         server_logger.info(f'Client  {clients_with_message.getpeername()} turn off from server')
                         self.clients_list.remove(clients_with_message)
+
             for i in self.messages_list:
                 try:
-                    self.process_message(i, write) #!!!!!
-                except Exception:
+                    self.process_message(i, write)  # !!!!!
+                except:
                     server_logger.info(f'Connection with client {i[DESTINATION]} lost')
                     self.clients_list.remove(self.names[i[DESTINATION]])
                     del self.names[i[DESTINATION]]
@@ -114,10 +120,11 @@ class Serv(metaclass=ServerVerifier):
         elif ACTION in message and message[ACTION] == MESSAGE and \
                 DESTINATION in message and TIME in message \
                 and SENDER in message and MESSAGE_TEXT in message:
-            self.client_messages_list.append(message)
+            self.messages_list.append(message)
             return
 
         elif ACTION in message and message[ACTION] == EXIT and ACCOUNT_NAME in message:
+            self.database.user_logout(message[ACCOUNT_NAME])
             self.clients_list.remove(self.names[ACCOUNT_NAME])
             self.names[ACCOUNT_NAME].close()
             del self.names[ACCOUNT_NAME]
@@ -129,27 +136,60 @@ class Serv(metaclass=ServerVerifier):
             send_message(client, response)
             return
 
+def print_help():
+    print('Available commands')
+    print('users - list of registered users')
+    print('connected - list of connected users')
+    print('history - logging history')
+    print('exit - turn off server')
+    print('help - user manual')
 
 def main():
     listen_address, listen_port = argument_parser()
+    database = ServerStorage()
     server = Serv(listen_port, listen_address)
-    server.main_loop()
+    server.daemon = True
+    server.start()
+    # server.main_loop()
+
+    print_help()
+
+    while True:
+        command = input('Input command: ')
+        if command == 'help':
+            print_help()
+        elif command == 'exit':
+            break
+        elif command == 'users':
+            for user in sorted(database.users_list()):
+                print(f'User {user[0]}, last entrance: {user[1]}')
+        elif command == 'connected':
+            for user in sorted(database.active_users_list()):
+                print(f'User {user[0]}, login: {user[1]}:{user[2]}, connecting time: {user[3]}')
+        elif command == 'history':
+            name = input(
+                'Enter username. For looking history press Enter: ')
+            for user in sorted(database.login_history(name)):
+                print(f'User: {user[0]} login time: {user[1]}. Enter from: {user[2]}:{user[3]}')
+        else:
+            print('Unknown command')
+
+
+if __name__ == '__main__':
+    main()
 
 
 
-
-
-
-  #     message_from_client = get_message(client)
-        #     server_logger.info(f'get clients message: {message_from_client}')
-        #     response = process_client_message(message_from_client)
-        #     server_logger.info(f'Post answer to client {response}')
-        #     send_message(client, response)
-        #     server_logger.debug(f'connection with client {client_address} is close')
-        #     client.close()
-        # except (ValueError, json.JSONDecodeError):
-        #     server_logger.error(f'Принято некорретное сообщение от клиента {client_address}. Connection close')
-        #     client.close()
+#     message_from_client = get_message(client)
+#     server_logger.info(f'get clients message: {message_from_client}')
+#     response = process_client_message(message_from_client)
+#     server_logger.info(f'Post answer to client {response}')
+#     send_message(client, response)
+#     server_logger.debug(f'connection with client {client_address} is close')
+#     client.close()
+# except (ValueError, json.JSONDecodeError):
+#     server_logger.error(f'Принято некорретное сообщение от клиента {client_address}. Connection close')
+#     client.close()
 
 
 if __name__ == '__main__':
