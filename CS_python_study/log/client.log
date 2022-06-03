@@ -488,3 +488,27 @@
 2022-06-01 13:45:39,950 INFO client.py server start with 7777, 127.0.0.1, Test0
 2022-06-01 13:45:39,946 DEBUG decorators.py <function argument_parser at 0x7f03445d4b80> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
 2022-06-01 13:45:39,954 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 10:20:24,714 DEBUG decorators.py <function argument_parser at 0x7f126c7fcdc0> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 10:20:24,716 DEBUG decorators.py <function argument_parser at 0x7fede4cdcdc0> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 10:20:24,716 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 10:20:24,720 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 13:38:28,136 DEBUG decorators.py <function argument_parser at 0x7f48aacdbe50> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 13:38:28,140 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 13:38:28,194 DEBUG decorators.py <function argument_parser at 0x7fe02f56de50> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 13:38:28,200 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 13:39:18,956 DEBUG decorators.py <function argument_parser at 0x7fd944e9ae50> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 13:39:18,961 DEBUG decorators.py <function argument_parser at 0x7f783402de50> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 13:39:18,961 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 13:39:18,968 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 13:44:28,083 DEBUG decorators.py <function argument_parser at 0x7fc9d5da4e50> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 13:44:28,119 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 13:44:28,077 DEBUG decorators.py <function argument_parser at 0x7f638dddde50> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 13:44:28,122 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 13:45:58,549 DEBUG decorators.py <function argument_parser at 0x7fedeee40e50> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 13:45:58,560 INFO client.py server start with 7777, 127.0.0.1, Test{i}
+2022-06-03 13:45:58,572 DEBUG decorators.py <function argument_parser at 0x7fa627624e50> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 13:45:58,574 INFO client.py server start with 7777, 127.0.0.1, Test{i}
+2022-06-03 14:46:09,856 DEBUG decorators.py <function argument_parser at 0x7f5b39305280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 14:46:09,857 DEBUG decorators.py <function argument_parser at 0x7f126d79a1f0> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 14:46:09,862 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 14:46:09,865 INFO client.py server start with 7777, 127.0.0.1, Test0

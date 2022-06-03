@@ -14,6 +14,7 @@ from decorators import logger
 import random
 from metaclasses import ClientVerifer
 from client_db import ClientDB
+from errors import ReqFieldMissingError, ServerError, IncorrectDataRecivedError
 
 client_logger = logging.getLogger('client')
 socket_locker = threading.Lock()
@@ -21,9 +22,9 @@ database_locker = threading.Lock()
 
 
 class ClientSender(threading.Thread, metaclass=ClientVerifer):
-        def __init__(self, account_name, socket, database):
+        def __init__(self, account_name, sock, database):
             self.account_name = account_name
-            self.socket = socket
+            self.sock = sock
             self.database = database
             super().__init__()
 
@@ -39,7 +40,7 @@ class ClientSender(threading.Thread, metaclass=ClientVerifer):
             message = input('Please input message for send to the chat or \'quit\' for close application ')
 
             if message == 'quit':
-                self.socket.close()
+                self.sock.close()
                 client_logger.info(f'App closed by user command')
                 print('THX for using our application CYA')
                 sys.exit(0)
@@ -56,29 +57,21 @@ class ClientSender(threading.Thread, metaclass=ClientVerifer):
                 TIME: time.ctime(),
                 MESSAGE_TEXT: message
                 }
-            client_logger.debug(f'New message dictory formed: {new_message}')
+            client_logger.debug(f'New message dicktary formed: {new_message}')
 
             with database_locker:
                 self.database.save_message(self.account_name, addresse, message)
 
             with socket_locker:
                 try:
-                    send_message(self.socket, new_message)
+                    send_message(self.sock, new_message)
                     client_logger.info(f'message send to user {addresse} ')
-                except:
-                    client_logger.critical(f'Connection lost')
-                    sys.exit(1)
-
-        def print_help(self):
-            print('Commands: \n'
-                  '"message" - send message; \n'
-                  '"help" - display command advises \n'
-                  '"exit" - close application \n'
-                  '"history" - messages history \n'
-                  '"edit" - edit contact list\n'
-                  '"contacts" - show contact list')
-
-
+                except OSError as err:
+                    if err.errno:
+                        client_logger.critical(f'Connection lost')
+                        sys.exit(1)
+                else:
+                    client_logger.error('Не удалось передать сообщение. Таймаут соединения.')
 
 
         def user_interface(self):
@@ -87,19 +80,17 @@ class ClientSender(threading.Thread, metaclass=ClientVerifer):
                 command = input('input command: ')
                 if command == 'message':
                     self.message_new()
-
                 elif command == 'help':
                     self.print_help()
-
                 elif command == 'exit':
                     with socket_locker:
                         try:
-                            send_message(self.socket, self.last_message())
+                            send_message(self.sock, self.last_message())
                         except:
                             pass
                         print('Connection finish')
                         client_logger.info('Connection finish by user command.')
-                    time.sleep(0.5)
+                    time.sleep(5)
                     break
 
                 elif command == 'contacts':
@@ -111,14 +102,19 @@ class ClientSender(threading.Thread, metaclass=ClientVerifer):
                 elif command == 'edit':
                     self.edit_contacts()
 
-
                 elif command == 'history':
                     self.print_history()
-
                 else:
                     print('Unknown command, try again. help - show user manual.')
 
-
+        def print_help(self):
+            print('Commands: \n'
+                  '"message" - send message; \n'
+                  '"help" - display command advises \n'
+                  '"exit" - close application \n'
+                  '"history" - messages history \n'
+                  '"edit" - edit contact list\n'
+                  '"contacts" - show contact list')
 
 
         def print_history(self):
@@ -132,12 +128,12 @@ class ClientSender(threading.Thread, metaclass=ClientVerifer):
                     history_list = self.database.get_history(from_who=self.account_name)
                     for message in history_list:
                         print(f'\nMessage to user: {message[1]} from {message[3]}:\n{message[2]}')
-                else:
-                    history_list = self.database.get_history()
-                    for message in history_list:
-                        print(
-                            f'\nMessage from user: {message[0]}, to user {message[1]} from {message[3]}\n{message[2]}')
-
+                # else:
+                #     history_list = self.database.get_history()
+                #     for message in history_list:
+                #         print(
+                #             f'\nMessage from user: {message[0]}, to user {message[1]} from {message[3]}\n{message[2]}')
+                #
 
 
         def edit_contacts(self):
@@ -157,15 +153,15 @@ class ClientSender(threading.Thread, metaclass=ClientVerifer):
                         self.database.add_contact(edit)
                     with socket_locker:
                         try:
-                            add_contact(self.socket, self.account_name, edit)
+                            add_contact(self.sock, self.account_name, edit)
                         except ServerError:
                             client_logger.error('Connot send packet to server.')
 
 
 class ClientReader(threading.Thread, metaclass=ClientVerifer):
-    def __init__(self, account_name, socket, database):
+    def __init__(self, account_name, sock, database):
         self.account_name = account_name
-        self.socket = socket
+        self.sock = sock
         self.database = database
         super().__init__()
 
@@ -188,7 +184,9 @@ class ClientReader(threading.Thread, metaclass=ClientVerifer):
             time.sleep(1)
             with socket_locker:
                 try:
-                    message = get_message(self.socket)
+                    message = get_message(self.sock)
+                except IncorrectDataRecivedError:
+                    client_logger.error(f'Connot decode error')
                 except OSError as err:
                     if err.errno:
                         client_logger.critical(f'Connection lost.')
@@ -196,10 +194,15 @@ class ClientReader(threading.Thread, metaclass=ClientVerifer):
                 except (ConnectionError, ConnectionAbortedError, ConnectionResetError, json.JSONDecodeError):
                     client_logger.critical(f'Connection lost.')
                     break
+                except (ConnectionError, ConnectionAbortedError, ConnectionResetError, json.JSONDecodeError):
+                    client_logger.critical(f'Connection lost.')
+                    break
+
                 else:
-                    if ACTION in message and message[ACTION] == MESSAGE and SENDER in message and DESTINATION in message \
+                    if ACTION in message and message[ACTION] == MESSAGE and \
+                            SENDER in message and DESTINATION in message \
                             and MESSAGE_TEXT in message and message[DESTINATION] == self.account_name:
-                        print(f'\nMessage frome user {message[SENDER]}:\n{message[MESSAGE_TEXT]}')
+                        print(f'\nMessage from user {message[SENDER]}:\n{message[MESSAGE_TEXT]}')
                         with database_locker:
                             try:
                                 self.database.save_message(message[SENDER], self.account_name, message[MESSAGE_TEXT])
@@ -209,17 +212,6 @@ class ClientReader(threading.Thread, metaclass=ClientVerifer):
                         client_logger.info(f'Message from user {message[SENDER]}:\n{message[MESSAGE_TEXT]}')
                     else:
                         client_logger.error(f'Uncorrect message frome server: {message}')
-
-
-@logger
-def process_ans(message):
-            client_logger.debug(f'debbuging info from server {message}')
-            if RESPONSE in message:
-                if message[RESPONSE] == 200:
-                    return '200 : OK'
-                elif message[RESPONSE] == 400:
-                    raise ServerError(f'400 : {message[ERROR]}')
-            raise ValueError
 
 @logger
 def create_pref(account_name):
@@ -232,6 +224,15 @@ def create_pref(account_name):
             return output_mess
 
 
+@logger
+def process_ans(message):
+            client_logger.debug(f'debbuging info from server {message}')
+            if RESPONSE in message:
+                if message[RESPONSE] == 200:
+                    return '200 : OK'
+                elif message[RESPONSE] == 400:
+                    raise ServerError(f'400 : {message[ERROR]}')
+            raise ReqFieldMissingError(RESPONSE)
 
 @logger
 def argument_parser():
@@ -247,15 +248,10 @@ def argument_parser():
     client_username = namespace.name
 
 
-    if server_port < 1024 or server_port > 65535:
+    if not 1023 < server_port < 65536:
         client_logger.critical(
             f'Trying to run client with wrong port number {server_port}. Ports nuber from 1024 to 65535 are avalible now.')
-        sys.exit(1)
-
-    # if cliend_mode not in mode_list:
-    #     client_logger.critical(f'{cliend_mode} must be in {mode_list}')
-    #     sys.exit(1)
-
+        exit(1)
     return server_address, server_port, client_username
 
 def contacts_list_request(sock, name):
@@ -328,14 +324,14 @@ def database_load(sock, database, username):
     try:
         users_list = user_list_request(sock, username)
     except ServerError:
-        client_logger.error('request known urs error.')
+        client_logger.error('request known users error.')
     else:
         database.add_users(users_list)
 
     try:
         contacts_list = contacts_list_request(sock, username)
     except ServerError:
-        client_logger.error('request known urs error.')
+        client_logger.error('request known users error.')
     else:
         for contact in contacts_list:
             database.add_contact(contact)
@@ -354,6 +350,7 @@ def main():
 
     try:
         cargo = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        cargo.settimeout(1)
         cargo.connect((server_address, server_port))
         send_message(cargo, create_pref(client_username))
         answer = process_ans(get_message(cargo))
@@ -361,14 +358,24 @@ def main():
         print(f'Connected with server')
     except json.JSONDecodeError:
         client_logger.error(f'Cannot decode JSON string')
-        sys.exit(1)
+        exit(1)
+    except ServerError as error:
+        client_logger.error(f'При установке соединения сервер вернул ошибку')
+        exit(1)
+    except ReqFieldMissingError as missing_error:
+        client_logger.error(f'В ответе сервера отсутствует необходимое поле {missing_error.missing_field}')
+        exit(1)
+    except (ConnectionRefusedError, ConnectionError):
+        client_logger.critical(f'Не удалось подключиться к серверу {server_address}:{server_port},'
+                        f'конечный компьютер отверг запрос на подключение.')
+        exit(1)
     else:
         database = ClientDB(client_username)
         database_load(cargo, database, client_username)
-        handler = ClientReader(client_username, cargo)
+        handler = ClientReader(client_username, cargo, database)
         handler.daemon = True
         handler.start()
-        user_interface_var = ClientSender(client_username, cargo)
+        user_interface_var = ClientSender(client_username, cargo, database)
         user_interface_var.daemon = True
         user_interface_var.start()
         client_logger.info(f'Processes started')
