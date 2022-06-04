@@ -18,7 +18,7 @@ clientlog_file = logging.FileHandler(PATH, encoding='utf-8')
 clientlog_file.setFormatter(client_formatter)
 
 #регистратор
-client_logger = logging.getLogger('client')
+client_logger = logging.getLogger('chat_client')
 client_logger.addHandler(crit_handler)
 client_logger.addHandler(clientlog_file)
 client_logger.setLevel('DEBUG')

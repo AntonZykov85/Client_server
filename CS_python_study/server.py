@@ -1,15 +1,9 @@
 import configparser
 import os
 import socket
-import sys
-import json
-import logging
 import threading
-import time
-import log.server_log_config
 from general.constants import *
-from general.utilites import get_message, send_message
-from decorators import logger
+from general.utilites import *
 import argparse
 import select
 from metaclasses import ServerVerifier
@@ -18,8 +12,6 @@ from server_db import ServerStorage
 from PyQt5.QtWidgets import QApplication, QMessageBox
 from PyQt5.QtCore import QTimer
 from server_gui import MainWindow, gui_create_model, HistoryWindow, ConfigWindow, create_statistic_model
-from PyQt5.QtGui import QStandardItemModel, QStandardItem
-from errors import IncorrectDataRecivedError
 
 server_logger = logging.getLogger('server')
 new_connection = False
@@ -57,6 +49,7 @@ class Serv(threading.Thread, metaclass=ServerVerifier):
         self.sock.listen()
 
     def main_loop(self):
+        global new_connection
         self.init_socket()
 
         while True:
@@ -76,8 +69,9 @@ class Serv(threading.Thread, metaclass=ServerVerifier):
             try:
                 if self.clients_list:
                     read, write, errors = select.select(self.clients_list, self.clients_list, [], 0)
-            except OSError:
-                pass
+            except OSError as err:
+                server_logger.error(f'Socket error')
+
 
             if read:
                 for clients_with_message in read:
@@ -91,6 +85,8 @@ class Serv(threading.Thread, metaclass=ServerVerifier):
                                 del self.names[name]
                                 break
                         self.clients_list.remove(clients_with_message)
+                        with conflag_lock:
+                            new_connection = True
 
 
             for message in self.messages_list:
@@ -101,6 +97,8 @@ class Serv(threading.Thread, metaclass=ServerVerifier):
                     self.clients_list.remove(self.names[message[DESTINATION]])
                     self.database.user_logout(message[DESTINATION])
                     del self.names[message[DESTINATION]]
+                    with conflag_lock:
+                        new_connection = True
             self.messages_list.clear()
 
     def process_message(self, message, listen_socks):
@@ -140,8 +138,13 @@ class Serv(threading.Thread, metaclass=ServerVerifier):
         elif ACTION in message and message[ACTION] == MESSAGE and DESTINATION in message and \
                 TIME in message and SENDER in message and MESSAGE_TEXT in message and \
                 self.names[message[SENDER]] == client:
-            self.messages_list.append(message)
-            self.database.process_message(message[SENDER], [DESTINATION])
+            if message [DESTINATION] in self.names:
+                self.messages_list.append(message)
+                self.database.process_message(message[SENDER], [DESTINATION])
+            else:
+                response = RESPONSE_400
+                response[ERROR] = 'User already registered on server'
+                send_message(client, response)
             return
 
         elif ACTION in message and message[ACTION] == EXIT and ACCOUNT_NAME in message \
@@ -184,6 +187,22 @@ class Serv(threading.Thread, metaclass=ServerVerifier):
             send_message(client, response)
             return
 
+def config_load():
+    config = configparser.ConfigParser()
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    config.read(f"{dir_path}/{'server.ini'}")
+    # Если конфиг файл загружен правильно, запускаемся, иначе конфиг по умолчанию.
+    if 'SETTINGS' in config:
+        return config
+    else:
+        config.add_section('SETTINGS')
+        config.set('SETTINGS', 'Default_port', str(DEFAULT_PORT))
+        config.set('SETTINGS', 'Listen_Address', '')
+        config.set('SETTINGS', 'Database_path', '')
+        config.set('SETTINGS', 'Database_file', 'server_database.db3')
+        return config
+
+
 # def print_help():
 #     print('Available commands')
 #     print('users - list of registered users')
@@ -193,10 +212,8 @@ class Serv(threading.Thread, metaclass=ServerVerifier):
 #     print('help - user manual')
 
 def main():
-    config = configparser.ConfigParser()
+    config = config_load()
 
-    dir_path = os.path.dirname(os.path.realpath(__file__))
-    config.read(f'{dir_path}/{"server.ini"}')
     listen_address, listen_port = argument_parser(
         config['SETTINGS']['Default_port'], config['SETTINGS']['Listen_Address'])
 
@@ -210,6 +227,7 @@ def main():
     server.start()
     server_app = QApplication(sys.argv)
     main_window = MainWindow()
+
     main_window.statusBar().showMessage('Server is working')
     main_window.active_clients_table.setModel(
         gui_create_model(database))
@@ -231,7 +249,7 @@ def main():
         stat_window.history_table.setModel(create_statistic_model(database))
         stat_window.history_table.resizeColumnsToContents()
         stat_window.history_table.resizeRowsToContents()
-        # stat_window.show()
+        stat_window.show()
 
     def server_config():
         global config_window
@@ -250,61 +268,27 @@ def main():
         try:
             port = int(config_window.port.text())
         except ValueError:
-            message.warning(config_window, 'Ошибка', 'Порт должен быть числом!')
+            message.warning(config_window, 'Error', 'Must be integer')
         else:
             config['SETTINGS']['Listen_Address'] = config_window.ip.text()
             if 1023 < port < 65536:
                 config['SETTINGS']['Default_port'] = str(port)
-                print(port)
-                with open('server.ini', 'w') as conf:
+                dir_path = os.path.dirname(os.path.realpath(__file__))
+                with open(f"{dir_path}/{'server.ini'}", 'w') as conf:
                     config.write(conf)
-                    message.information(config_window, 'OK', 'Настройки успешно сохранены!')
+                    message.information(config_window, 'done', 'Settings saved')
             else:
-                message.warning(config_window, 'Ошибка!', 'Порт должен быть от 1024 до 65536')
+                message.warning(config_window, 'Error', 'Port must be integer between 1024 to 65536')
 
     timer = QTimer()
     timer.timeout.connect(list_update)
     timer.start(1000)
+
     main_window.refresh_button.triggered.connect(list_update)
     main_window.show_history_button.triggered.connect(show_statistics)
     main_window.config_btn.triggered.connect(server_config)
 
     server_app.exec_()
-    # while True:
-    #     command = input('Input command: ')
-    #     if command == 'help':
-    #         print_help()
-    #     elif command == 'exit':
-    #         break
-    #     elif command == 'users':
-    #         for user in sorted(database.users_list()):
-    #             print(f'User {user[0]}, last entrance: {user[1]}')
-    #     elif command == 'connected':
-    #         for user in sorted(database.active_users_list()):
-    #             print(f'User {user[0]}, login: {user[1]}:{user[2]}, connecting time: {user[3]}')
-    #     elif command == 'history':
-    #         name = input(
-    #             'Enter username. For looking history press Enter: ')
-    #         for user in sorted(database.login_history(name)):
-    #             print(f'User: {user[0]} login time: {user[1]}. Enter from: {user[2]}:{user[3]}')
-    #     else:
-    #         print('Unknown command')
-
 
 if __name__ == '__main__':
     main()
-
-
-
-#     message_from_client = get_message(client)
-#     server_logger.info(f'get clients message: {message_from_client}')
-#     response = process_client_message(message_from_client)
-#     server_logger.info(f'Post answer to client {response}')
-#     send_message(client, response)
-#     server_logger.debug(f'connection with client {client_address} is close')
-#     client.close()
-# except (ValueError, json.JSONDecodeError):
-#     server_logger.error(f'Принято некорретное сообщение от клиента {client_address}. Connection close')
-#     client.close()
-
-

@@ -512,3 +512,112 @@
 2022-06-03 14:46:09,857 DEBUG decorators.py <function argument_parser at 0x7f126d79a1f0> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
 2022-06-03 14:46:09,862 INFO client.py server start with 7777, 127.0.0.1, Test1
 2022-06-03 14:46:09,865 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 16:27:30,494 DEBUG decorators.py <function argument_parser at 0x7efd197a8280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:27:30,495 INFO client.py server start with 7777, 127.0.0.1, Test2
+2022-06-03 16:27:30,496 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:27:30,513 DEBUG decorators.py <function argument_parser at 0x7f4fb511a280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:27:30,522 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 16:27:30,522 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:27:30,532 DEBUG decorators.py <function argument_parser at 0x7f76fc120280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:27:30,554 INFO client.py server start with 7777, 127.0.0.1, Test3
+2022-06-03 16:27:30,554 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:27:30,588 DEBUG decorators.py <function argument_parser at 0x7f70b3d1e280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:27:30,599 DEBUG decorators.py <function argument_parser at 0x7f07c023a280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:27:30,599 INFO client.py server start with 7777, 127.0.0.1, Test4
+2022-06-03 16:27:30,599 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:27:30,609 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 16:27:30,609 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:37:08,092 DEBUG decorators.py <function argument_parser at 0x7fd54f9a1280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:37:08,093 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 16:37:08,094 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:37:08,124 DEBUG decorators.py <function argument_parser at 0x7ff67bc6b280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:37:08,133 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 16:37:08,133 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:37:35,978 DEBUG decorators.py <function argument_parser at 0x7ffa75f50280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:37:35,978 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 16:37:35,978 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:37:35,988 DEBUG decorators.py <function argument_parser at 0x7fdb3a3ff280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:37:35,993 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 16:37:35,993 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:39:24,858 DEBUG decorators.py <function argument_parser at 0x7f59a158e280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:39:24,858 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 16:39:24,859 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:39:24,862 DEBUG decorators.py <function argument_parser at 0x7f1705aa4280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:39:24,862 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 16:39:24,862 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:43:55,592 DEBUG decorators.py <function argument_parser at 0x7f7ad1fb3280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:43:55,601 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 16:43:55,602 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:43:55,630 DEBUG decorators.py <function argument_parser at 0x7f5c3155a280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:43:55,631 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 16:43:55,631 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:50:29,974 DEBUG decorators.py <function argument_parser at 0x7efc02b03280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:50:29,975 DEBUG decorators.py <function argument_parser at 0x7f482d02a280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:50:29,977 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 16:50:29,978 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 16:50:29,978 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:50:29,978 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-04 09:30:46,177 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: gggg
+2022-06-04 09:30:46,301 INFO cargo.py Connection try №1
+2022-06-04 09:30:49,329 INFO cargo.py Connection try №2
+2022-06-04 09:30:52,356 INFO cargo.py Connection try №3
+2022-06-04 09:30:55,367 INFO cargo.py Connection try №4
+2022-06-04 09:30:58,396 INFO cargo.py Connection try №5
+2022-06-04 09:31:01,423 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:33:03,365 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-04 09:33:03,428 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-04 09:33:03,447 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test3
+2022-06-04 09:33:03,500 INFO cargo.py Connection try №1
+2022-06-04 09:33:03,510 INFO cargo.py Connection try №1
+2022-06-04 09:33:03,520 INFO cargo.py Connection try №1
+2022-06-04 09:33:06,535 INFO cargo.py Connection try №2
+2022-06-04 09:33:06,551 INFO cargo.py Connection try №2
+2022-06-04 09:33:09,548 INFO cargo.py Connection try №3
+2022-06-04 09:33:09,564 INFO cargo.py Connection try №3
+2022-06-04 09:33:12,558 INFO cargo.py Connection try №4
+2022-06-04 09:33:12,589 INFO cargo.py Connection try №4
+2022-06-04 09:33:15,581 INFO cargo.py Connection try №5
+2022-06-04 09:33:15,601 INFO cargo.py Connection try №5
+2022-06-04 09:33:18,620 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:33:18,635 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:34:00,145 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-04 09:34:00,155 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-04 09:34:00,212 INFO cargo.py Connection try №1
+2022-06-04 09:34:00,216 INFO cargo.py Connection try №1
+2022-06-04 09:34:03,232 INFO cargo.py Connection try №2
+2022-06-04 09:34:06,245 INFO cargo.py Connection try №3
+2022-06-04 09:34:09,259 INFO cargo.py Connection try №4
+2022-06-04 09:34:12,272 INFO cargo.py Connection try №5
+2022-06-04 09:34:15,284 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:35:07,820 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-04 09:35:07,853 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-04 09:35:07,869 INFO cargo.py Connection try №1
+2022-06-04 09:35:07,916 INFO cargo.py Connection try №1
+2022-06-04 09:35:10,898 INFO cargo.py Connection try №2
+2022-06-04 09:35:10,952 INFO cargo.py Connection try №2
+2022-06-04 09:35:13,930 INFO cargo.py Connection try №3
+2022-06-04 09:35:13,987 INFO cargo.py Connection try №3
+2022-06-04 09:35:16,949 INFO cargo.py Connection try №4
+2022-06-04 09:35:17,003 INFO cargo.py Connection try №4
+2022-06-04 09:35:19,978 INFO cargo.py Connection try №5
+2022-06-04 09:35:20,016 INFO cargo.py Connection try №5
+2022-06-04 09:35:23,007 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:35:23,028 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:36:20,519 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-04 09:36:20,519 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-04 09:36:20,566 INFO cargo.py Connection try №1
+2022-06-04 09:36:20,566 INFO cargo.py Connection try №1
+2022-06-04 09:36:23,615 INFO cargo.py Connection try №2
+2022-06-04 09:36:26,629 INFO cargo.py Connection try №3
+2022-06-04 09:36:29,637 INFO cargo.py Connection try №4
+2022-06-04 09:36:29,653 INFO cargo.py Connection try №4
+2022-06-04 09:36:32,689 INFO cargo.py Connection try №5
+2022-06-04 09:36:35,718 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:36:35,735 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:36:40,933 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: guest
+2022-06-04 09:36:41,066 INFO cargo.py Connection try №1
+2022-06-04 09:36:44,101 INFO cargo.py Connection try №2
+2022-06-04 09:36:47,134 INFO cargo.py Connection try №3
+2022-06-04 09:36:50,164 INFO cargo.py Connection try №4
+2022-06-04 09:36:53,197 INFO cargo.py Connection try №5
+2022-06-04 09:36:56,220 CRITICAL cargo.py Cannot connect with server
