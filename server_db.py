@@ -86,6 +86,7 @@ class ServerStorage:
                                     )
 
         self.metadata.create_all(self.database_engine)
+
         mapper(self.AllUsers, users_table)
         mapper(self.ActiveUsers, active_users_table)
         mapper(self.LoginHistory, user_login_history)
@@ -94,6 +95,7 @@ class ServerStorage:
 
         Session = sessionmaker(bind=self.database_engine)
         self.session = Session()
+
         self.session.query(self.ActiveUsers).delete()
         self.session.commit()
 
@@ -110,12 +112,13 @@ class ServerStorage:
             self.session.commit()
             user_in_history = self.UsersHistory(user.id)
             self.session.add(user_in_history)
+
         new_active_user = self.ActiveUsers(user.id, ip_address, port, datetime.datetime.now())
         self.session.add(new_active_user)
+
         history = self.LoginHistory(user.id, datetime.datetime.now(), ip_address, port)
         self.session.add(history)
 
-        # Сохраняем изменения.
         self.session.commit()
 
     def user_logout(self, username):
@@ -151,10 +154,10 @@ class ServerStorage:
         if not contact:
             return
 
-        print(self.session.query(self.UsersContacts).filter(
+        self.session.query(self.UsersContacts).filter(
             self.UsersContacts.user == user.id,
             self.UsersContacts.contact == contact.id
-        ).delete())
+        ).delete()
         self.session.commit()
 
     def users_list(self):
@@ -174,12 +177,11 @@ class ServerStorage:
         return query.all()
 
     def login_history(self, username=None):
-        query = self.session.query(
-            self.AllUsers.name,
-            self.LoginHistory.date_time,
-            self.LoginHistory.ip,
-            self.LoginHistory.port
-            ).join(self.AllUsers)
+        query = self.session.query(self.AllUsers.name,
+                                    self.LoginHistory.date_time,
+                                    self.LoginHistory.ip,
+                                    self.LoginHistory.port
+                                    ).join(self.AllUsers)
         if username:
             query = query.filter(self.AllUsers.name == username)
         return query.all()
@@ -200,7 +202,6 @@ class ServerStorage:
             self.UsersHistory.sent,
             self.UsersHistory.accepted
         ).join(self.AllUsers)
-        # Возвращаем список кортежей.
         return query.all()
 
 
@@ -214,3 +215,5 @@ if __name__ == '__main__':
     print(test_db.active_users_list())
     test_db.login_history('client_1')
     print(test_db.users_list())
+    test_db.process_message('Mes1', 'Mes2')
+    print(test_db.message_history())

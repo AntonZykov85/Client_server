@@ -1,46 +1,47 @@
 # -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'client.ui'
-#
+
 # Created by: PyQt5 UI code generator 5.11.3
-#
+
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+
 class Ui_MainClientWindow(object):
     def setupUi(self, MainClientWindow):
         MainClientWindow.setObjectName("MainClientWindow")
-        MainClientWindow.resize(756, 534)
-        MainClientWindow.setMinimumSize(QtCore.QSize(756, 534))
+        MainClientWindow.resize(850, 600)
+        MainClientWindow.setMinimumSize(QtCore.QSize(850, 600))
         self.centralwidget = QtWidgets.QWidget(MainClientWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label_contacts = QtWidgets.QLabel(self.centralwidget)
-        self.label_contacts.setGeometry(QtCore.QRect(10, 0, 101, 16))
+        self.label_contacts.setGeometry(QtCore.QRect(10, 0, 130, 16))
         self.label_contacts.setObjectName("label_contacts")
         self.btn_add_contact = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_add_contact.setGeometry(QtCore.QRect(10, 450, 121, 31))
+        self.btn_add_contact.setGeometry(QtCore.QRect(10, 460, 135, 31))
         self.btn_add_contact.setObjectName("btn_add_contact")
         self.btn_remove_contact = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_remove_contact.setGeometry(QtCore.QRect(140, 450, 121, 31))
+        self.btn_remove_contact.setGeometry(QtCore.QRect(150, 460, 130, 31))
         self.btn_remove_contact.setObjectName("btn_remove_contact")
         self.label_history = QtWidgets.QLabel(self.centralwidget)
         self.label_history.setGeometry(QtCore.QRect(300, 0, 391, 21))
         self.label_history.setObjectName("label_history")
         self.text_message = QtWidgets.QTextEdit(self.centralwidget)
-        self.text_message.setGeometry(QtCore.QRect(300, 360, 441, 71))
+        self.text_message.setGeometry(QtCore.QRect(300, 360, 500, 70))
         self.text_message.setObjectName("text_message")
         self.label_new_message = QtWidgets.QLabel(self.centralwidget)
-        self.label_new_message.setGeometry(QtCore.QRect(300, 330, 450, 16)) # Правка тут
+        self.label_new_message.setGeometry(QtCore.QRect(300, 330, 550, 16))  # Правка тут
         self.label_new_message.setObjectName("label_new_message")
         self.list_contacts = QtWidgets.QListView(self.centralwidget)
-        self.list_contacts.setGeometry(QtCore.QRect(10, 20, 251, 411))
+        self.list_contacts.setGeometry(QtCore.QRect(10, 20, 270, 411))
         self.list_contacts.setObjectName("list_contacts")
         self.list_messages = QtWidgets.QListView(self.centralwidget)
-        self.list_messages.setGeometry(QtCore.QRect(300, 20, 441, 301))
+        self.list_messages.setGeometry(QtCore.QRect(300, 20, 500, 301))
         self.list_messages.setObjectName("list_messages")
         self.btn_send = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_send.setGeometry(QtCore.QRect(610, 450, 131, 31))
+        self.btn_send.setGeometry(QtCore.QRect(610, 450, 170, 31))
         self.btn_send.setObjectName("btn_send")
         self.btn_clear = QtWidgets.QPushButton(self.centralwidget)
         self.btn_clear.setGeometry(QtCore.QRect(460, 450, 131, 31))
@@ -89,4 +90,3 @@ class Ui_MainClientWindow(object):
         self.menu_exit.setText(_translate("MainClientWindow", "Выход"))
         self.menu_add_contact.setText(_translate("MainClientWindow", "Добавить контакт"))
         self.menu_del_contact.setText(_translate("MainClientWindow", "Удалить контакт"))
-

@@ -557,3 +557,410 @@
 2022-06-03 16:50:29,978 INFO client.py server start with 7777, 127.0.0.1, Test1
 2022-06-03 16:50:29,978 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
 2022-06-03 16:50:29,978 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-04 09:30:46,177 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: gggg
+2022-06-04 09:30:46,301 INFO cargo.py Connection try №1
+2022-06-04 09:30:49,329 INFO cargo.py Connection try №2
+2022-06-04 09:30:52,356 INFO cargo.py Connection try №3
+2022-06-04 09:30:55,367 INFO cargo.py Connection try №4
+2022-06-04 09:30:58,396 INFO cargo.py Connection try №5
+2022-06-04 09:31:01,423 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:33:03,365 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-04 09:33:03,428 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-04 09:33:03,447 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test3
+2022-06-04 09:33:03,500 INFO cargo.py Connection try №1
+2022-06-04 09:33:03,510 INFO cargo.py Connection try №1
+2022-06-04 09:33:03,520 INFO cargo.py Connection try №1
+2022-06-04 09:33:06,535 INFO cargo.py Connection try №2
+2022-06-04 09:33:06,551 INFO cargo.py Connection try №2
+2022-06-04 09:33:09,548 INFO cargo.py Connection try №3
+2022-06-04 09:33:09,564 INFO cargo.py Connection try №3
+2022-06-04 09:33:12,558 INFO cargo.py Connection try №4
+2022-06-04 09:33:12,589 INFO cargo.py Connection try №4
+2022-06-04 09:33:15,581 INFO cargo.py Connection try №5
+2022-06-04 09:33:15,601 INFO cargo.py Connection try №5
+2022-06-04 09:33:18,620 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:33:18,635 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:34:00,145 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-04 09:34:00,155 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-04 09:34:00,212 INFO cargo.py Connection try №1
+2022-06-04 09:34:00,216 INFO cargo.py Connection try №1
+2022-06-04 09:34:03,232 INFO cargo.py Connection try №2
+2022-06-04 09:34:06,245 INFO cargo.py Connection try №3
+2022-06-04 09:34:09,259 INFO cargo.py Connection try №4
+2022-06-04 09:34:12,272 INFO cargo.py Connection try №5
+2022-06-04 09:34:15,284 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:35:07,820 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-04 09:35:07,853 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-04 09:35:07,869 INFO cargo.py Connection try №1
+2022-06-04 09:35:07,916 INFO cargo.py Connection try №1
+2022-06-04 09:35:10,898 INFO cargo.py Connection try №2
+2022-06-04 09:35:10,952 INFO cargo.py Connection try №2
+2022-06-04 09:35:13,930 INFO cargo.py Connection try №3
+2022-06-04 09:35:13,987 INFO cargo.py Connection try №3
+2022-06-04 09:35:16,949 INFO cargo.py Connection try №4
+2022-06-04 09:35:17,003 INFO cargo.py Connection try №4
+2022-06-04 09:35:19,978 INFO cargo.py Connection try №5
+2022-06-04 09:35:20,016 INFO cargo.py Connection try №5
+2022-06-04 09:35:23,007 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:35:23,028 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:36:20,519 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-04 09:36:20,519 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-04 09:36:20,566 INFO cargo.py Connection try №1
+2022-06-04 09:36:20,566 INFO cargo.py Connection try №1
+2022-06-04 09:36:23,615 INFO cargo.py Connection try №2
+2022-06-04 09:36:26,629 INFO cargo.py Connection try №3
+2022-06-04 09:36:29,637 INFO cargo.py Connection try №4
+2022-06-04 09:36:29,653 INFO cargo.py Connection try №4
+2022-06-04 09:36:32,689 INFO cargo.py Connection try №5
+2022-06-04 09:36:35,718 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:36:35,735 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:36:40,933 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: guest
+2022-06-04 09:36:41,066 INFO cargo.py Connection try №1
+2022-06-04 09:36:44,101 INFO cargo.py Connection try №2
+2022-06-04 09:36:47,134 INFO cargo.py Connection try №3
+2022-06-04 09:36:50,164 INFO cargo.py Connection try №4
+2022-06-04 09:36:53,197 INFO cargo.py Connection try №5
+2022-06-04 09:36:56,220 CRITICAL cargo.py Cannot connect with server
+2022-06-06 11:19:10,890 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 11:19:10,890 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 11:19:10,970 INFO cargo.py Попытка подключения №1
+2022-06-06 11:19:10,970 INFO cargo.py Попытка подключения №1
+2022-06-06 11:19:14,018 INFO cargo.py Попытка подключения №2
+2022-06-06 11:19:14,034 INFO cargo.py Попытка подключения №2
+2022-06-06 11:19:17,055 INFO cargo.py Попытка подключения №3
+2022-06-06 11:19:17,071 INFO cargo.py Попытка подключения №3
+2022-06-06 11:19:20,112 INFO cargo.py Попытка подключения №4
+2022-06-06 11:19:23,148 INFO cargo.py Попытка подключения №5
+2022-06-06 11:19:26,184 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 11:20:34,503 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: guest
+2022-06-06 11:20:34,600 INFO cargo.py Попытка подключения №1
+2022-06-06 11:20:37,650 INFO cargo.py Попытка подключения №2
+2022-06-06 11:20:40,672 INFO cargo.py Попытка подключения №3
+2022-06-06 11:20:43,715 INFO cargo.py Попытка подключения №4
+2022-06-06 11:20:46,744 INFO cargo.py Попытка подключения №5
+2022-06-06 11:20:49,780 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 11:21:57,639 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: Guest
+2022-06-06 11:21:57,719 INFO cargo.py Попытка подключения №1
+2022-06-06 11:22:00,763 INFO cargo.py Попытка подключения №2
+2022-06-06 11:22:03,803 INFO cargo.py Попытка подключения №3
+2022-06-06 11:22:06,849 INFO cargo.py Попытка подключения №4
+2022-06-06 11:22:09,887 INFO cargo.py Попытка подключения №5
+2022-06-06 11:22:12,926 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 11:42:14,026 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: guest
+2022-06-06 11:42:14,127 INFO cargo.py Попытка подключения №1
+2022-06-06 11:42:17,146 INFO cargo.py Попытка подключения №2
+2022-06-06 11:42:20,178 INFO cargo.py Попытка подключения №3
+2022-06-06 11:42:23,220 INFO cargo.py Попытка подключения №4
+2022-06-06 11:42:26,257 INFO cargo.py Попытка подключения №5
+2022-06-06 11:42:29,310 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 11:50:53,973 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: guest
+2022-06-06 11:50:54,036 INFO cargo.py Попытка подключения №1
+2022-06-06 11:50:54,037 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 11:50:54,037 DEBUG cargo.py Сформировано presence сообщение для пользователя guest
+2022-06-06 11:50:54,085 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 11:50:54,085 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 11:50:54,085 DEBUG cargo.py Запрос списка известных пользователей guest
+2022-06-06 11:50:54,613 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 11:50:54,613 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654505454.613673, 'user': 'guest'}
+2022-06-06 11:50:55,110 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': []}
+2022-06-06 11:50:55,110 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 11:51:34,016 CRITICAL cargo.py Потеряно соединение с сервером.
+2022-06-06 11:51:47,888 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 11:51:47,906 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test3
+2022-06-06 11:51:47,916 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 11:51:47,951 INFO cargo.py Попытка подключения №1
+2022-06-06 11:51:47,951 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 11:51:47,951 DEBUG cargo.py Сформировано presence сообщение для пользователя test1
+2022-06-06 11:51:47,975 INFO cargo.py Попытка подключения №1
+2022-06-06 11:51:47,975 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 11:51:47,975 DEBUG cargo.py Сформировано presence сообщение для пользователя test2
+2022-06-06 11:51:48,031 INFO cargo.py Попытка подключения №1
+2022-06-06 11:51:48,031 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 11:51:48,031 DEBUG cargo.py Сформировано presence сообщение для пользователя test3
+2022-06-06 11:51:48,711 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 11:51:48,711 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 11:51:48,711 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 11:51:48,727 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 11:51:48,727 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654505508.727325, 'user': 'test1'}
+2022-06-06 11:51:48,743 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 11:51:48,743 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 11:51:48,743 DEBUG cargo.py Запрос списка известных пользователей test2
+2022-06-06 11:51:48,751 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': []}
+2022-06-06 11:51:48,751 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 11:51:48,767 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 11:51:48,767 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654505508.7673376, 'user': 'test2'}
+2022-06-06 11:51:48,783 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 11:51:48,783 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 11:51:48,783 DEBUG cargo.py Запрос списка известных пользователей test3
+2022-06-06 11:51:49,296 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': []}
+2022-06-06 11:51:49,296 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 11:51:49,336 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 11:51:49,336 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654505509.3362257, 'user': 'test3'}
+2022-06-06 11:51:49,800 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': []}
+2022-06-06 11:51:49,800 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 11:52:21,343 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 11:52:22,797 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 11:52:28,083 DEBUG cargo.py Создание контакта test2
+2022-06-06 11:52:28,955 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 11:52:28,982 INFO main_window.py Successfully added contact <PyQt5.QtGui.QStandardItem object at 0x0000029F8D3D7E50>
+2022-06-06 11:52:44,080 DEBUG cargo.py Сформирован словарь сообщения: {'action': 'message', 'sender': 'test1', 'to': 'test2', 'time': 1654505564.0804405, 'message_text': 'вчммчсмчм'}
+2022-06-06 11:52:44,266 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 11:52:44,266 DEBUG cargo.py Принято сообщение с сервера: {'action': 'message', 'sender': 'test1', 'to': 'test2', 'time': 1654505564.0804405, 'message_text': 'вчммчсмчм'}
+2022-06-06 11:52:44,266 INFO cargo.py Отправлено сообщение для пользователя test2
+2022-06-06 11:52:44,266 DEBUG cargo.py Разбор сообщения от сервера: {'action': 'message', 'sender': 'test1', 'to': 'test2', 'time': 1654505564.0804405, 'message_text': 'вчммчсмчм'}
+2022-06-06 11:52:44,266 DEBUG cargo.py Получено сообщение от пользователя test1:вчммчсмчм
+2022-06-06 11:52:44,300 DEBUG main_window.py message send for test2: вчммчсмчм
+2022-06-06 11:52:47,369 DEBUG cargo.py Создание контакта test1
+2022-06-06 11:52:47,871 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 11:52:47,890 INFO main_window.py Successfully added contact <PyQt5.QtGui.QStandardItem object at 0x000001BA1C5A85E0>
+2022-06-06 11:53:11,713 DEBUG cargo.py Транспорт завершает работу.
+2022-06-06 11:53:12,535 DEBUG cargo.py Потеряно соединение с сервером.
+2022-06-06 11:53:13,021 DEBUG cargo.py Транспорт завершает работу.
+2022-06-06 11:53:13,401 DEBUG cargo.py Потеряно соединение с сервером.
+2022-06-06 11:53:14,460 DEBUG cargo.py Транспорт завершает работу.
+2022-06-06 11:53:14,836 DEBUG cargo.py Потеряно соединение с сервером.
+2022-06-06 13:06:29,708 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 13:06:29,754 INFO cargo.py Попытка подключения №1
+2022-06-06 13:06:29,754 INFO cargo.py Попытка подключения №1
+2022-06-06 13:06:32,802 INFO cargo.py Попытка подключения №2
+2022-06-06 13:06:35,845 INFO cargo.py Попытка подключения №3
+2022-06-06 13:06:35,860 INFO cargo.py Попытка подключения №3
+2022-06-06 13:06:38,880 INFO cargo.py Попытка подключения №4
+2022-06-06 13:06:38,895 INFO cargo.py Попытка подключения №4
+2022-06-06 13:06:41,923 INFO cargo.py Попытка подключения №5
+2022-06-06 13:06:41,923 INFO cargo.py Попытка подключения №5
+2022-06-06 13:06:41,939 INFO cargo.py Попытка подключения №5
+2022-06-06 13:06:44,970 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 13:06:44,986 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 13:09:07,910 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 13:09:07,921 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 13:09:07,955 INFO cargo.py Попытка подключения №1
+2022-06-06 13:09:07,962 INFO cargo.py Попытка подключения №1
+2022-06-06 13:09:10,985 INFO cargo.py Попытка подключения №2
+2022-06-06 13:09:14,012 INFO cargo.py Попытка подключения №3
+2022-06-06 13:09:14,028 INFO cargo.py Попытка подключения №3
+2022-06-06 13:09:17,050 INFO cargo.py Попытка подключения №4
+2022-06-06 13:09:17,065 INFO cargo.py Попытка подключения №4
+2022-06-06 13:09:20,082 INFO cargo.py Попытка подключения №5
+2022-06-06 13:09:20,097 INFO cargo.py Попытка подключения №5
+2022-06-06 13:09:23,107 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 13:09:23,123 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 13:10:36,324 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: guest
+2022-06-06 13:10:36,368 INFO cargo.py Попытка подключения №1
+2022-06-06 13:10:39,412 INFO cargo.py Попытка подключения №2
+2022-06-06 13:10:42,456 INFO cargo.py Попытка подключения №3
+2022-06-06 13:10:45,497 INFO cargo.py Попытка подключения №4
+2022-06-06 13:10:48,543 INFO cargo.py Попытка подключения №5
+2022-06-06 13:10:51,579 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 13:11:46,126 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 13:11:46,128 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 13:11:46,168 INFO cargo.py Попытка подключения №1
+2022-06-06 13:11:46,168 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 13:11:46,168 DEBUG cargo.py Сформировано presence сообщение для пользователя test1
+2022-06-06 13:11:46,170 INFO cargo.py Попытка подключения №1
+2022-06-06 13:11:46,170 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 13:11:46,171 DEBUG cargo.py Сформировано presence сообщение для пользователя test2
+2022-06-06 13:11:46,693 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 13:11:46,693 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 13:11:46,693 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 13:11:46,708 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 13:11:46,708 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654510306.7083068, 'user': 'test1'}
+2022-06-06 13:11:46,709 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 13:11:46,709 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 13:11:46,709 DEBUG cargo.py Запрос списка известных пользователей test2
+2022-06-06 13:11:47,226 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': ['test2']}
+2022-06-06 13:11:47,249 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 13:11:47,252 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 13:11:47,252 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654510307.2520306, 'user': 'test2'}
+2022-06-06 13:11:47,743 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': ['test1']}
+2022-06-06 13:11:47,776 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 13:12:28,441 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 13:12:28,452 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 13:12:28,489 INFO cargo.py Попытка подключения №1
+2022-06-06 13:12:28,490 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 13:12:28,490 DEBUG cargo.py Сформировано presence сообщение для пользователя test1
+2022-06-06 13:12:28,500 INFO cargo.py Попытка подключения №1
+2022-06-06 13:12:28,500 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 13:12:28,501 DEBUG cargo.py Сформировано presence сообщение для пользователя test2
+2022-06-06 13:12:28,927 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 13:12:28,927 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 13:12:28,927 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 13:12:28,942 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 13:12:28,942 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654510348.942295, 'user': 'test1'}
+2022-06-06 13:12:28,942 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 13:12:28,943 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 13:12:28,943 DEBUG cargo.py Запрос списка известных пользователей test2
+2022-06-06 13:12:29,459 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': ['test2']}
+2022-06-06 13:12:29,475 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 13:12:29,476 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654510349.475354, 'user': 'test2'}
+2022-06-06 13:12:29,480 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 13:12:29,970 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': ['test1']}
+2022-06-06 13:12:30,005 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 13:12:32,357 DEBUG cargo.py Транспорт завершает работу.
+2022-06-06 13:12:32,554 DEBUG cargo.py Потеряно соединение с сервером.
+2022-06-06 13:12:32,974 DEBUG cargo.py Транспорт завершает работу.
+2022-06-06 13:12:33,563 DEBUG cargo.py Потеряно соединение с сервером.
+2022-06-06 13:13:06,467 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 13:13:06,471 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 13:13:06,513 INFO cargo.py Попытка подключения №1
+2022-06-06 13:13:06,514 INFO cargo.py Попытка подключения №1
+2022-06-06 13:13:09,556 INFO cargo.py Попытка подключения №2
+2022-06-06 13:13:09,556 INFO cargo.py Попытка подключения №2
+2022-06-06 13:13:12,603 INFO cargo.py Попытка подключения №3
+2022-06-06 13:13:12,619 INFO cargo.py Попытка подключения №3
+2022-06-06 13:13:32,025 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 13:13:32,032 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 13:13:32,074 INFO cargo.py Попытка подключения №1
+2022-06-06 13:13:32,074 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 13:13:32,075 DEBUG cargo.py Сформировано presence сообщение для пользователя test1
+2022-06-06 13:13:32,080 INFO cargo.py Попытка подключения №1
+2022-06-06 13:13:32,081 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 13:13:32,081 DEBUG cargo.py Сформировано presence сообщение для пользователя test2
+2022-06-06 13:13:32,129 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 13:13:32,130 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 13:13:32,130 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 13:13:32,718 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 13:13:32,718 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 13:13:32,718 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654510412.7185087, 'user': 'test1'}
+2022-06-06 13:13:32,718 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 13:13:32,718 DEBUG cargo.py Запрос списка известных пользователей test2
+2022-06-06 13:13:33,241 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': ['test2']}
+2022-06-06 13:13:33,259 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 13:13:33,259 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654510413.2590833, 'user': 'test2'}
+2022-06-06 13:13:33,262 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 13:13:33,756 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': ['test1']}
+2022-06-06 13:13:33,782 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 13:13:35,535 DEBUG cargo.py Транспорт завершает работу.
+2022-06-06 13:13:36,318 DEBUG cargo.py Транспорт завершает работу.
+2022-06-06 13:13:36,334 DEBUG cargo.py Потеряно соединение с сервером.
+2022-06-06 13:13:52,090 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 13:13:52,103 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 13:13:52,170 INFO cargo.py Попытка подключения №1
+2022-06-06 13:13:52,223 INFO cargo.py Попытка подключения №1
+2022-06-06 13:13:55,213 INFO cargo.py Попытка подключения №2
+2022-06-06 13:13:55,275 INFO cargo.py Попытка подключения №2
+2022-06-06 13:13:58,238 INFO cargo.py Попытка подключения №3
+2022-06-06 13:13:58,317 INFO cargo.py Попытка подключения №3
+2022-06-06 13:14:01,272 INFO cargo.py Попытка подключения №4
+2022-06-06 14:38:40,328 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 14:38:40,330 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 14:38:40,370 INFO cargo.py Connection attempt No №1
+2022-06-06 14:38:40,370 INFO cargo.py Connection attempt No №1
+2022-06-06 14:38:40,371 DEBUG cargo.py Server connection established
+2022-06-06 14:38:40,371 DEBUG cargo.py Server connection established
+2022-06-06 14:38:40,371 DEBUG cargo.py Message presence for user test2 formed
+2022-06-06 14:38:40,868 DEBUG cargo.py Parsing a message from the server: {'response': 200}
+2022-06-06 14:38:40,868 INFO cargo.py The connection to the server was successfully established.
+2022-06-06 14:38:40,868 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 14:38:40,884 DEBUG cargo.py Parsing a message from the server: {'response': 200}
+2022-06-06 14:38:40,884 DEBUG cargo.py Request formed {'action': 'get_contacts', 'time': 1654515520.8844798, 'user': 'test1'}
+2022-06-06 14:38:40,884 INFO cargo.py The connection to the server was successfully established.
+2022-06-06 14:38:40,884 DEBUG cargo.py Запрос списка известных пользователей test2
+2022-06-06 14:38:41,400 DEBUG cargo.py Get answer {'response': 202, 'data_list': ['test2']}
+2022-06-06 14:38:41,413 DEBUG cargo.py Request a contact list for a user Thread-1
+2022-06-06 14:38:41,413 DEBUG cargo.py Request formed {'action': 'get_contacts', 'time': 1654515521.4130123, 'user': 'test2'}
+2022-06-06 14:38:41,416 DEBUG cargo.py The process is running - the receiver of messages from the server.
+2022-06-06 14:38:46,420 ERROR cargo.py Connection timeout when updating user lists
+2022-06-06 14:38:46,420 DEBUG cargo.py The process is running - the receiver of messages from the server.
+2022-06-06 14:38:49,042 DEBUG cargo.py Transport shuts down
+2022-06-06 14:38:49,076 DEBUG cargo.py Message received from the server: {'response': 202, 'data_list': ['test1']}
+2022-06-06 14:38:49,077 DEBUG cargo.py Parsing a message from the server: {'response': 202, 'data_list': ['test1']}
+2022-06-06 14:38:49,077 DEBUG cargo.py Unknown verification code received 202
+2022-06-06 14:38:50,091 CRITICAL cargo.py Connection lost
+2022-06-06 14:38:51,609 DEBUG cargo.py Transport shuts down
+2022-06-06 14:39:43,095 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 14:39:43,099 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 14:39:43,140 INFO cargo.py Connection attempt No №1
+2022-06-06 14:39:43,141 DEBUG cargo.py Server connection established
+2022-06-06 14:39:43,141 DEBUG cargo.py Message presence for user test1 formed
+2022-06-06 14:39:43,144 INFO cargo.py Connection attempt No №1
+2022-06-06 14:39:43,145 DEBUG cargo.py Server connection established
+2022-06-06 14:39:43,145 DEBUG cargo.py Message presence for user test2 formed
+2022-06-06 14:39:44,662 CRITICAL cargo.py Connection lost
+2022-06-06 14:39:44,663 CRITICAL cargo.py Connection lost
+2022-06-06 14:39:54,186 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 14:39:54,224 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 14:39:54,265 INFO cargo.py Connection attempt No №1
+2022-06-06 14:39:54,266 DEBUG cargo.py Server connection established
+2022-06-06 14:39:54,266 DEBUG cargo.py Message presence for user test1 formed
+2022-06-06 14:39:54,280 INFO cargo.py Connection attempt No №1
+2022-06-06 14:39:54,281 DEBUG cargo.py Server connection established
+2022-06-06 14:39:54,281 DEBUG cargo.py Message presence for user test2 formed
+2022-06-06 14:39:54,734 DEBUG cargo.py Parsing a message from the server: {'response': 200}
+2022-06-06 14:39:54,734 INFO cargo.py The connection to the server was successfully established.
+2022-06-06 14:39:54,734 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 14:39:54,750 DEBUG cargo.py Request a contact list for a user Thread-1
+2022-06-06 14:39:54,750 DEBUG cargo.py Request formed {'action': 'get_contacts', 'time': 1654515594.7506495, 'user': 'test1'}
+2022-06-06 14:39:54,769 DEBUG cargo.py Parsing a message from the server: {'response': 200}
+2022-06-06 14:39:54,769 INFO cargo.py The connection to the server was successfully established.
+2022-06-06 14:39:54,769 DEBUG cargo.py Запрос списка известных пользователей test2
+2022-06-06 14:39:55,288 DEBUG cargo.py Get answer {'response': 202, 'data_list': ['test2']}
+2022-06-06 14:39:55,309 DEBUG cargo.py The process is running - the receiver of messages from the server.
+2022-06-06 14:39:55,312 DEBUG cargo.py Request a contact list for a user Thread-1
+2022-06-06 14:39:55,313 DEBUG cargo.py Request formed {'action': 'get_contacts', 'time': 1654515595.3133934, 'user': 'test2'}
+2022-06-06 14:40:00,324 ERROR cargo.py Connection timeout when updating user lists
+2022-06-06 14:40:00,325 DEBUG cargo.py The process is running - the receiver of messages from the server.
+2022-06-06 14:40:05,435 CRITICAL cargo.py Connection lost
+2022-06-06 14:40:05,921 CRITICAL cargo.py Connection lost
+2022-06-06 14:40:11,737 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 14:40:11,770 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 14:40:11,785 INFO cargo.py Connection attempt No №1
+2022-06-06 14:40:11,822 INFO cargo.py Connection attempt No №1
+2022-06-06 14:40:11,823 DEBUG cargo.py Server connection established
+2022-06-06 14:40:11,823 DEBUG cargo.py Message presence for user test2 formed
+2022-06-06 14:40:12,287 DEBUG cargo.py Server connection established
+2022-06-06 14:40:12,287 DEBUG cargo.py Message presence for user test1 formed
+2022-06-06 14:40:12,296 DEBUG cargo.py Parsing a message from the server: {'response': 200}
+2022-06-06 14:40:12,296 INFO cargo.py The connection to the server was successfully established.
+2022-06-06 14:40:12,296 DEBUG cargo.py Запрос списка известных пользователей test2
+2022-06-06 14:40:12,311 DEBUG cargo.py Request a contact list for a user Thread-1
+2022-06-06 14:40:12,311 DEBUG cargo.py Request formed {'action': 'get_contacts', 'time': 1654515612.311622, 'user': 'test2'}
+2022-06-06 14:40:12,312 DEBUG cargo.py Parsing a message from the server: {'response': 200}
+2022-06-06 14:40:12,312 INFO cargo.py The connection to the server was successfully established.
+2022-06-06 14:40:12,312 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 14:40:12,835 DEBUG cargo.py Get answer {'response': 202, 'data_list': ['test1']}
+2022-06-06 14:40:12,853 DEBUG cargo.py Request a contact list for a user Thread-1
+2022-06-06 14:40:12,853 DEBUG cargo.py Request formed {'action': 'get_contacts', 'time': 1654515612.8539817, 'user': 'test1'}
+2022-06-06 14:40:12,856 DEBUG cargo.py The process is running - the receiver of messages from the server.
+2022-06-06 14:40:17,856 ERROR cargo.py Connection timeout when updating user lists
+2022-06-06 14:40:17,857 DEBUG cargo.py The process is running - the receiver of messages from the server.
+2022-06-06 14:40:19,856 DEBUG cargo.py Transport shuts down
+2022-06-06 14:40:19,965 DEBUG cargo.py Connection lost
+2022-06-06 14:40:20,415 DEBUG cargo.py Message received from the server: {'response': 202, 'data_list': ['test2']}
+2022-06-06 14:40:20,415 DEBUG cargo.py Parsing a message from the server: {'response': 202, 'data_list': ['test2']}
+2022-06-06 14:40:20,415 DEBUG cargo.py Unknown verification code received 202
+2022-06-06 14:40:20,468 DEBUG cargo.py Transport shuts down
+2022-06-06 14:40:21,423 DEBUG cargo.py Connection lost
+2022-06-06 14:40:49,671 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 14:40:49,690 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 14:40:49,717 INFO cargo.py Connection attempt No №1
+2022-06-06 14:40:49,718 DEBUG cargo.py Server connection established
+2022-06-06 14:40:49,718 DEBUG cargo.py Message presence for user test1 formed
+2022-06-06 14:40:49,735 INFO cargo.py Connection attempt No №1
+2022-06-06 14:40:49,735 DEBUG cargo.py Server connection established
+2022-06-06 14:40:49,736 DEBUG cargo.py Message presence for user test2 formed
+2022-06-06 14:40:50,204 DEBUG cargo.py Parsing a message from the server: {'response': 200}
+2022-06-06 14:40:50,204 INFO cargo.py The connection to the server was successfully established.
+2022-06-06 14:40:50,205 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 14:40:50,219 DEBUG cargo.py Request a contact list for a user Thread-1
+2022-06-06 14:40:50,219 DEBUG cargo.py Request formed {'action': 'get_contacts', 'time': 1654515650.2197769, 'user': 'test1'}
+2022-06-06 14:40:50,221 DEBUG cargo.py Parsing a message from the server: {'response': 200}
+2022-06-06 14:40:50,221 INFO cargo.py The connection to the server was successfully established.
+2022-06-06 14:40:50,221 DEBUG cargo.py Запрос списка известных пользователей test2
+2022-06-06 14:40:50,736 DEBUG cargo.py Get answer {'response': 202, 'data_list': ['test2']}
+2022-06-06 14:40:50,749 DEBUG cargo.py Request a contact list for a user Thread-1
+2022-06-06 14:40:50,750 DEBUG cargo.py Request formed {'action': 'get_contacts', 'time': 1654515650.7508163, 'user': 'test2'}
+2022-06-06 14:40:50,753 DEBUG cargo.py The process is running - the receiver of messages from the server.
+2022-06-06 14:40:55,762 ERROR cargo.py Connection timeout when updating user lists
+2022-06-06 14:40:55,762 DEBUG cargo.py The process is running - the receiver of messages from the server.
+2022-06-06 14:42:21,244 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 14:42:21,258 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 14:42:21,291 INFO cargo.py Connection attempt No №1
+2022-06-06 14:42:21,291 DEBUG cargo.py Server connection established
+2022-06-06 14:42:21,291 DEBUG cargo.py Message presence for user test1 formed
+2022-06-06 14:42:21,301 INFO cargo.py Connection attempt No №1
+2022-06-06 14:42:21,301 DEBUG cargo.py Server connection established
+2022-06-06 14:42:21,301 DEBUG cargo.py Message presence for user test2 formed
+2022-06-06 14:42:26,305 CRITICAL cargo.py Connection lost
+2022-06-06 15:37:41,247 CRITICAL cargo.py Connection lost
+2022-06-06 15:37:41,981 CRITICAL cargo.py Connection lost

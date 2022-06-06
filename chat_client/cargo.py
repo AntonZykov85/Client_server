@@ -6,13 +6,13 @@ import json
 import threading
 from PyQt5.QtCore import pyqtSignal, QObject
 
-sys.path.append('../')
 from general.constants import *
 from general.utilites import *
 from general.errors import ServerError
 
+sys.path.append('../')
 
-logger = logging.getLogger('client')
+logger = logging.getLogger('chat_client')
 socket_lock = threading.Lock()
 
 
@@ -23,6 +23,7 @@ class ClientTransport(threading.Thread, QObject):
     def __init__(self, port, ip_address, database, username):
         threading.Thread.__init__(self)
         QObject.__init__(self)
+
         self.database = database
         self.username = username
         self.transport = None
@@ -32,12 +33,12 @@ class ClientTransport(threading.Thread, QObject):
             self.contacts_list_update()
         except OSError as err:
             if err.errno:
-                logger.critical(f'Connection with server lost')
-                raise ServerError('Connection with server lost')
-            logger.error('Timeout cjnnection by refresh users list')
+                logger.critical(f'Connection lost')
+                raise ServerError('Connection lost!')
+            logger.error('Connection timeout when updating user lists')
         except json.JSONDecodeError:
-            logger.critical(f'Connection with server lost')
-            raise ServerError('Connection with server lost')
+            logger.critical(f'Connection lost')
+            raise ServerError('Connection lost')
         self.running = True
 
     def connection_init(self, port, ip):
@@ -45,7 +46,7 @@ class ClientTransport(threading.Thread, QObject):
         self.transport.settimeout(5)
         connected = False
         for i in range(5):
-            logger.info(f'Connection try №{i + 1}')
+            logger.info(f'Connection attempt No №{i + 1}')
             try:
                 self.transport.connect((ip, port))
             except (OSError, ConnectionRefusedError):
@@ -56,19 +57,20 @@ class ClientTransport(threading.Thread, QObject):
             time.sleep(1)
 
         if not connected:
-            logger.critical('Cannot connect with server')
-            raise ServerError('Cannot connect with server')
+            logger.critical('Failed to connect to server')
+            raise ServerError('НFailed to connect to server')
 
-        logger.debug('Connection with server successful')
+        logger.debug('Server connection established')
 
         try:
             with socket_lock:
                 send_message(self.transport, self.create_presence())
                 self.process_server_ans(get_message(self.transport))
         except (OSError, json.JSONDecodeError):
-            logger.critical('Connection with server lost')
-            raise ServerError('Connection with server lost')
-        logger.info('Connection with server successful')
+            logger.critical('Connection lost')
+            raise ServerError('Connection lost')
+
+        logger.info('The connection to the server was successfully established.')
 
     def create_presence(self):
         out = {
@@ -78,27 +80,28 @@ class ClientTransport(threading.Thread, QObject):
                 ACCOUNT_NAME: self.username
             }
         }
-        logger.debug(f'Formed {PRESENCE} message for user {self.username}')
+        logger.debug(f'Message {PRESENCE} for user {self.username} formed')
         return out
 
     def process_server_ans(self, message):
-        logger.debug(f'message from server: {message}')
+        logger.debug(f'Parsing a message from the server: {message}')
+
         if RESPONSE in message:
             if message[RESPONSE] == 200:
                 return
             elif message[RESPONSE] == 400:
                 raise ServerError(f'{message[ERROR]}')
             else:
-                logger.debug(f'get unknown trigger {message[RESPONSE]}')
+                logger.debug(f'Unknown verification code received {message[RESPONSE]}')
 
         elif ACTION in message and message[ACTION] == MESSAGE and SENDER in message and DESTINATION in message \
                 and MESSAGE_TEXT in message and message[DESTINATION] == self.username:
-            logger.debug(f'Get message from user {message[SENDER]}:{message[MESSAGE_TEXT]}')
-            self.database.save_message(message[SENDER] , 'in' , message[MESSAGE_TEXT])
+            logger.debug(f'Message received from user {message[SENDER]}:{message[MESSAGE_TEXT]}')
+            self.database.save_message(message[SENDER], 'in', message[MESSAGE_TEXT])
             self.new_message.emit(message[SENDER])
 
     def contacts_list_update(self):
-        logger.debug(f'Request contact list for user {self.name}')
+        logger.debug(f'Request a contact list for a user {self.name}')
         req = {
             ACTION: GET_CONTACTS,
             TIME: time.time(),
@@ -113,10 +116,10 @@ class ClientTransport(threading.Thread, QObject):
             for contact in ans[LIST_INFO]:
                 self.database.add_contact(contact)
         else:
-            logger.error('Cannot refresh contacts list')
+            logger.error('Failed to update contact list.')
 
     def user_list_update(self):
-        logger.debug(f'Request known users list {self.username}')
+        logger.debug(f'Запрос списка известных пользователей {self.username}')
         req = {
             ACTION: USERS_REQUEST,
             TIME: time.time(),
@@ -128,7 +131,7 @@ class ClientTransport(threading.Thread, QObject):
         if RESPONSE in ans and ans[RESPONSE] == 202:
             self.database.add_users(ans[LIST_INFO])
         else:
-            logger.error('Cannot refresh known users list.')
+            logger.error('Query a list of known Users')
 
     def add_contact(self, contact):
         logger.debug(f'Create contact {contact}')
@@ -166,7 +169,7 @@ class ClientTransport(threading.Thread, QObject):
                 send_message(self.transport, message)
             except OSError:
                 pass
-        logger.debug('Transport finished work.')
+        logger.debug('Transport shuts down')
         time.sleep(0.5)
 
     def send_message(self, to, message):
@@ -177,15 +180,15 @@ class ClientTransport(threading.Thread, QObject):
             TIME: time.time(),
             MESSAGE_TEXT: message
         }
-        logger.debug(f'Message dict formed: {message_dict}')
+        logger.debug(f'Message dictionary generated: {message_dict}')
 
         with socket_lock:
             send_message(self.transport, message_dict)
             self.process_server_ans(get_message(self.transport))
-            logger.info(f'message for user send {to}')
+            logger.info(f'Sent message to user {to}')
 
     def run(self):
-        logger.debug('handler servers messages started.')
+        logger.debug('The process is running - the receiver of messages from the server.')
         while self.running:
             time.sleep(1)
             with socket_lock:
@@ -194,17 +197,15 @@ class ClientTransport(threading.Thread, QObject):
                     message = get_message(self.transport)
                 except OSError as err:
                     if err.errno:
-                        logger.critical(f'Connection with server lost')
+                        logger.critical(f'Connection lost')
                         self.running = False
                         self.connection_lost.emit()
-
                 except (ConnectionError, ConnectionAbortedError, ConnectionResetError, json.JSONDecodeError, TypeError):
-                    logger.debug(f'Connection with server lost')
+                    logger.debug(f'Connection lost')
                     self.running = False
                     self.connection_lost.emit()
-
                 else:
-                    logger.debug(f'get message from server {message}')
+                    logger.debug(f'Message received from the server: {message}')
                     self.process_server_ans(message)
                 finally:
                     self.transport.settimeout(5)

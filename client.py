@@ -7,12 +7,12 @@ from PyQt5.QtWidgets import QApplication
 from general.constants import *
 from general.utilites import *
 from general.errors import ServerError
-from client.client_db import ClientDB
-from client.cargo import ClientTransport
-from client.main_window import ClientMainWindow
-from client.start_dialog import UserNameDialog
+from chat_client.client_db import ClientDB
+from chat_client.cargo import ClientTransport
+from chat_client.main_window import ClientMainWindow
+from chat_client.start_dialog import UserNameDialog
 
-logger = logging.getLogger('client')
+logger = logging.getLogger('chat_client')
 
 
 def argument_parser():
@@ -27,7 +27,7 @@ def argument_parser():
 
     if not 1023 < server_port < 65536:
         logger.critical(
-            f'trying to run client with wrong port number {server_port}. Ports nuber from 1024 to 65535 are avalible now.')
+            f'trying to run chat_client with wrong port number {server_port}. Ports nuber from 1024 to 65535 are avalible now.')
         exit(1)
 
     return server_address, server_port, client_name
@@ -49,6 +49,7 @@ if __name__ == '__main__':
     logger.info(
         f'Client running: server: {server_address} , port: {server_port}, username: {client_name}')
     database = ClientDB(client_name)
+
     try:
         cargo = ClientTransport(server_port, server_address, database, client_name)
     except ServerError as error:
@@ -57,7 +58,6 @@ if __name__ == '__main__':
     cargo.setDaemon(True)
     cargo.start()
 
-    # Создаём GUI
     main_window = ClientMainWindow(database, cargo)
     main_window.make_connection(cargo)
     main_window.setWindowTitle(f'Chat application alpha release - {client_name}')

@@ -1,1 +1,110 @@
-2022-05-28 08:01:02,200 INFO server.py server run with 7777, 
+2022-06-06 11:49:51,021 INFO server.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+2022-06-06 11:50:54,037 INFO server.py Установлено соедение с ПК ('127.0.0.1', 58150)
+2022-06-06 11:50:54,038 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1654505454.0376308, 'user': {'account_name': 'guest'}}
+2022-06-06 11:50:54,595 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1654505454.0866337, 'account_name': 'guest'}
+2022-06-06 11:50:55,103 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1654505454.613673, 'user': 'guest'}
+2022-06-06 11:51:47,916 INFO server.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+2022-06-06 11:51:47,951 INFO server.py Установлено соедение с ПК ('127.0.0.1', 58180)
+2022-06-06 11:51:47,991 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1654505507.9511344, 'user': {'account_name': 'test1'}}
+2022-06-06 11:51:48,711 INFO server.py Установлено соедение с ПК ('127.0.0.1', 58181)
+2022-06-06 11:51:48,711 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1654505508.7113214, 'account_name': 'test1'}
+2022-06-06 11:51:48,719 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1654505507.9751387, 'user': {'account_name': 'test2'}}
+2022-06-06 11:51:48,743 INFO server.py Установлено соедение с ПК ('127.0.0.1', 58183)
+2022-06-06 11:51:48,743 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1654505508.727325, 'user': 'test1'}
+2022-06-06 11:51:48,751 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1654505508.7433326, 'account_name': 'test2'}
+2022-06-06 11:51:48,751 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1654505508.031154, 'user': {'account_name': 'test3'}}
+2022-06-06 11:51:49,288 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1654505508.7673376, 'user': 'test2'}
+2022-06-06 11:51:49,296 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1654505508.783343, 'account_name': 'test3'}
+2022-06-06 11:51:49,800 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1654505509.3362257, 'user': 'test3'}
+2022-06-06 11:52:21,751 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1654505541.343477, 'account_name': 'test1'}
+2022-06-06 11:52:23,276 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1654505542.7974522, 'account_name': 'test1'}
+2022-06-06 11:52:28,891 DEBUG server.py Разбор сообщения от клиента : {'action': 'add', 'time': 1654505548.084855, 'user': 'test1', 'account_name': 'test2'}
+2022-06-06 11:52:44,198 DEBUG server.py Разбор сообщения от клиента : {'action': 'message', 'sender': 'test1', 'to': 'test2', 'time': 1654505564.0804405, 'message_text': 'вчммчсмчм'}
+2022-06-06 11:52:44,266 INFO server.py Отправлено сообщение пользователю test2 от пользователя test1.
+2022-06-06 11:52:47,810 DEBUG server.py Разбор сообщения от клиента : {'action': 'add', 'time': 1654505567.3694854, 'user': 'test2', 'account_name': 'test1'}
+2022-06-06 11:53:11,737 DEBUG server.py Разбор сообщения от клиента : {'action': 'Application closed', 'time': 1654505591.713467, 'account_name': 'test2'}
+2022-06-06 11:53:11,745 INFO server.py Клиент test2 корректно отключился от сервера.
+2022-06-06 11:53:13,281 DEBUG server.py Разбор сообщения от клиента : {'action': 'Application closed', 'time': 1654505593.021725, 'account_name': 'test1'}
+2022-06-06 11:53:13,297 INFO server.py Клиент test1 корректно отключился от сервера.
+2022-06-06 11:53:14,820 DEBUG server.py Разбор сообщения от клиента : {'action': 'Application closed', 'time': 1654505594.4592116, 'account_name': 'test3'}
+2022-06-06 11:53:14,836 INFO server.py Клиент test3 корректно отключился от сервера.
+2022-06-06 13:11:46,138 INFO server.py Server started, connection port: 7777 ,address from which connections are accepted: . \ If the address is not specified, connections from any address are accepted..
+2022-06-06 13:11:46,660 INFO server.py Установлено соедение с ПК ('127.0.0.1', 61877)
+2022-06-06 13:11:46,664 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1654510306.1686692, 'user': {'account_name': 'test1'}}
+2022-06-06 13:11:46,693 INFO server.py Установлено соедение с ПК ('127.0.0.1', 61878)
+2022-06-06 13:11:46,694 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1654510306.6933036, 'account_name': 'test1'}
+2022-06-06 13:11:46,697 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1654510306.17167, 'user': {'account_name': 'test2'}}
+2022-06-06 13:11:47,217 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1654510306.7083068, 'user': 'test1'}
+2022-06-06 13:11:47,226 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1654510306.710306, 'account_name': 'test2'}
+2022-06-06 13:11:47,739 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1654510307.2520306, 'user': 'test2'}
+2022-06-06 13:11:52,828 INFO server.py Клиент ('127.0.0.1', 61878) отключился от сервера.
+2022-06-06 13:11:54,390 INFO server.py Клиент ('127.0.0.1', 61877) отключился от сервера.
+2022-06-06 13:12:28,439 INFO server.py Server started, connection port: 7777 ,address from which connections are accepted: . \ If the address is not specified, connections from any address are accepted..
+2022-06-06 13:12:28,885 INFO server.py Установлено соедение с ПК ('127.0.0.1', 61899)
+2022-06-06 13:12:28,888 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1654510348.490631, 'user': {'account_name': 'test1'}}
+2022-06-06 13:12:28,927 INFO server.py Установлено соедение с ПК ('127.0.0.1', 61900)
+2022-06-06 13:12:28,927 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1654510348.927204, 'account_name': 'test1'}
+2022-06-06 13:12:28,930 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1654510348.5016313, 'user': {'account_name': 'test2'}}
+2022-06-06 13:12:29,451 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1654510348.942295, 'user': 'test1'}
+2022-06-06 13:12:29,459 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1654510348.9432955, 'account_name': 'test2'}
+2022-06-06 13:12:29,966 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1654510349.475354, 'user': 'test2'}
+2022-06-06 13:12:32,523 DEBUG server.py Разбор сообщения от клиента : {'action': 'Application closed', 'time': 1654510352.357904, 'account_name': 'test2'}
+2022-06-06 13:12:32,549 INFO server.py Клиент test2 корректно отключился от сервера.
+2022-06-06 13:12:33,051 DEBUG server.py Разбор сообщения от клиента : {'action': 'Application closed', 'time': 1654510352.9743838, 'account_name': 'test1'}
+2022-06-06 13:12:33,077 INFO server.py Клиент test1 корректно отключился от сервера.
+2022-06-06 13:13:32,065 INFO server.py Server started, connection port: 7777 ,address from which connections are accepted: . \ If the address is not specified, connections from any address are accepted..
+2022-06-06 13:13:32,074 INFO server.py Установлено соедение с ПК ('127.0.0.1', 61941)
+2022-06-06 13:13:32,075 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1654510412.0752647, 'user': {'account_name': 'test1'}}
+2022-06-06 13:13:32,685 INFO server.py Установлено соедение с ПК ('127.0.0.1', 61942)
+2022-06-06 13:13:32,685 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1654510412.1302679, 'account_name': 'test1'}
+2022-06-06 13:13:32,706 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1654510412.081264, 'user': {'account_name': 'test2'}}
+2022-06-06 13:13:33,234 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1654510412.7185087, 'user': 'test1'}
+2022-06-06 13:13:33,241 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1654510412.7185087, 'account_name': 'test2'}
+2022-06-06 13:13:33,752 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1654510413.2590833, 'user': 'test2'}
+2022-06-06 13:13:35,793 DEBUG server.py Разбор сообщения от клиента : {'action': 'Application closed', 'time': 1654510415.534179, 'account_name': 'test2'}
+2022-06-06 13:13:35,820 INFO server.py Клиент test2 корректно отключился от сервера.
+2022-06-06 13:13:36,334 DEBUG server.py Разбор сообщения от клиента : {'action': 'Application closed', 'time': 1654510416.1195412, 'account_name': 'test1'}
+2022-06-06 13:13:36,369 INFO server.py Клиент test1 корректно отключился от сервера.
+2022-06-06 14:38:39,988 INFO server.py Server started, connection port: 7777 ,address from which connections are accepted: . If the address is not specified, connections from any address are accepted..
+2022-06-06 14:38:40,822 INFO server.py PC connection established ('127.0.0.1', 63041)
+2022-06-06 14:38:40,838 DEBUG server.py Parsing a message from a client: {'action': 'presence', 'time': 1654515520.371647, 'user': {'account_name': 'test1'}}
+2022-06-06 14:38:40,868 INFO server.py PC connection established ('127.0.0.1', 63042)
+2022-06-06 14:38:40,868 DEBUG server.py Parsing a message from a client: {'action': 'get_users', 'time': 1654515520.86885, 'account_name': 'test1'}
+2022-06-06 14:38:40,868 DEBUG server.py Parsing a message from a client: {'action': 'presence', 'time': 1654515520.371647, 'user': {'account_name': 'test2'}}
+2022-06-06 14:38:41,394 DEBUG server.py Parsing a message from a client: {'action': 'get_contacts', 'time': 1654515520.8844798, 'user': 'test1'}
+2022-06-06 14:38:41,400 DEBUG server.py Parsing a message from a client: {'action': 'get_users', 'time': 1654515520.8844798, 'account_name': 'test2'}
+2022-06-06 14:38:49,042 DEBUG server.py Parsing a message from a client: {'action': 'Application closed', 'time': 1654515528.8948812, 'account_name': 'test1'}
+2022-06-06 14:38:49,071 INFO server.py Client test1 correctly disconnected from the server.
+2022-06-06 14:38:49,072 DEBUG server.py Parsing a message from a client: {'action': 'get_contacts', 'time': 1654515521.4130123, 'user': 'test2'}
+2022-06-06 14:39:43,120 INFO server.py Server started, connection port: 7777 ,address from which connections are accepted: . If the address is not specified, connections from any address are accepted..
+2022-06-06 14:39:43,141 INFO server.py PC connection established ('127.0.0.1', 63066)
+2022-06-06 14:39:43,142 DEBUG server.py Parsing a message from a client: {'action': 'presence', 'time': 1654515583.1414027, 'user': {'account_name': 'test1'}}
+2022-06-06 14:39:54,253 INFO server.py Server started, connection port: 7777 ,address from which connections are accepted: . If the address is not specified, connections from any address are accepted..
+2022-06-06 14:39:54,266 INFO server.py PC connection established ('127.0.0.1', 63078)
+2022-06-06 14:39:54,267 DEBUG server.py Parsing a message from a client: {'action': 'presence', 'time': 1654515594.266198, 'user': {'account_name': 'test1'}}
+2022-06-06 14:39:54,735 INFO server.py PC connection established ('127.0.0.1', 63079)
+2022-06-06 14:39:54,736 DEBUG server.py Parsing a message from a client: {'action': 'get_users', 'time': 1654515594.7346518, 'account_name': 'test1'}
+2022-06-06 14:39:54,753 DEBUG server.py Parsing a message from a client: {'action': 'presence', 'time': 1654515594.2814136, 'user': {'account_name': 'test2'}}
+2022-06-06 14:39:55,280 DEBUG server.py Parsing a message from a client: {'action': 'get_contacts', 'time': 1654515594.7506495, 'user': 'test1'}
+2022-06-06 14:39:55,288 DEBUG server.py Parsing a message from a client: {'action': 'get_users', 'time': 1654515594.7696524, 'account_name': 'test2'}
+2022-06-06 14:40:11,788 INFO server.py Server started, connection port: 7777 ,address from which connections are accepted: . If the address is not specified, connections from any address are accepted..
+2022-06-06 14:40:12,251 INFO server.py PC connection established ('127.0.0.1', 63087)
+2022-06-06 14:40:12,255 DEBUG server.py Parsing a message from a client: {'action': 'presence', 'time': 1654515611.8239543, 'user': {'account_name': 'test2'}}
+2022-06-06 14:40:12,296 INFO server.py PC connection established ('127.0.0.1', 63086)
+2022-06-06 14:40:12,297 DEBUG server.py Parsing a message from a client: {'action': 'get_users', 'time': 1654515612.2962291, 'account_name': 'test2'}
+2022-06-06 14:40:12,300 DEBUG server.py Parsing a message from a client: {'action': 'presence', 'time': 1654515612.287227, 'user': {'account_name': 'test1'}}
+2022-06-06 14:40:12,825 DEBUG server.py Parsing a message from a client: {'action': 'get_contacts', 'time': 1654515612.311622, 'user': 'test2'}
+2022-06-06 14:40:12,835 DEBUG server.py Parsing a message from a client: {'action': 'get_users', 'time': 1654515612.3126245, 'account_name': 'test1'}
+2022-06-06 14:40:19,856 DEBUG server.py Parsing a message from a client: {'action': 'Application closed', 'time': 1654515619.8561444, 'account_name': 'test2'}
+2022-06-06 14:40:19,877 INFO server.py Client test2 correctly disconnected from the server.
+2022-06-06 14:40:19,878 DEBUG server.py Parsing a message from a client: {'action': 'get_contacts', 'time': 1654515612.8539817, 'user': 'test1'}
+2022-06-06 14:40:20,468 DEBUG server.py Parsing a message from a client: {'action': 'Application closed', 'time': 1654515620.4681442, 'account_name': 'test1'}
+2022-06-06 14:40:20,489 INFO server.py Client test1 correctly disconnected from the server.
+2022-06-06 14:40:49,670 INFO server.py Server started, connection port: 7777 ,address from which connections are accepted: . If the address is not specified, connections from any address are accepted..
+2022-06-06 14:40:50,162 INFO server.py PC connection established ('127.0.0.1', 63103)
+2022-06-06 14:40:50,165 DEBUG server.py Parsing a message from a client: {'action': 'presence', 'time': 1654515649.7183604, 'user': {'account_name': 'test1'}}
+2022-06-06 14:40:50,204 INFO server.py PC connection established ('127.0.0.1', 63104)
+2022-06-06 14:40:50,205 DEBUG server.py Parsing a message from a client: {'action': 'get_users', 'time': 1654515650.205502, 'account_name': 'test1'}
+2022-06-06 14:40:50,208 DEBUG server.py Parsing a message from a client: {'action': 'presence', 'time': 1654515649.7365882, 'user': {'account_name': 'test2'}}
+2022-06-06 14:40:50,726 DEBUG server.py Parsing a message from a client: {'action': 'get_contacts', 'time': 1654515650.2197769, 'user': 'test1'}
+2022-06-06 14:40:50,736 DEBUG server.py Parsing a message from a client: {'action': 'get_users', 'time': 1654515650.2217743, 'account_name': 'test2'}
