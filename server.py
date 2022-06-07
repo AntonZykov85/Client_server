@@ -228,7 +228,6 @@ def main():
     server = Server(listen_address, listen_port, database)
     server.daemon = True
     server.start()
-
     server_app = QApplication(sys.argv)
     main_window = MainWindow()
 
