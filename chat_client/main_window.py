@@ -11,6 +11,11 @@ from chat_client.client_db import ClientDB
 from chat_client.cargo import ClientTransport
 from chat_client.start_dialog import UserNameDialog
 from general.errors import ServerError
+from general.constants import *
+import base64
+from Cryptodome.Cipher import PKCS1_OAEP
+from Cryptodome.PublicKey import RSA
+import json
 
 sys.path.append('../')
 
@@ -18,10 +23,12 @@ logger = logging.getLogger('chat_client')
 
 
 class ClientMainWindow(QMainWindow):
-    def __init__(self, database, transport):
+    def __init__(self, database, transport, keys):
         super().__init__()
         self.database = database
         self.transport = transport
+
+        self.decrypter = PKCS1_OAEP.new(keys)
 
         self.ui = Ui_MainClientWindow()
         self.ui.setupUi(self)
@@ -95,7 +102,23 @@ class ClientMainWindow(QMainWindow):
         self.set_active_user()
 
     def set_active_user(self):
-        self.ui.label_new_message.setText(f'Input message for {self.current_chat}:')
+        try:
+            self.current_chat_key = self.transport.key_request(
+                self.current_chat)
+            logger.debug(f'Uploaded public key for {self.current_chat}')
+            if self.current_chat_key:
+                self.encryptor = PKCS1_OAEP.new(
+                    RSA.import_key(self.current_chat_key))
+        except (OSError, json.JSONDecodeError):
+            self.current_chat_key = None
+            self.encryptor = None
+            logger.debug(f'Failed to get key for {self.current_chat}')
+        if not self.current_chat_key:
+            self.messages.warning(
+                self, 'Error', 'The selected user does not have an encryption key.')
+            return
+        self.ui.label_new_message.setText(
+            f'Input message for {self.current_chat}:')
         self.ui.btn_clear.setDisabled(False)
         self.ui.btn_send.setDisabled(False)
         self.ui.text_message.setDisabled(False)
@@ -130,7 +153,7 @@ class ClientMainWindow(QMainWindow):
             if err.errno:
                 self.messages.critical(self, 'error', 'Connection lost!')
                 self.close()
-            self.messages.critical(self, 'error', 'server timeout')
+            self.messages.critical(self, 'error', 'server_module timeout')
         else:
             self.database.add_contact(new_contact)
             new_contact = QStandardItem(new_contact)
@@ -155,7 +178,7 @@ class ClientMainWindow(QMainWindow):
             if err.errno:
                 self.messages.critical(self, 'error', 'Connection lost')
                 self.close()
-            self.messages.critical(self, 'error', 'server timeout')
+            self.messages.critical(self, 'error', 'server_module timeout')
         else:
             self.database.del_contact(selected)
             self.clients_list_update()
@@ -171,51 +194,81 @@ class ClientMainWindow(QMainWindow):
         self.ui.text_message.clear()
         if not message_text:
             return
+        message_text_encrypted = self.encryptor.encrypt(
+            message_text.encode('utf8'))
+        message_text_encrypted_base64 = base64.b64encode(
+            message_text_encrypted)
         try:
-            self.transport.send_message(self.current_chat, message_text)
+            self.transport.send_message(
+                self.current_chat,
+                message_text_encrypted_base64.decode('ascii'))
             pass
         except ServerError as err:
-            self.messages.critical(self, 'error', err.text)
+            self.messages.critical(self, 'Error', err.text)
         except OSError as err:
             if err.errno:
-                self.messages.critical(self, 'error', 'Connection lost')
+                self.messages.critical(
+                    self, 'Error', 'Connection lost')
                 self.close()
-            self.messages.critical(self, 'error', 'server timeout')
+            self.messages.critical(self, 'Error', 'Connection timeout')
         except (ConnectionResetError, ConnectionAbortedError):
-            self.messages.critical(self, 'error', 'Connection lost')
+            self.messages.critical(
+                self, 'Error', 'Connection lost')
             self.close()
         else:
             self.database.save_message(self.current_chat, 'out', message_text)
-            logger.debug(f'message send for {self.current_chat}: {message_text}')
+            logger.debug(
+                f'Message send for {self.current_chat}: {message_text}')
             self.history_list_update()
 
     @pyqtSlot(str)
-    def message(self, sender):
+    def message(self, sender, message):
+        encrypted_message = base64.b64decode(message[MESSAGE_TEXT])
+        try:
+            decrypted_message = self.decrypter.decrypt(encrypted_message)
+        except (ValueError, TypeError):
+            self.messages.warning(
+                self, 'Error', 'Failed to decode message')
+            return
+
+        self.database.save_message(
+            self.current_chat,
+            'in',
+            decrypted_message.decode('utf8'))
+
+        sender = message[SENDER]
         if sender == self.current_chat:
             self.history_list_update()
         else:
             if self.database.check_contact(sender):
-                if self.messages.question(self, 'New message', \
-                                          f'New message {sender}, start chating?', QMessageBox.Yes,
-                                          QMessageBox.No) == QMessageBox.Yes:
+                if self.messages.question(
+                        self,
+                        'New message',
+                        f'Get new message from {sender}, start chating?',
+                        QMessageBox.Yes,
+                        QMessageBox.No) == QMessageBox.Yes:
                     self.current_chat = sender
                     self.set_active_user()
             else:
                 print('NO')
-                if self.messages.question(self, 'New message', \
-                                          f'New message {sender}.\n This user is not '
-                                          f'in your contact list\n Add to contacts and open a chat '
-                                          f'with him?',
-                                          QMessageBox.Yes,
-                                          QMessageBox.No) == QMessageBox.Yes:
+                if self.messages.question(
+                        self,
+                        'New message',
+                        f'Get new message from {sender}.'
+                        f'\n This user is not in your contact list.'
+                        f'\n Add to contacts and open a chat with him?',
+                        QMessageBox.Yes,
+                        QMessageBox.No) == QMessageBox.Yes:
                     self.add_contact(sender)
                     self.current_chat = sender
+                    self.database.save_message(
+                        self.current_chat, 'in', decrypted_message.decode('utf8'))
                     self.set_active_user()
 
 
     @pyqtSlot()
     def connection_lost(self):
-        self.messages.warning(self, 'Connection failure', 'Lost connection to server')
+        self.messages.warning(self, 'Connection failure', 'Lost connection to server_module')
         self.close()
 
     def make_connection(self, trans_obj):

@@ -67,6 +67,8 @@ class ClientDB:
     def del_contact(self, contact):
         self.session.query(self.Contacts).filter_by(name=contact).delete()
 
+    def contacts_clear(self):
+        self.session.query(self.Contacts).delete()
 
     def add_users(self, users_list):
         self.session.query(self.KnownUsers).delete()

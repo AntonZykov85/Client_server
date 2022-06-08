@@ -20,7 +20,7 @@ class ServerVerifier(type):
                             attrs.append(i.argval)
         print(methods)
         if 'connect' in methods:
-            raise TypeError('Usung "connect" method invalid in server class')
+            raise TypeError('Usung "connect" method invalid in server_module class')
         if not ('SOCK_STREAM' in attrs and 'AF_INET' in attrs):
             raise TypeError('Incorrect socket initialization.')
         super().__init__(clsname, bases, clsdict)

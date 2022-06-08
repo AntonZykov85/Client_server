@@ -19,7 +19,7 @@ serverlog_file = logging.handlers.TimedRotatingFileHandler(PATH, encoding='utf-8
 serverlog_file.setFormatter(server_formatter)
 
 #регистратор
-server_logger = logging.getLogger('server')
+server_logger = logging.getLogger('server_module')
 server_logger.addHandler(crit_handler)
 server_logger.addHandler(serverlog_file)
 server_logger.setLevel('DEBUG')

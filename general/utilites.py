@@ -10,7 +10,7 @@ def get_message(client):
     response = json.loads(json_response)
     if isinstance(response, dict):
         return response
-    raise ValueError
+    raise TypeError
 
 
 def send_message(sock, message):
