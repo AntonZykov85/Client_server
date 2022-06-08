@@ -1,12 +1,12 @@
 import logging
 import sys
 
-logger = logging.getLogger('server')
+logger = logging.getLogger('server_module')
 
 
 
 if sys.argv[0].find('chat_client') == -1:
-    logger = logging.getLogger('server')
+    logger = logging.getLogger('server_module')
 else:
     logger = logging.getLogger('chat_client')
 

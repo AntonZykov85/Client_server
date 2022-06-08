@@ -7,7 +7,7 @@ MAX_PACKAGE_LENGTH = 1024
 ENCODING = 'utf-8'
 LOGGING_LEVEL = logging.DEBUG
 # SERVER_DATABASE = 'sqlite:///server_base.db3'
-SERVER_CONFIG = 'server.ini'
+SERVER_CONFIG = 'server_module.ini'
 
 ACTION = 'action'
 TIME = 'time'
@@ -27,13 +27,24 @@ LIST_INFO = 'data_list'
 REMOVE_CONTACT = 'remove'
 ADD_CONTACT = 'add'
 USERS_REQUEST = 'get_users'
+PUBLIC_KEY = 'public_key'
+DATA = 'data'
+RESPONSE_511 = {
+    RESPONSE: 511,
+    DATA: None
+}
 
+PUBLIC_KEY_REQUEST = 'pubkey'
 
 
 RESPONSE_200 = {RESPONSE: 200}
 
 RESPONSE_202 = {RESPONSE: 202,
                 LIST_INFO: None}
+
+RESPONSE_205 = {
+    RESPONSE: 205
+}
 
 
 RESPONSE_400 = {
