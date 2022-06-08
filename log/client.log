@@ -1,0 +1,1072 @@
+2022-04-24 17:02:36,732 DEBUG client.py debbuging info from server {'response': 200}
+2022-04-24 17:02:36,733 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-04-24 17:02:36,733 DEBUG client.py debbuging info from server {'error': 'Bad Request'}
+2022-04-24 17:07:41,769 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-24 17:07:48,726 DEBUG client.py message {'action': 'presence', 'time': 'Sun Apr 24 17:07:41 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-24 17:07:48,726 DEBUG client.py debbuging info from server {'response': 200}
+2022-04-24 17:07:48,727 INFO client.py servers answer 200 : OK
+2022-04-24 17:09:12,565 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-24 17:09:17,477 DEBUG client.py message {'action': 'presence', 'time': 'Sun Apr 24 17:09:12 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-24 17:09:17,479 DEBUG client.py debbuging info from server {'response': 200}
+2022-04-24 17:09:17,479 INFO client.py servers answer 200 : OK
+2022-04-24 17:29:11,294 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-24 17:29:16,667 DEBUG client.py message {'action': 'presence', 'time': 'Sun Apr 24 17:29:11 2022', 'user': {'account_name': 'nm,.n'}} debuging
+2022-04-24 17:29:16,670 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-04-24 17:29:16,670 INFO client.py servers answer 400 : Bad Request
+2022-04-30 09:54:07,375 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 09:54:57,338 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 09:58:24,436 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:00:45,915 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:02:05,234 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:02:53,940 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:02:59,234 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:02:53 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-30 10:02:59,235 DEBUG client.py debbuging info from server {'response': 200}
+2022-04-30 10:02:59,235 INFO client.py servers answer 200 : OK
+2022-04-30 10:04:08,794 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:04:13,903 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:04:08 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-30 10:04:14,153 ERROR client.py Не удалось декодировать сообщение сервера
+2022-04-30 10:04:39,514 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:05:21,186 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:05:40,333 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:05:51,844 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:05:40 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-30 10:05:52,029 ERROR client.py Не удалось декодировать сообщение сервера
+2022-04-30 10:06:20,572 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:07:46,172 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:07:51,316 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:07:46 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-30 10:07:51,318 DEBUG client.py debbuging info from server {'response': 200}
+2022-04-30 10:07:51,318 INFO client.py servers answer 200 : OK
+2022-04-30 10:08:24,108 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:09:03,093 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:09:13,986 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:09:03 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-30 10:09:14,210 ERROR client.py Не удалось декодировать сообщение сервера
+2022-04-30 10:12:00,193 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:12:06,719 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:12:00 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-30 10:12:06,888 ERROR client.py Не удалось декодировать сообщение сервера
+2022-04-30 10:13:08,392 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:13:13,164 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:13:18,498 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:13:33,700 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:13:38,816 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:13:33 2022', 'user': {'account_name': 'Guesr'}} debuging
+2022-04-30 10:13:39,026 ERROR client.py Не удалось декодировать сообщение сервера
+2022-04-30 10:13:46,697 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:13:48,849 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:14:11,460 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:14:38,423 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:14:51,646 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:14:56,447 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:14:51 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-30 10:14:56,724 ERROR client.py Не удалось декодировать сообщение сервера
+2022-04-30 10:17:36,402 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-04-30 10:17:42,772 DEBUG client.py message {'action': 'presence', 'time': 'Sat Apr 30 10:17:36 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-04-30 10:17:42,788 DEBUG client.py debbuging info from server {'response': 200}
+2022-04-30 10:17:42,794 DEBUG decorators.py <function process_ans at 0x7f10bda7c160> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-04-30 10:17:42,794 INFO client.py servers answer 200 : OK
+2022-05-01 16:04:02,204 INFO client.py client with server adress 127.0.0.1 & port number 7777 is run
+2022-05-01 16:04:08,845 DEBUG client.py message {'action': 'presence', 'time': 'Sun May  1 16:04:02 2022', 'user': {'account_name': 'Guest'}} debuging
+2022-05-01 16:04:09,074 ERROR client.py Не удалось декодировать сообщение сервера
+2022-05-01 21:33:20,611 DEBUG decorators.py <function argument_parser at 0x7fcd18b6a700> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:36:18,941 DEBUG decorators.py <function argument_parser at 0x7fdd5a780670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:36:18,946 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 21:36:44,749 DEBUG decorators.py <function argument_parser at 0x7fe82bb65670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:36:44,763 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 21:36:47,560 DEBUG decorators.py <function argument_parser at 0x7fb0de7ae670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:36:47,561 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 21:37:00,288 DEBUG decorators.py <function argument_parser at 0x7fb015e4e670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:42:43,680 DEBUG decorators.py <function argument_parser at 0x7fb6bd3b3670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:42:43,682 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 21:43:56,128 DEBUG decorators.py <function argument_parser at 0x7f8922844700> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:43:56,128 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 21:44:54,140 DEBUG decorators.py <function argument_parser at 0x7fa7f87d7700> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:44:54,141 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 21:46:53,798 DEBUG decorators.py <function argument_parser at 0x7fc27bb2a700> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:51:50,791 DEBUG decorators.py <function argument_parser at 0x7f50f92f3670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:51:50,795 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 21:58:46,983 DEBUG decorators.py <function argument_parser at 0x7fb8c3101670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 21:58:46,985 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:01:44,728 DEBUG decorators.py <function argument_parser at 0x7f62f9f29670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:01:44,732 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:04:57,318 DEBUG decorators.py <function argument_parser at 0x7f44d9a56670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:04:57,322 INFO client.py server start with 7777, 127.0.0.1, listen
+2022-05-01 22:04:57,322 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:05:10,095 DEBUG decorators.py <function argument_parser at 0x7fea3ebdf670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:05:10,097 INFO client.py server start with 7777, 127.0.0.1, listen
+2022-05-01 22:05:10,098 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:05:26,570 DEBUG decorators.py <function argument_parser at 0x7fdbeea85670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:05:26,570 INFO client.py server start with 7777, 127.0.0.1, listen
+2022-05-01 22:05:26,570 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:05:35,566 DEBUG decorators.py <function argument_parser at 0x7f44a9f9a670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:05:35,566 INFO client.py server start with 7777, 127.0.0.1, send
+2022-05-01 22:05:35,566 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:05:37,805 DEBUG decorators.py <function argument_parser at 0x7f02a7514670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:05:37,805 INFO client.py server start with 7777, 127.0.0.1, listen
+2022-05-01 22:05:37,805 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:05:41,131 DEBUG decorators.py <function argument_parser at 0x7f8a9e2c9670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:05:41,131 INFO client.py server start with 7777, 127.0.0.1, send
+2022-05-01 22:05:41,131 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:07:42,299 DEBUG decorators.py <function argument_parser at 0x7faf784dc940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:08:10,008 INFO client.py server start with 7777, 127.0.0.1, send
+2022-05-01 22:09:00,847 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:12:55,027 DEBUG decorators.py <function argument_parser at 0x7fc1e4f03670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:12:55,031 INFO client.py server start with 7777, 127.0.0.1, send
+2022-05-01 22:12:55,031 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:16:42,469 DEBUG decorators.py <function argument_parser at 0x7fdc4abaf700> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:16:42,474 INFO client.py server start with 7777, 127.0.0.1, listen
+2022-05-01 22:16:42,475 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:22:02,349 DEBUG decorators.py <function argument_parser at 0x7f3ef79ba700> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:22:02,358 INFO client.py server start with 7777, 127.0.0.1, send
+2022-05-01 22:22:02,358 ERROR client.py Cannot connect with server 127.0.0.1 : 7777, client decline connection request
+2022-05-01 22:23:01,906 DEBUG decorators.py <function argument_parser at 0x7fae47592670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:23:01,908 INFO client.py server start with 7777, 127.0.0.1, listen
+2022-05-01 22:29:30,094 DEBUG decorators.py <function argument_parser at 0x7feb1a9c2670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:29:30,098 INFO client.py server start with 7777, 127.0.0.1, send
+2022-05-01 22:42:17,547 DEBUG decorators.py <function argument_parser at 0x7f25dccc4670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:42:17,547 INFO client.py server start with 7777, 127.0.0.1, listen
+2022-05-01 22:42:17,548 DEBUG client.py presence for Guest
+2022-05-01 22:42:17,650 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-01 22:42:17,650 DEBUG decorators.py <function process_ans at 0x7f25dccc4550> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:42:17,650 INFO client.py Connected with server 200 : OK
+2022-05-01 22:43:51,919 DEBUG decorators.py <function argument_parser at 0x7fe75af04670> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-01 22:43:51,921 INFO client.py server start with 7777, 127.0.0.1, send
+2022-05-05 14:31:54,582 DEBUG decorators.py <function argument_parser at 0x7f1ef7a54940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:31:54,586 INFO client.py server start with 7777, 127.0.0.1, Test2
+2022-05-05 14:31:54,586 DEBUG client.py presence for Guest
+2022-05-05 14:31:54,622 DEBUG decorators.py <function argument_parser at 0x7f7fb85c9940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:31:54,622 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:31:54,624 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:31:54,624 DEBUG decorators.py <function process_ans at 0x7f1ef7a54820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:31:54,625 INFO client.py Connected with server 200 : OK
+2022-05-05 14:31:54,625 INFO client.py Processes started
+2022-05-05 14:31:54,635 DEBUG client.py presence for Guest
+2022-05-05 14:31:54,632 DEBUG decorators.py <function argument_parser at 0x7fb6ec0ed940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:31:54,636 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:31:54,637 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:31:54,637 DEBUG decorators.py <function process_ans at 0x7f7fb85c9820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:31:54,637 INFO client.py Connected with server 200 : OK
+2022-05-05 14:31:54,638 INFO client.py Processes started
+2022-05-05 14:31:54,639 DEBUG client.py presence for Guest
+2022-05-05 14:31:54,738 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:31:54,738 DEBUG decorators.py <function process_ans at 0x7fb6ec0ed820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:31:54,738 INFO client.py Connected with server 200 : OK
+2022-05-05 14:31:54,739 INFO client.py Processes started
+2022-05-05 14:32:41,972 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test0', 'to': 'Test1', 'time': 'Thu May  5 14:32:41 2022', 'message_text': 'u is loh'}
+2022-05-05 14:32:41,972 INFO client.py message send to userTest1 
+2022-05-05 14:32:42,010 DEBUG decorators.py <function message_new at 0x7f7fb85c9550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39014), raddr=('127.0.0.1', 7777)>, 'Test0'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:33:11,841 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test0', 'to': 'Test2', 'time': 'Thu May  5 14:33:11 2022', 'message_text': 'jn,nmnnknlkn'}
+2022-05-05 14:33:11,841 INFO client.py message send to userTest2 
+2022-05-05 14:33:11,842 DEBUG decorators.py <function message_new at 0x7f7fb85c9550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39014), raddr=('127.0.0.1', 7777)>, 'Test0'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:34:38,983 DEBUG decorators.py <function last_message at 0x7f7fb912e0d0> was running with ('Test0',), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:34:38,984 INFO client.py Connection finished by users command
+2022-05-05 14:34:46,704 DEBUG decorators.py <function last_message at 0x7f1ef85b90d0> was running with ('Test2',), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:34:46,705 INFO client.py Connection finished by users command
+2022-05-05 14:34:46,731 ERROR client.py incorrect server message {'response': 400, 'error': 'Bad Request'}
+2022-05-05 14:34:51,548 DEBUG decorators.py <function last_message at 0x7fb6ecc520d0> was running with ('Test1',), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:34:51,549 INFO client.py Connection finished by users command
+2022-05-05 14:34:51,552 ERROR client.py incorrect server message {'response': 400, 'error': 'Bad Request'}
+2022-05-05 14:35:08,486 DEBUG decorators.py <function argument_parser at 0x7fbaf8677940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:35:08,490 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:35:08,491 DEBUG client.py presence for Guest
+2022-05-05 14:35:08,503 DEBUG decorators.py <function argument_parser at 0x7f551cd72940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:35:08,503 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:35:08,507 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:35:08,508 DEBUG decorators.py <function process_ans at 0x7fbaf8677820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:35:08,508 INFO client.py Connected with server 200 : OK
+2022-05-05 14:35:08,508 INFO client.py Processes started
+2022-05-05 14:35:08,512 DEBUG client.py presence for Guest
+2022-05-05 14:35:08,609 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:35:08,609 DEBUG decorators.py <function process_ans at 0x7f551cd72820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:35:08,609 INFO client.py Connected with server 200 : OK
+2022-05-05 14:35:08,609 INFO client.py Processes started
+2022-05-05 14:35:59,427 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test1', 'to': 'Test1', 'time': 'Thu May  5 14:35:59 2022', 'message_text': 'dcvvxv'}
+2022-05-05 14:35:59,427 INFO client.py message send to userTest1 
+2022-05-05 14:35:59,429 DEBUG decorators.py <function message_new at 0x7f551cd72550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39022), raddr=('127.0.0.1', 7777)>, 'Test1'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:36:20,761 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test1', 'to': 'Test2', 'time': 'Thu May  5 14:36:20 2022', 'message_text': 'dsfgddff'}
+2022-05-05 14:36:20,762 INFO client.py message send to userTest2 
+2022-05-05 14:36:20,763 DEBUG decorators.py <function message_new at 0x7f551cd72550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39022), raddr=('127.0.0.1', 7777)>, 'Test1'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:37:10,792 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test1', 'to': 'client_name2', 'time': 'Thu May  5 14:37:10 2022', 'message_text': 'sazcxx'}
+2022-05-05 14:37:10,792 INFO client.py message send to userclient_name2 
+2022-05-05 14:37:10,793 DEBUG decorators.py <function message_new at 0x7f551cd72550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39022), raddr=('127.0.0.1', 7777)>, 'Test1'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:38:03,327 DEBUG decorators.py <function argument_parser at 0x7fbc17fe9940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:38:03,327 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:38:03,329 DEBUG client.py presence for Guest
+2022-05-05 14:38:03,428 CRITICAL client.py Connection lost
+2022-05-05 14:38:03,429 DEBUG decorators.py <function get_message_from_server at 0x7f551cdae940> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39022)>, 'Test1'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function run
+2022-05-05 14:38:03,429 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:38:03,429 DEBUG decorators.py <function process_ans at 0x7fbc17fe9820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:38:03,429 INFO client.py Connected with server 200 : OK
+2022-05-05 14:38:03,430 INFO client.py Processes started
+2022-05-05 14:38:03,665 DEBUG decorators.py <function argument_parser at 0x7fe06cb84940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:38:03,668 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:38:03,668 DEBUG client.py presence for Guest
+2022-05-05 14:38:03,770 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:38:03,770 DEBUG decorators.py <function process_ans at 0x7fe06cb84820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:38:03,770 INFO client.py Connected with server 200 : OK
+2022-05-05 14:38:03,771 INFO client.py Processes started
+2022-05-05 14:38:08,615 CRITICAL client.py Connection lost
+2022-05-05 14:38:08,619 DEBUG decorators.py <function get_message_from_server at 0x7fe06cbc0940> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39028), raddr=('127.0.0.1', 7777)>, 'Test0'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function run
+2022-05-05 14:38:20,081 DEBUG decorators.py <function argument_parser at 0x7f73f60d8940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:38:20,081 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:38:20,097 DEBUG decorators.py <function argument_parser at 0x7f84feef4940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:38:20,098 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:38:42,888 DEBUG decorators.py <function argument_parser at 0x7fcf12c04940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:38:42,904 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:38:42,927 DEBUG decorators.py <function argument_parser at 0x7f5bb1587940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:38:42,928 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:39:10,224 DEBUG decorators.py <function argument_parser at 0x7f462b40f940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:39:10,230 DEBUG decorators.py <function argument_parser at 0x7f2b522a1940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:39:10,230 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:39:10,233 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:43:20,675 DEBUG decorators.py <function argument_parser at 0x7fd6bd191940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:43:20,675 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:43:20,677 DEBUG decorators.py <function argument_parser at 0x7fce074dc940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:43:20,677 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:43:20,678 DEBUG client.py presence for Guest
+2022-05-05 14:43:20,679 DEBUG client.py presence for Guest
+2022-05-05 14:43:20,781 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:43:20,782 DEBUG decorators.py <function process_ans at 0x7fd6bd191820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:43:20,782 INFO client.py Connected with server 200 : OK
+2022-05-05 14:43:20,783 INFO client.py Processes started
+2022-05-05 14:43:20,791 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:43:20,791 DEBUG decorators.py <function process_ans at 0x7fce074dc820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:43:20,791 INFO client.py Connected with server 200 : OK
+2022-05-05 14:43:20,791 INFO client.py Processes started
+2022-05-05 14:43:38,280 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test1', 'to': 'Test2', 'time': 'Thu May  5 14:43:38 2022', 'message_text': 'qwerty'}
+2022-05-05 14:43:38,280 INFO client.py message send to userTest2 
+2022-05-05 14:43:38,319 DEBUG decorators.py <function message_new at 0x7fd6bd191550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33502), raddr=('127.0.0.1', 7777)>, 'Test1'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:43:55,127 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test1', 'to': 'Test1', 'time': 'Thu May  5 14:43:55 2022', 'message_text': 'sfdsfsfds'}
+2022-05-05 14:43:55,128 INFO client.py message send to userTest1 
+2022-05-05 14:43:55,128 DEBUG decorators.py <function message_new at 0x7fd6bd191550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33502), raddr=('127.0.0.1', 7777)>, 'Test1'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 14:52:32,266 DEBUG decorators.py <function argument_parser at 0x7fae84c31940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:52:32,266 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:52:32,267 DEBUG client.py presence for Guest
+2022-05-05 14:52:32,300 DEBUG decorators.py <function argument_parser at 0x7f16de389940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:52:32,300 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:52:32,302 CRITICAL client.py Connection lost
+2022-05-05 14:52:32,302 DEBUG decorators.py <function get_message_from_server at 0x7fd6bd1cd940> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33502)>, 'Test1'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function run
+2022-05-05 14:52:32,303 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:52:32,303 DEBUG decorators.py <function process_ans at 0x7fae84c31820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:52:32,303 INFO client.py Connected with server 200 : OK
+2022-05-05 14:52:32,303 INFO client.py Processes started
+2022-05-05 14:52:32,309 DEBUG client.py presence for Guest
+2022-05-05 14:52:32,403 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:52:32,403 DEBUG decorators.py <function process_ans at 0x7f16de389820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:52:32,403 INFO client.py Connected with server 200 : OK
+2022-05-05 14:52:32,404 INFO client.py Processes started
+2022-05-05 14:53:09,044 DEBUG decorators.py <function argument_parser at 0x7fb0686f9940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:53:09,044 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:53:09,034 DEBUG decorators.py <function argument_parser at 0x7fdd277e8940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:53:09,045 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:53:09,045 DEBUG client.py presence for Guest
+2022-05-05 14:53:09,046 DEBUG client.py presence for Guest
+2022-05-05 14:54:20,083 DEBUG decorators.py <function argument_parser at 0x7f48aaeaa940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:54:20,087 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:54:20,096 DEBUG client.py presence for Guest
+2022-05-05 14:54:20,099 DEBUG decorators.py <function argument_parser at 0x7f74a2570940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:54:20,099 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:54:20,099 DEBUG client.py presence for Guest
+2022-05-05 14:55:06,494 DEBUG decorators.py <function argument_parser at 0x7f055674a940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:55:06,497 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 14:55:06,501 DEBUG client.py presence for Guest
+2022-05-05 14:55:06,538 DEBUG decorators.py <function argument_parser at 0x7f9ceb2d9940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:55:06,538 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 14:55:06,542 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 14:55:06,542 DEBUG decorators.py <function process_ans at 0x7f055674a820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 14:55:06,542 INFO client.py Connected with server 200 : OK
+2022-05-05 14:55:06,542 INFO client.py Processes started
+2022-05-05 14:55:06,543 DEBUG client.py presence for Guest
+2022-05-05 14:55:24,638 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test0', 'to': 'Test2', 'time': 'Thu May  5 14:55:24 2022', 'message_text': 'sdfsfdfs'}
+2022-05-05 14:55:24,638 INFO client.py message send to userTest2 
+2022-05-05 14:55:24,639 DEBUG decorators.py <function message_new at 0x7f055674a550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 33534), raddr=('127.0.0.1', 7777)>, 'Test0'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 15:01:45,944 DEBUG decorators.py <function argument_parser at 0x7f9b09931940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:01:45,944 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 15:01:45,950 DEBUG decorators.py <function argument_parser at 0x7ff01da6a940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:01:45,950 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 15:01:45,951 DEBUG client.py presence for Guest
+2022-05-05 15:01:45,951 DEBUG client.py presence for Guest
+2022-05-05 15:05:40,314 DEBUG decorators.py <function argument_parser at 0x7f2e2f6e8940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:05:40,318 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 15:05:40,319 DEBUG client.py presence for Guest
+2022-05-05 15:10:08,696 DEBUG decorators.py <function argument_parser at 0x7fa1f8c85940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:10:08,696 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 15:10:08,699 DEBUG client.py presence for Guest
+2022-05-05 15:10:08,737 DEBUG decorators.py <function argument_parser at 0x7f79ee9e7940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:10:08,737 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 15:10:08,739 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 15:10:08,740 DEBUG decorators.py <function process_ans at 0x7fa1f8c85820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:10:08,740 INFO client.py Connected with server 200 : OK
+2022-05-05 15:10:08,740 INFO client.py Processes started
+2022-05-05 15:10:08,743 DEBUG client.py presence for Guest
+2022-05-05 15:10:41,567 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test1', 'to': 'Test1', 'time': 'Thu May  5 15:10:41 2022', 'message_text': 'qwrtfcngcv'}
+2022-05-05 15:10:41,567 INFO client.py message send to userTest1 
+2022-05-05 15:10:41,606 DEBUG decorators.py <function message_new at 0x7fa1f8c85550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 41488), raddr=('127.0.0.1', 7777)>, 'Test1'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 15:12:04,554 DEBUG decorators.py <function argument_parser at 0x7f7ea9051940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:12:04,555 DEBUG decorators.py <function argument_parser at 0x7f7953e00940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:12:04,556 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 15:12:04,556 DEBUG client.py presence for Guest
+2022-05-05 15:12:04,559 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 15:12:04,563 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 15:12:04,564 DEBUG decorators.py <function process_ans at 0x7f7953e00820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:12:04,564 INFO client.py Connected with server 200 : OK
+2022-05-05 15:12:04,564 INFO client.py Processes started
+2022-05-05 15:12:04,564 DEBUG client.py presence for Guest
+2022-05-05 15:12:04,667 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 15:12:04,667 DEBUG decorators.py <function process_ans at 0x7f7ea9051820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 15:12:04,667 INFO client.py Connected with server 200 : OK
+2022-05-05 15:12:04,668 INFO client.py Processes started
+2022-05-05 15:12:55,421 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test0', 'to': 'Test1', 'time': 'Thu May  5 15:12:55 2022', 'message_text': 'saddsadsd'}
+2022-05-05 15:12:55,422 INFO client.py message send to userTest1 
+2022-05-05 15:12:55,424 DEBUG decorators.py <function message_new at 0x7f7ea9051550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 41498), raddr=('127.0.0.1', 7777)>, 'Test0'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 15:13:25,090 DEBUG decorators.py <function last_message at 0x7f79549650d0> was running with ('Test1',), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 15:13:25,091 INFO client.py Connection finished by users command
+2022-05-05 15:13:25,166 ERROR client.py incorrect server message {'response': 400, 'error': 'Bad Request'}
+2022-05-05 15:13:29,973 DEBUG decorators.py <function last_message at 0x7f7ea9bb60d0> was running with ('Test0',), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 15:13:29,973 INFO client.py Connection finished by users command
+2022-05-05 16:03:10,937 DEBUG decorators.py <function argument_parser at 0x7fe6377bc940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:03:10,937 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 16:03:10,940 DEBUG decorators.py <function argument_parser at 0x7ff3790a2940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:03:10,940 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 16:03:10,940 DEBUG client.py presence for Test1
+2022-05-05 16:03:10,941 DEBUG client.py presence for Test0
+2022-05-05 16:03:11,043 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:03:11,047 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:07:03,600 DEBUG decorators.py <function argument_parser at 0x7f4f7f862940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:07:03,601 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 16:07:03,601 DEBUG decorators.py <function argument_parser at 0x7fa1996cc940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:07:03,602 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 16:07:03,604 DEBUG client.py presence for Test1
+2022-05-05 16:07:03,605 DEBUG client.py presence for Test0
+2022-05-05 16:07:03,707 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:07:03,719 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:12:22,455 DEBUG decorators.py <function argument_parser at 0x7f1852b45940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:12:22,455 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 16:12:22,456 DEBUG client.py presence for Guest
+2022-05-05 16:12:22,557 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 16:12:22,557 DEBUG decorators.py <function process_ans at 0x7f1852b45820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:12:22,557 INFO client.py Connected with server 200 : OK
+2022-05-05 16:12:22,558 INFO client.py Processes started
+2022-05-05 16:12:22,891 DEBUG decorators.py <function argument_parser at 0x7f8b89b4d940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:12:22,895 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 16:12:22,896 DEBUG client.py presence for Guest
+2022-05-05 16:12:22,997 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 16:12:22,997 DEBUG decorators.py <function process_ans at 0x7f8b89b4d820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:12:22,997 INFO client.py Connected with server 200 : OK
+2022-05-05 16:12:22,998 INFO client.py Processes started
+2022-05-05 16:17:19,213 DEBUG decorators.py <function argument_parser at 0x7ff295225940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:19,222 INFO client.py server start with 7777, 127.0.0.1, Test4
+2022-05-05 16:17:19,223 DEBUG client.py presence for Test4
+2022-05-05 16:17:19,334 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,082 DEBUG decorators.py <function argument_parser at 0x7f90487dd940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,138 INFO client.py server start with 7777, 127.0.0.1, Test13
+2022-05-05 16:17:23,142 DEBUG client.py presence for Test13
+2022-05-05 16:17:23,240 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,257 DEBUG decorators.py <function argument_parser at 0x7fd22c749940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,257 INFO client.py server start with 7777, 127.0.0.1, Test6
+2022-05-05 16:17:23,305 DEBUG decorators.py <function argument_parser at 0x7fe1c888b940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,305 INFO client.py server start with 7777, 127.0.0.1, Test9
+2022-05-05 16:17:23,324 DEBUG client.py presence for Test6
+2022-05-05 16:17:23,335 DEBUG client.py presence for Test9
+2022-05-05 16:17:23,346 DEBUG decorators.py <function argument_parser at 0x7fe69a5b3940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,346 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 16:17:23,347 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,351 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,405 DEBUG client.py presence for Test1
+2022-05-05 16:17:23,411 DEBUG decorators.py <function argument_parser at 0x7f6cef258940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,411 INFO client.py server start with 7777, 127.0.0.1, Test14
+2022-05-05 16:17:23,412 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,426 DEBUG client.py presence for Test14
+2022-05-05 16:17:23,514 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,601 DEBUG decorators.py <function argument_parser at 0x7fedadba7940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,601 INFO client.py server start with 7777, 127.0.0.1, Test5
+2022-05-05 16:17:23,629 DEBUG decorators.py <function argument_parser at 0x7f735b613940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,629 INFO client.py server start with 7777, 127.0.0.1, Test12
+2022-05-05 16:17:23,650 DEBUG client.py presence for Test5
+2022-05-05 16:17:23,666 DEBUG client.py presence for Test12
+2022-05-05 16:17:23,731 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,734 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,780 DEBUG decorators.py <function argument_parser at 0x7f7b62dfc940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,780 INFO client.py server start with 7777, 127.0.0.1, Test7
+2022-05-05 16:17:23,783 DEBUG decorators.py <function argument_parser at 0x7f77ac5f6940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,784 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 16:17:23,784 DEBUG decorators.py <function argument_parser at 0x7f848433e940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,784 INFO client.py server start with 7777, 127.0.0.1, Test8
+2022-05-05 16:17:23,800 DEBUG client.py presence for Test8
+2022-05-05 16:17:23,807 DEBUG client.py presence for Test7
+2022-05-05 16:17:23,811 DEBUG client.py presence for Test0
+2022-05-05 16:17:23,816 DEBUG decorators.py <function argument_parser at 0x7f82e4f59940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,816 INFO client.py server start with 7777, 127.0.0.1, Test16
+2022-05-05 16:17:23,818 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,823 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,826 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,855 DEBUG client.py presence for Test16
+2022-05-05 16:17:23,920 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:23,966 DEBUG decorators.py <function argument_parser at 0x7fd4ca329940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,966 INFO client.py server start with 7777, 127.0.0.1, Test11
+2022-05-05 16:17:23,968 DEBUG decorators.py <function argument_parser at 0x7f99690cc940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,968 INFO client.py server start with 7777, 127.0.0.1, Test15
+2022-05-05 16:17:23,978 DEBUG decorators.py <function argument_parser at 0x7f26b9257940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:23,978 INFO client.py server start with 7777, 127.0.0.1, Test2
+2022-05-05 16:17:23,991 DEBUG client.py presence for Test15
+2022-05-05 16:17:23,991 DEBUG client.py presence for Test2
+2022-05-05 16:17:24,027 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:24,031 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:24,038 DEBUG client.py presence for Test11
+2022-05-05 16:17:24,092 DEBUG decorators.py <function argument_parser at 0x7fda4b50a940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:24,114 INFO client.py server start with 7777, 127.0.0.1, Test10
+2022-05-05 16:17:24,115 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:24,128 DEBUG client.py presence for Test10
+2022-05-05 16:17:24,130 DEBUG decorators.py <function argument_parser at 0x7f4a0b8e5940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 16:17:24,166 INFO client.py server start with 7777, 127.0.0.1, Test3
+2022-05-05 16:17:24,167 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 16:17:24,173 DEBUG client.py presence for Test3
+2022-05-05 16:17:24,268 DEBUG client.py debbuging info from server {'response': 400, 'error': 'Bad Request'}
+2022-05-05 17:04:15,927 DEBUG decorators.py <function argument_parser at 0x7fcba44ea940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:04:15,929 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 17:04:15,927 DEBUG decorators.py <function argument_parser at 0x7fec32340940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:04:15,929 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 17:04:15,930 DEBUG client.py presence for Test0
+2022-05-05 17:04:15,930 DEBUG client.py presence for Test1
+2022-05-05 17:04:16,131 ERROR client.py Cannot decode JSON string
+2022-05-05 17:04:51,030 ERROR client.py Cannot decode JSON string
+2022-05-05 17:22:21,080 DEBUG decorators.py <function argument_parser at 0x7f70e8faa940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:22:21,085 DEBUG decorators.py <function argument_parser at 0x7fe3f05fe940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:22:21,085 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 17:22:21,086 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 17:22:21,086 DEBUG client.py presence for Test0
+2022-05-05 17:22:21,086 DEBUG client.py presence for Test1
+2022-05-05 17:22:21,288 ERROR client.py Cannot decode JSON string
+2022-05-05 17:26:49,496 DEBUG decorators.py <function argument_parser at 0x7f3514d3f9d0> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:26:55,307 INFO client.py server start with 7777, 127.0.0.1, Anton
+2022-05-05 17:26:55,307 DEBUG client.py presence for Anton
+2022-05-05 17:29:50,068 ERROR client.py Cannot decode JSON string
+2022-05-05 17:34:06,087 DEBUG decorators.py <function argument_parser at 0x7fa4183989d0> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:34:26,458 DEBUG decorators.py <function argument_parser at 0x7f362edc1940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:34:26,458 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 17:34:26,487 DEBUG decorators.py <function argument_parser at 0x7fc5e33c2940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:34:26,487 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 17:35:47,804 DEBUG decorators.py <function argument_parser at 0x7f635db72940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:35:47,804 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 17:35:47,808 DEBUG decorators.py <function argument_parser at 0x7f4bcaad8940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:35:47,808 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 17:35:47,809 DEBUG client.py presence for Test1
+2022-05-05 17:35:47,814 DEBUG client.py presence for Test0
+2022-05-05 17:35:48,010 ERROR client.py Cannot decode JSON string
+2022-05-05 17:41:46,725 DEBUG decorators.py <function argument_parser at 0x7f5747181940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:41:46,728 DEBUG decorators.py <function argument_parser at 0x7f3540945940> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:41:46,728 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-05 17:41:46,728 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-05 17:41:46,730 DEBUG client.py presence for Test1
+2022-05-05 17:41:46,732 DEBUG client.py presence for Test0
+2022-05-05 17:41:47,231 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 17:41:47,231 DEBUG decorators.py <function process_ans at 0x7f3540945820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:41:47,231 INFO client.py Connected with server 200 : OK
+2022-05-05 17:41:47,232 INFO client.py Processes started
+2022-05-05 17:41:47,239 DEBUG client.py debbuging info from server {'response': 200}
+2022-05-05 17:41:47,239 DEBUG decorators.py <function process_ans at 0x7f5747181820> was running with ({'response': 200},), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-05 17:41:47,239 INFO client.py Connected with server 200 : OK
+2022-05-05 17:41:47,240 INFO client.py Processes started
+2022-05-05 17:42:00,088 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test0', 'to': 'Test0', 'time': 'Thu May  5 17:42:00 2022', 'message_text': 'sdvxvcxvc'}
+2022-05-05 17:42:00,088 INFO client.py message send to user Test0 
+2022-05-05 17:42:00,090 DEBUG decorators.py <function message_new at 0x7f3540945550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39224), raddr=('127.0.0.1', 7777)>, 'Test0'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 17:42:00,258 INFO client.py Get message from user Test0  :  sdvxvcxvc
+2022-05-05 17:42:25,489 DEBUG client.py New message dictory formed: {'action': 'message', 'sender': 'Test0', 'to': 'Test1', 'time': 'Thu May  5 17:42:25 2022', 'message_text': 'qwerty88'}
+2022-05-05 17:42:25,490 INFO client.py message send to user Test1 
+2022-05-05 17:42:25,491 DEBUG decorators.py <function message_new at 0x7f3540945550> was running with (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 39224), raddr=('127.0.0.1', 7777)>, 'Test0'), {} parametres.Running from module __main__ Running from function  self._bootstrap_inner() Running from function user_interface
+2022-05-05 17:42:25,796 INFO client.py Get message from user Test0  :  qwerty88
+2022-05-25 16:49:29,573 DEBUG decorators.py <function argument_parser at 0x7f7b8b7a7b80> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-25 16:49:29,577 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-25 16:49:29,586 DEBUG decorators.py <function argument_parser at 0x7fd1577ccb80> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-25 16:49:29,587 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-25 16:50:57,397 DEBUG decorators.py <function argument_parser at 0x7fb9a859eb80> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-25 16:50:57,400 DEBUG decorators.py <function argument_parser at 0x7f3c7c4d7b80> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-25 16:50:57,400 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-05-25 16:50:57,405 INFO client.py server start with 7777, 127.0.0.1, Test2
+2022-05-25 16:50:57,410 DEBUG decorators.py <function argument_parser at 0x7ff79728bb80> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-25 16:50:57,424 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-28 08:01:06,550 DEBUG decorators.py <function argument_parser at 0x7ff69564bb80> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-28 08:01:06,553 DEBUG decorators.py <function argument_parser at 0x7f9a6bf9eb80> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-05-28 08:01:06,555 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-05-28 08:01:06,558 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-01 13:45:39,945 DEBUG decorators.py <function argument_parser at 0x7fbf0d633b80> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-01 13:45:39,950 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-01 13:45:39,946 DEBUG decorators.py <function argument_parser at 0x7f03445d4b80> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-01 13:45:39,954 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 10:20:24,714 DEBUG decorators.py <function argument_parser at 0x7f126c7fcdc0> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 10:20:24,716 DEBUG decorators.py <function argument_parser at 0x7fede4cdcdc0> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 10:20:24,716 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 10:20:24,720 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 13:38:28,136 DEBUG decorators.py <function argument_parser at 0x7f48aacdbe50> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 13:38:28,140 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 13:38:28,194 DEBUG decorators.py <function argument_parser at 0x7fe02f56de50> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 13:38:28,200 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 13:39:18,956 DEBUG decorators.py <function argument_parser at 0x7fd944e9ae50> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 13:39:18,961 DEBUG decorators.py <function argument_parser at 0x7f783402de50> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 13:39:18,961 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 13:39:18,968 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 13:44:28,083 DEBUG decorators.py <function argument_parser at 0x7fc9d5da4e50> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 13:44:28,119 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 13:44:28,077 DEBUG decorators.py <function argument_parser at 0x7f638dddde50> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 13:44:28,122 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 13:45:58,549 DEBUG decorators.py <function argument_parser at 0x7fedeee40e50> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 13:45:58,560 INFO client.py server start with 7777, 127.0.0.1, Test{i}
+2022-06-03 13:45:58,572 DEBUG decorators.py <function argument_parser at 0x7fa627624e50> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 13:45:58,574 INFO client.py server start with 7777, 127.0.0.1, Test{i}
+2022-06-03 14:46:09,856 DEBUG decorators.py <function argument_parser at 0x7f5b39305280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 14:46:09,857 DEBUG decorators.py <function argument_parser at 0x7f126d79a1f0> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 14:46:09,862 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 14:46:09,865 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 16:27:30,494 DEBUG decorators.py <function argument_parser at 0x7efd197a8280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:27:30,495 INFO client.py server start with 7777, 127.0.0.1, Test2
+2022-06-03 16:27:30,496 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:27:30,513 DEBUG decorators.py <function argument_parser at 0x7f4fb511a280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:27:30,522 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 16:27:30,522 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:27:30,532 DEBUG decorators.py <function argument_parser at 0x7f76fc120280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:27:30,554 INFO client.py server start with 7777, 127.0.0.1, Test3
+2022-06-03 16:27:30,554 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:27:30,588 DEBUG decorators.py <function argument_parser at 0x7f70b3d1e280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:27:30,599 DEBUG decorators.py <function argument_parser at 0x7f07c023a280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:27:30,599 INFO client.py server start with 7777, 127.0.0.1, Test4
+2022-06-03 16:27:30,599 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:27:30,609 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 16:27:30,609 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:37:08,092 DEBUG decorators.py <function argument_parser at 0x7fd54f9a1280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:37:08,093 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 16:37:08,094 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:37:08,124 DEBUG decorators.py <function argument_parser at 0x7ff67bc6b280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:37:08,133 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 16:37:08,133 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:37:35,978 DEBUG decorators.py <function argument_parser at 0x7ffa75f50280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:37:35,978 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 16:37:35,978 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:37:35,988 DEBUG decorators.py <function argument_parser at 0x7fdb3a3ff280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:37:35,993 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 16:37:35,993 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:39:24,858 DEBUG decorators.py <function argument_parser at 0x7f59a158e280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:39:24,858 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 16:39:24,859 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:39:24,862 DEBUG decorators.py <function argument_parser at 0x7f1705aa4280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:39:24,862 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 16:39:24,862 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:43:55,592 DEBUG decorators.py <function argument_parser at 0x7f7ad1fb3280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:43:55,601 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 16:43:55,602 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:43:55,630 DEBUG decorators.py <function argument_parser at 0x7f5c3155a280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:43:55,631 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 16:43:55,631 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:50:29,974 DEBUG decorators.py <function argument_parser at 0x7efc02b03280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:50:29,975 DEBUG decorators.py <function argument_parser at 0x7f482d02a280> was running with (), {} parametres.Running from module __main__ Running from function  main() Running from function main
+2022-06-03 16:50:29,977 INFO client.py server start with 7777, 127.0.0.1, Test0
+2022-06-03 16:50:29,978 INFO client.py server start with 7777, 127.0.0.1, Test1
+2022-06-03 16:50:29,978 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-03 16:50:29,978 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777,конечный компьютер отверг запрос на подключение.
+2022-06-04 09:30:46,177 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: gggg
+2022-06-04 09:30:46,301 INFO cargo.py Connection try №1
+2022-06-04 09:30:49,329 INFO cargo.py Connection try №2
+2022-06-04 09:30:52,356 INFO cargo.py Connection try №3
+2022-06-04 09:30:55,367 INFO cargo.py Connection try №4
+2022-06-04 09:30:58,396 INFO cargo.py Connection try №5
+2022-06-04 09:31:01,423 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:33:03,365 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-04 09:33:03,428 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-04 09:33:03,447 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test3
+2022-06-04 09:33:03,500 INFO cargo.py Connection try №1
+2022-06-04 09:33:03,510 INFO cargo.py Connection try №1
+2022-06-04 09:33:03,520 INFO cargo.py Connection try №1
+2022-06-04 09:33:06,535 INFO cargo.py Connection try №2
+2022-06-04 09:33:06,551 INFO cargo.py Connection try №2
+2022-06-04 09:33:09,548 INFO cargo.py Connection try №3
+2022-06-04 09:33:09,564 INFO cargo.py Connection try №3
+2022-06-04 09:33:12,558 INFO cargo.py Connection try №4
+2022-06-04 09:33:12,589 INFO cargo.py Connection try №4
+2022-06-04 09:33:15,581 INFO cargo.py Connection try №5
+2022-06-04 09:33:15,601 INFO cargo.py Connection try №5
+2022-06-04 09:33:18,620 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:33:18,635 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:34:00,145 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-04 09:34:00,155 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-04 09:34:00,212 INFO cargo.py Connection try №1
+2022-06-04 09:34:00,216 INFO cargo.py Connection try №1
+2022-06-04 09:34:03,232 INFO cargo.py Connection try №2
+2022-06-04 09:34:06,245 INFO cargo.py Connection try №3
+2022-06-04 09:34:09,259 INFO cargo.py Connection try №4
+2022-06-04 09:34:12,272 INFO cargo.py Connection try №5
+2022-06-04 09:34:15,284 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:35:07,820 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-04 09:35:07,853 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-04 09:35:07,869 INFO cargo.py Connection try №1
+2022-06-04 09:35:07,916 INFO cargo.py Connection try №1
+2022-06-04 09:35:10,898 INFO cargo.py Connection try №2
+2022-06-04 09:35:10,952 INFO cargo.py Connection try №2
+2022-06-04 09:35:13,930 INFO cargo.py Connection try №3
+2022-06-04 09:35:13,987 INFO cargo.py Connection try №3
+2022-06-04 09:35:16,949 INFO cargo.py Connection try №4
+2022-06-04 09:35:17,003 INFO cargo.py Connection try №4
+2022-06-04 09:35:19,978 INFO cargo.py Connection try №5
+2022-06-04 09:35:20,016 INFO cargo.py Connection try №5
+2022-06-04 09:35:23,007 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:35:23,028 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:36:20,519 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-04 09:36:20,519 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-04 09:36:20,566 INFO cargo.py Connection try №1
+2022-06-04 09:36:20,566 INFO cargo.py Connection try №1
+2022-06-04 09:36:23,615 INFO cargo.py Connection try №2
+2022-06-04 09:36:26,629 INFO cargo.py Connection try №3
+2022-06-04 09:36:29,637 INFO cargo.py Connection try №4
+2022-06-04 09:36:29,653 INFO cargo.py Connection try №4
+2022-06-04 09:36:32,689 INFO cargo.py Connection try №5
+2022-06-04 09:36:35,718 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:36:35,735 CRITICAL cargo.py Cannot connect with server
+2022-06-04 09:36:40,933 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: guest
+2022-06-04 09:36:41,066 INFO cargo.py Connection try №1
+2022-06-04 09:36:44,101 INFO cargo.py Connection try №2
+2022-06-04 09:36:47,134 INFO cargo.py Connection try №3
+2022-06-04 09:36:50,164 INFO cargo.py Connection try №4
+2022-06-04 09:36:53,197 INFO cargo.py Connection try №5
+2022-06-04 09:36:56,220 CRITICAL cargo.py Cannot connect with server
+2022-06-06 11:19:10,890 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 11:19:10,890 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 11:19:10,970 INFO cargo.py Попытка подключения №1
+2022-06-06 11:19:10,970 INFO cargo.py Попытка подключения №1
+2022-06-06 11:19:14,018 INFO cargo.py Попытка подключения №2
+2022-06-06 11:19:14,034 INFO cargo.py Попытка подключения №2
+2022-06-06 11:19:17,055 INFO cargo.py Попытка подключения №3
+2022-06-06 11:19:17,071 INFO cargo.py Попытка подключения №3
+2022-06-06 11:19:20,112 INFO cargo.py Попытка подключения №4
+2022-06-06 11:19:23,148 INFO cargo.py Попытка подключения №5
+2022-06-06 11:19:26,184 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 11:20:34,503 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: guest
+2022-06-06 11:20:34,600 INFO cargo.py Попытка подключения №1
+2022-06-06 11:20:37,650 INFO cargo.py Попытка подключения №2
+2022-06-06 11:20:40,672 INFO cargo.py Попытка подключения №3
+2022-06-06 11:20:43,715 INFO cargo.py Попытка подключения №4
+2022-06-06 11:20:46,744 INFO cargo.py Попытка подключения №5
+2022-06-06 11:20:49,780 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 11:21:57,639 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: Guest
+2022-06-06 11:21:57,719 INFO cargo.py Попытка подключения №1
+2022-06-06 11:22:00,763 INFO cargo.py Попытка подключения №2
+2022-06-06 11:22:03,803 INFO cargo.py Попытка подключения №3
+2022-06-06 11:22:06,849 INFO cargo.py Попытка подключения №4
+2022-06-06 11:22:09,887 INFO cargo.py Попытка подключения №5
+2022-06-06 11:22:12,926 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 11:42:14,026 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: guest
+2022-06-06 11:42:14,127 INFO cargo.py Попытка подключения №1
+2022-06-06 11:42:17,146 INFO cargo.py Попытка подключения №2
+2022-06-06 11:42:20,178 INFO cargo.py Попытка подключения №3
+2022-06-06 11:42:23,220 INFO cargo.py Попытка подключения №4
+2022-06-06 11:42:26,257 INFO cargo.py Попытка подключения №5
+2022-06-06 11:42:29,310 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 11:50:53,973 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: guest
+2022-06-06 11:50:54,036 INFO cargo.py Попытка подключения №1
+2022-06-06 11:50:54,037 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 11:50:54,037 DEBUG cargo.py Сформировано presence сообщение для пользователя guest
+2022-06-06 11:50:54,085 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 11:50:54,085 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 11:50:54,085 DEBUG cargo.py Запрос списка известных пользователей guest
+2022-06-06 11:50:54,613 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 11:50:54,613 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654505454.613673, 'user': 'guest'}
+2022-06-06 11:50:55,110 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': []}
+2022-06-06 11:50:55,110 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 11:51:34,016 CRITICAL cargo.py Потеряно соединение с сервером.
+2022-06-06 11:51:47,888 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 11:51:47,906 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test3
+2022-06-06 11:51:47,916 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 11:51:47,951 INFO cargo.py Попытка подключения №1
+2022-06-06 11:51:47,951 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 11:51:47,951 DEBUG cargo.py Сформировано presence сообщение для пользователя test1
+2022-06-06 11:51:47,975 INFO cargo.py Попытка подключения №1
+2022-06-06 11:51:47,975 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 11:51:47,975 DEBUG cargo.py Сформировано presence сообщение для пользователя test2
+2022-06-06 11:51:48,031 INFO cargo.py Попытка подключения №1
+2022-06-06 11:51:48,031 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 11:51:48,031 DEBUG cargo.py Сформировано presence сообщение для пользователя test3
+2022-06-06 11:51:48,711 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 11:51:48,711 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 11:51:48,711 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 11:51:48,727 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 11:51:48,727 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654505508.727325, 'user': 'test1'}
+2022-06-06 11:51:48,743 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 11:51:48,743 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 11:51:48,743 DEBUG cargo.py Запрос списка известных пользователей test2
+2022-06-06 11:51:48,751 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': []}
+2022-06-06 11:51:48,751 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 11:51:48,767 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 11:51:48,767 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654505508.7673376, 'user': 'test2'}
+2022-06-06 11:51:48,783 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 11:51:48,783 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 11:51:48,783 DEBUG cargo.py Запрос списка известных пользователей test3
+2022-06-06 11:51:49,296 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': []}
+2022-06-06 11:51:49,296 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 11:51:49,336 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 11:51:49,336 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654505509.3362257, 'user': 'test3'}
+2022-06-06 11:51:49,800 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': []}
+2022-06-06 11:51:49,800 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 11:52:21,343 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 11:52:22,797 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 11:52:28,083 DEBUG cargo.py Создание контакта test2
+2022-06-06 11:52:28,955 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 11:52:28,982 INFO main_window.py Successfully added contact <PyQt5.QtGui.QStandardItem object at 0x0000029F8D3D7E50>
+2022-06-06 11:52:44,080 DEBUG cargo.py Сформирован словарь сообщения: {'action': 'message', 'sender': 'test1', 'to': 'test2', 'time': 1654505564.0804405, 'message_text': 'вчммчсмчм'}
+2022-06-06 11:52:44,266 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 11:52:44,266 DEBUG cargo.py Принято сообщение с сервера: {'action': 'message', 'sender': 'test1', 'to': 'test2', 'time': 1654505564.0804405, 'message_text': 'вчммчсмчм'}
+2022-06-06 11:52:44,266 INFO cargo.py Отправлено сообщение для пользователя test2
+2022-06-06 11:52:44,266 DEBUG cargo.py Разбор сообщения от сервера: {'action': 'message', 'sender': 'test1', 'to': 'test2', 'time': 1654505564.0804405, 'message_text': 'вчммчсмчм'}
+2022-06-06 11:52:44,266 DEBUG cargo.py Получено сообщение от пользователя test1:вчммчсмчм
+2022-06-06 11:52:44,300 DEBUG main_window.py message send for test2: вчммчсмчм
+2022-06-06 11:52:47,369 DEBUG cargo.py Создание контакта test1
+2022-06-06 11:52:47,871 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 11:52:47,890 INFO main_window.py Successfully added contact <PyQt5.QtGui.QStandardItem object at 0x000001BA1C5A85E0>
+2022-06-06 11:53:11,713 DEBUG cargo.py Транспорт завершает работу.
+2022-06-06 11:53:12,535 DEBUG cargo.py Потеряно соединение с сервером.
+2022-06-06 11:53:13,021 DEBUG cargo.py Транспорт завершает работу.
+2022-06-06 11:53:13,401 DEBUG cargo.py Потеряно соединение с сервером.
+2022-06-06 11:53:14,460 DEBUG cargo.py Транспорт завершает работу.
+2022-06-06 11:53:14,836 DEBUG cargo.py Потеряно соединение с сервером.
+2022-06-06 13:06:29,708 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 13:06:29,754 INFO cargo.py Попытка подключения №1
+2022-06-06 13:06:29,754 INFO cargo.py Попытка подключения №1
+2022-06-06 13:06:32,802 INFO cargo.py Попытка подключения №2
+2022-06-06 13:06:35,845 INFO cargo.py Попытка подключения №3
+2022-06-06 13:06:35,860 INFO cargo.py Попытка подключения №3
+2022-06-06 13:06:38,880 INFO cargo.py Попытка подключения №4
+2022-06-06 13:06:38,895 INFO cargo.py Попытка подключения №4
+2022-06-06 13:06:41,923 INFO cargo.py Попытка подключения №5
+2022-06-06 13:06:41,923 INFO cargo.py Попытка подключения №5
+2022-06-06 13:06:41,939 INFO cargo.py Попытка подключения №5
+2022-06-06 13:06:44,970 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 13:06:44,986 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 13:09:07,910 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 13:09:07,921 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 13:09:07,955 INFO cargo.py Попытка подключения №1
+2022-06-06 13:09:07,962 INFO cargo.py Попытка подключения №1
+2022-06-06 13:09:10,985 INFO cargo.py Попытка подключения №2
+2022-06-06 13:09:14,012 INFO cargo.py Попытка подключения №3
+2022-06-06 13:09:14,028 INFO cargo.py Попытка подключения №3
+2022-06-06 13:09:17,050 INFO cargo.py Попытка подключения №4
+2022-06-06 13:09:17,065 INFO cargo.py Попытка подключения №4
+2022-06-06 13:09:20,082 INFO cargo.py Попытка подключения №5
+2022-06-06 13:09:20,097 INFO cargo.py Попытка подключения №5
+2022-06-06 13:09:23,107 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 13:09:23,123 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 13:10:36,324 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: guest
+2022-06-06 13:10:36,368 INFO cargo.py Попытка подключения №1
+2022-06-06 13:10:39,412 INFO cargo.py Попытка подключения №2
+2022-06-06 13:10:42,456 INFO cargo.py Попытка подключения №3
+2022-06-06 13:10:45,497 INFO cargo.py Попытка подключения №4
+2022-06-06 13:10:48,543 INFO cargo.py Попытка подключения №5
+2022-06-06 13:10:51,579 CRITICAL cargo.py Не удалось установить соединение с сервером
+2022-06-06 13:11:46,126 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 13:11:46,128 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 13:11:46,168 INFO cargo.py Попытка подключения №1
+2022-06-06 13:11:46,168 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 13:11:46,168 DEBUG cargo.py Сформировано presence сообщение для пользователя test1
+2022-06-06 13:11:46,170 INFO cargo.py Попытка подключения №1
+2022-06-06 13:11:46,170 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 13:11:46,171 DEBUG cargo.py Сформировано presence сообщение для пользователя test2
+2022-06-06 13:11:46,693 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 13:11:46,693 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 13:11:46,693 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 13:11:46,708 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 13:11:46,708 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654510306.7083068, 'user': 'test1'}
+2022-06-06 13:11:46,709 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 13:11:46,709 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 13:11:46,709 DEBUG cargo.py Запрос списка известных пользователей test2
+2022-06-06 13:11:47,226 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': ['test2']}
+2022-06-06 13:11:47,249 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 13:11:47,252 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 13:11:47,252 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654510307.2520306, 'user': 'test2'}
+2022-06-06 13:11:47,743 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': ['test1']}
+2022-06-06 13:11:47,776 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 13:12:28,441 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 13:12:28,452 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 13:12:28,489 INFO cargo.py Попытка подключения №1
+2022-06-06 13:12:28,490 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 13:12:28,490 DEBUG cargo.py Сформировано presence сообщение для пользователя test1
+2022-06-06 13:12:28,500 INFO cargo.py Попытка подключения №1
+2022-06-06 13:12:28,500 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 13:12:28,501 DEBUG cargo.py Сформировано presence сообщение для пользователя test2
+2022-06-06 13:12:28,927 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 13:12:28,927 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 13:12:28,927 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 13:12:28,942 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 13:12:28,942 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654510348.942295, 'user': 'test1'}
+2022-06-06 13:12:28,942 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 13:12:28,943 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 13:12:28,943 DEBUG cargo.py Запрос списка известных пользователей test2
+2022-06-06 13:12:29,459 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': ['test2']}
+2022-06-06 13:12:29,475 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 13:12:29,476 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654510349.475354, 'user': 'test2'}
+2022-06-06 13:12:29,480 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 13:12:29,970 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': ['test1']}
+2022-06-06 13:12:30,005 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 13:12:32,357 DEBUG cargo.py Транспорт завершает работу.
+2022-06-06 13:12:32,554 DEBUG cargo.py Потеряно соединение с сервером.
+2022-06-06 13:12:32,974 DEBUG cargo.py Транспорт завершает работу.
+2022-06-06 13:12:33,563 DEBUG cargo.py Потеряно соединение с сервером.
+2022-06-06 13:13:06,467 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 13:13:06,471 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 13:13:06,513 INFO cargo.py Попытка подключения №1
+2022-06-06 13:13:06,514 INFO cargo.py Попытка подключения №1
+2022-06-06 13:13:09,556 INFO cargo.py Попытка подключения №2
+2022-06-06 13:13:09,556 INFO cargo.py Попытка подключения №2
+2022-06-06 13:13:12,603 INFO cargo.py Попытка подключения №3
+2022-06-06 13:13:12,619 INFO cargo.py Попытка подключения №3
+2022-06-06 13:13:32,025 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 13:13:32,032 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 13:13:32,074 INFO cargo.py Попытка подключения №1
+2022-06-06 13:13:32,074 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 13:13:32,075 DEBUG cargo.py Сформировано presence сообщение для пользователя test1
+2022-06-06 13:13:32,080 INFO cargo.py Попытка подключения №1
+2022-06-06 13:13:32,081 DEBUG cargo.py Установлено соединение с сервером
+2022-06-06 13:13:32,081 DEBUG cargo.py Сформировано presence сообщение для пользователя test2
+2022-06-06 13:13:32,129 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 13:13:32,130 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 13:13:32,130 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 13:13:32,718 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 13:13:32,718 DEBUG cargo.py Разбор сообщения от сервера: {'response': 200}
+2022-06-06 13:13:32,718 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654510412.7185087, 'user': 'test1'}
+2022-06-06 13:13:32,718 INFO cargo.py Соединение с сервером успешно установлено.
+2022-06-06 13:13:32,718 DEBUG cargo.py Запрос списка известных пользователей test2
+2022-06-06 13:13:33,241 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': ['test2']}
+2022-06-06 13:13:33,259 DEBUG cargo.py Запрос контакт листа для пользователся Thread-1
+2022-06-06 13:13:33,259 DEBUG cargo.py Сформирован запрос {'action': 'get_contacts', 'time': 1654510413.2590833, 'user': 'test2'}
+2022-06-06 13:13:33,262 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 13:13:33,756 DEBUG cargo.py Получен ответ {'response': 202, 'data_list': ['test1']}
+2022-06-06 13:13:33,782 DEBUG cargo.py Запущен процесс - приёмник собщений с сервера.
+2022-06-06 13:13:35,535 DEBUG cargo.py Транспорт завершает работу.
+2022-06-06 13:13:36,318 DEBUG cargo.py Транспорт завершает работу.
+2022-06-06 13:13:36,334 DEBUG cargo.py Потеряно соединение с сервером.
+2022-06-06 13:13:52,090 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 13:13:52,103 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 13:13:52,170 INFO cargo.py Попытка подключения №1
+2022-06-06 13:13:52,223 INFO cargo.py Попытка подключения №1
+2022-06-06 13:13:55,213 INFO cargo.py Попытка подключения №2
+2022-06-06 13:13:55,275 INFO cargo.py Попытка подключения №2
+2022-06-06 13:13:58,238 INFO cargo.py Попытка подключения №3
+2022-06-06 13:13:58,317 INFO cargo.py Попытка подключения №3
+2022-06-06 13:14:01,272 INFO cargo.py Попытка подключения №4
+2022-06-06 14:38:40,328 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 14:38:40,330 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 14:38:40,370 INFO cargo.py Connection attempt No №1
+2022-06-06 14:38:40,370 INFO cargo.py Connection attempt No №1
+2022-06-06 14:38:40,371 DEBUG cargo.py Server connection established
+2022-06-06 14:38:40,371 DEBUG cargo.py Server connection established
+2022-06-06 14:38:40,371 DEBUG cargo.py Message presence for user test2 formed
+2022-06-06 14:38:40,868 DEBUG cargo.py Parsing a message from the server: {'response': 200}
+2022-06-06 14:38:40,868 INFO cargo.py The connection to the server was successfully established.
+2022-06-06 14:38:40,868 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 14:38:40,884 DEBUG cargo.py Parsing a message from the server: {'response': 200}
+2022-06-06 14:38:40,884 DEBUG cargo.py Request formed {'action': 'get_contacts', 'time': 1654515520.8844798, 'user': 'test1'}
+2022-06-06 14:38:40,884 INFO cargo.py The connection to the server was successfully established.
+2022-06-06 14:38:40,884 DEBUG cargo.py Запрос списка известных пользователей test2
+2022-06-06 14:38:41,400 DEBUG cargo.py Get answer {'response': 202, 'data_list': ['test2']}
+2022-06-06 14:38:41,413 DEBUG cargo.py Request a contact list for a user Thread-1
+2022-06-06 14:38:41,413 DEBUG cargo.py Request formed {'action': 'get_contacts', 'time': 1654515521.4130123, 'user': 'test2'}
+2022-06-06 14:38:41,416 DEBUG cargo.py The process is running - the receiver of messages from the server.
+2022-06-06 14:38:46,420 ERROR cargo.py Connection timeout when updating user lists
+2022-06-06 14:38:46,420 DEBUG cargo.py The process is running - the receiver of messages from the server.
+2022-06-06 14:38:49,042 DEBUG cargo.py Transport shuts down
+2022-06-06 14:38:49,076 DEBUG cargo.py Message received from the server: {'response': 202, 'data_list': ['test1']}
+2022-06-06 14:38:49,077 DEBUG cargo.py Parsing a message from the server: {'response': 202, 'data_list': ['test1']}
+2022-06-06 14:38:49,077 DEBUG cargo.py Unknown verification code received 202
+2022-06-06 14:38:50,091 CRITICAL cargo.py Connection lost
+2022-06-06 14:38:51,609 DEBUG cargo.py Transport shuts down
+2022-06-06 14:39:43,095 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 14:39:43,099 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 14:39:43,140 INFO cargo.py Connection attempt No №1
+2022-06-06 14:39:43,141 DEBUG cargo.py Server connection established
+2022-06-06 14:39:43,141 DEBUG cargo.py Message presence for user test1 formed
+2022-06-06 14:39:43,144 INFO cargo.py Connection attempt No №1
+2022-06-06 14:39:43,145 DEBUG cargo.py Server connection established
+2022-06-06 14:39:43,145 DEBUG cargo.py Message presence for user test2 formed
+2022-06-06 14:39:44,662 CRITICAL cargo.py Connection lost
+2022-06-06 14:39:44,663 CRITICAL cargo.py Connection lost
+2022-06-06 14:39:54,186 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 14:39:54,224 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 14:39:54,265 INFO cargo.py Connection attempt No №1
+2022-06-06 14:39:54,266 DEBUG cargo.py Server connection established
+2022-06-06 14:39:54,266 DEBUG cargo.py Message presence for user test1 formed
+2022-06-06 14:39:54,280 INFO cargo.py Connection attempt No №1
+2022-06-06 14:39:54,281 DEBUG cargo.py Server connection established
+2022-06-06 14:39:54,281 DEBUG cargo.py Message presence for user test2 formed
+2022-06-06 14:39:54,734 DEBUG cargo.py Parsing a message from the server: {'response': 200}
+2022-06-06 14:39:54,734 INFO cargo.py The connection to the server was successfully established.
+2022-06-06 14:39:54,734 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 14:39:54,750 DEBUG cargo.py Request a contact list for a user Thread-1
+2022-06-06 14:39:54,750 DEBUG cargo.py Request formed {'action': 'get_contacts', 'time': 1654515594.7506495, 'user': 'test1'}
+2022-06-06 14:39:54,769 DEBUG cargo.py Parsing a message from the server: {'response': 200}
+2022-06-06 14:39:54,769 INFO cargo.py The connection to the server was successfully established.
+2022-06-06 14:39:54,769 DEBUG cargo.py Запрос списка известных пользователей test2
+2022-06-06 14:39:55,288 DEBUG cargo.py Get answer {'response': 202, 'data_list': ['test2']}
+2022-06-06 14:39:55,309 DEBUG cargo.py The process is running - the receiver of messages from the server.
+2022-06-06 14:39:55,312 DEBUG cargo.py Request a contact list for a user Thread-1
+2022-06-06 14:39:55,313 DEBUG cargo.py Request formed {'action': 'get_contacts', 'time': 1654515595.3133934, 'user': 'test2'}
+2022-06-06 14:40:00,324 ERROR cargo.py Connection timeout when updating user lists
+2022-06-06 14:40:00,325 DEBUG cargo.py The process is running - the receiver of messages from the server.
+2022-06-06 14:40:05,435 CRITICAL cargo.py Connection lost
+2022-06-06 14:40:05,921 CRITICAL cargo.py Connection lost
+2022-06-06 14:40:11,737 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 14:40:11,770 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 14:40:11,785 INFO cargo.py Connection attempt No №1
+2022-06-06 14:40:11,822 INFO cargo.py Connection attempt No №1
+2022-06-06 14:40:11,823 DEBUG cargo.py Server connection established
+2022-06-06 14:40:11,823 DEBUG cargo.py Message presence for user test2 formed
+2022-06-06 14:40:12,287 DEBUG cargo.py Server connection established
+2022-06-06 14:40:12,287 DEBUG cargo.py Message presence for user test1 formed
+2022-06-06 14:40:12,296 DEBUG cargo.py Parsing a message from the server: {'response': 200}
+2022-06-06 14:40:12,296 INFO cargo.py The connection to the server was successfully established.
+2022-06-06 14:40:12,296 DEBUG cargo.py Запрос списка известных пользователей test2
+2022-06-06 14:40:12,311 DEBUG cargo.py Request a contact list for a user Thread-1
+2022-06-06 14:40:12,311 DEBUG cargo.py Request formed {'action': 'get_contacts', 'time': 1654515612.311622, 'user': 'test2'}
+2022-06-06 14:40:12,312 DEBUG cargo.py Parsing a message from the server: {'response': 200}
+2022-06-06 14:40:12,312 INFO cargo.py The connection to the server was successfully established.
+2022-06-06 14:40:12,312 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 14:40:12,835 DEBUG cargo.py Get answer {'response': 202, 'data_list': ['test1']}
+2022-06-06 14:40:12,853 DEBUG cargo.py Request a contact list for a user Thread-1
+2022-06-06 14:40:12,853 DEBUG cargo.py Request formed {'action': 'get_contacts', 'time': 1654515612.8539817, 'user': 'test1'}
+2022-06-06 14:40:12,856 DEBUG cargo.py The process is running - the receiver of messages from the server.
+2022-06-06 14:40:17,856 ERROR cargo.py Connection timeout when updating user lists
+2022-06-06 14:40:17,857 DEBUG cargo.py The process is running - the receiver of messages from the server.
+2022-06-06 14:40:19,856 DEBUG cargo.py Transport shuts down
+2022-06-06 14:40:19,965 DEBUG cargo.py Connection lost
+2022-06-06 14:40:20,415 DEBUG cargo.py Message received from the server: {'response': 202, 'data_list': ['test2']}
+2022-06-06 14:40:20,415 DEBUG cargo.py Parsing a message from the server: {'response': 202, 'data_list': ['test2']}
+2022-06-06 14:40:20,415 DEBUG cargo.py Unknown verification code received 202
+2022-06-06 14:40:20,468 DEBUG cargo.py Transport shuts down
+2022-06-06 14:40:21,423 DEBUG cargo.py Connection lost
+2022-06-06 14:40:49,671 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 14:40:49,690 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 14:40:49,717 INFO cargo.py Connection attempt No №1
+2022-06-06 14:40:49,718 DEBUG cargo.py Server connection established
+2022-06-06 14:40:49,718 DEBUG cargo.py Message presence for user test1 formed
+2022-06-06 14:40:49,735 INFO cargo.py Connection attempt No №1
+2022-06-06 14:40:49,735 DEBUG cargo.py Server connection established
+2022-06-06 14:40:49,736 DEBUG cargo.py Message presence for user test2 formed
+2022-06-06 14:40:50,204 DEBUG cargo.py Parsing a message from the server: {'response': 200}
+2022-06-06 14:40:50,204 INFO cargo.py The connection to the server was successfully established.
+2022-06-06 14:40:50,205 DEBUG cargo.py Запрос списка известных пользователей test1
+2022-06-06 14:40:50,219 DEBUG cargo.py Request a contact list for a user Thread-1
+2022-06-06 14:40:50,219 DEBUG cargo.py Request formed {'action': 'get_contacts', 'time': 1654515650.2197769, 'user': 'test1'}
+2022-06-06 14:40:50,221 DEBUG cargo.py Parsing a message from the server: {'response': 200}
+2022-06-06 14:40:50,221 INFO cargo.py The connection to the server was successfully established.
+2022-06-06 14:40:50,221 DEBUG cargo.py Запрос списка известных пользователей test2
+2022-06-06 14:40:50,736 DEBUG cargo.py Get answer {'response': 202, 'data_list': ['test2']}
+2022-06-06 14:40:50,749 DEBUG cargo.py Request a contact list for a user Thread-1
+2022-06-06 14:40:50,750 DEBUG cargo.py Request formed {'action': 'get_contacts', 'time': 1654515650.7508163, 'user': 'test2'}
+2022-06-06 14:40:50,753 DEBUG cargo.py The process is running - the receiver of messages from the server.
+2022-06-06 14:40:55,762 ERROR cargo.py Connection timeout when updating user lists
+2022-06-06 14:40:55,762 DEBUG cargo.py The process is running - the receiver of messages from the server.
+2022-06-06 14:42:21,244 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test1
+2022-06-06 14:42:21,258 INFO client.py Client running: server: 127.0.0.1 , port: 7777, username: test2
+2022-06-06 14:42:21,291 INFO cargo.py Connection attempt No №1
+2022-06-06 14:42:21,291 DEBUG cargo.py Server connection established
+2022-06-06 14:42:21,291 DEBUG cargo.py Message presence for user test1 formed
+2022-06-06 14:42:21,301 INFO cargo.py Connection attempt No №1
+2022-06-06 14:42:21,301 DEBUG cargo.py Server connection established
+2022-06-06 14:42:21,301 DEBUG cargo.py Message presence for user test2 formed
+2022-06-06 14:42:26,305 CRITICAL cargo.py Connection lost
+2022-06-06 15:37:41,247 CRITICAL cargo.py Connection lost
+2022-06-06 15:37:41,981 CRITICAL cargo.py Connection lost
+2022-06-08 16:52:24,064 DEBUG client.py Using USERNAME = sfszc, PASSWD = qwerty.
+2022-06-08 16:52:24,064 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: sfszc
+2022-06-08 16:52:44,853 DEBUG client.py Using USERNAME = qwerty, PASSWD = qwerty.
+2022-06-08 16:52:44,853 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: qwerty
+2022-06-08 16:52:45,881 INFO cargo.py Connection attempt No №1
+2022-06-08 16:52:48,908 INFO cargo.py Connection attempt No №2
+2022-06-08 16:52:51,957 INFO cargo.py Connection attempt No №3
+2022-06-08 16:52:54,971 INFO cargo.py Connection attempt No №4
+2022-06-08 16:52:58,011 INFO cargo.py Connection attempt No №5
+2022-06-08 16:53:01,048 CRITICAL cargo.py Failed to connect to server_module
+2022-06-08 16:53:47,269 DEBUG client.py Using USERNAME = qwerty, PASSWD = qwerty.
+2022-06-08 16:53:47,270 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: qwerty
+2022-06-08 16:53:47,530 INFO cargo.py Connection attempt No №1
+2022-06-08 16:53:50,554 INFO cargo.py Connection attempt No №2
+2022-06-08 16:53:53,585 INFO cargo.py Connection attempt No №3
+2022-06-08 16:53:56,639 INFO cargo.py Connection attempt No №4
+2022-06-08 16:53:59,683 INFO cargo.py Connection attempt No №5
+2022-06-08 16:54:02,716 CRITICAL cargo.py Failed to connect to server_module
+2022-06-08 16:54:15,861 DEBUG client.py Using USERNAME = qwerty, PASSWD = qwertyu.
+2022-06-08 16:54:15,861 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: qwerty
+2022-06-08 16:54:15,957 INFO cargo.py Connection attempt No №1
+2022-06-08 16:54:18,977 INFO cargo.py Connection attempt No №2
+2022-06-08 16:54:22,015 INFO cargo.py Connection attempt No №3
+2022-06-08 16:54:25,040 INFO cargo.py Connection attempt No №4
+2022-06-08 16:54:28,073 INFO cargo.py Connection attempt No №5
+2022-06-08 16:54:31,104 CRITICAL cargo.py Failed to connect to server_module
+2022-06-08 16:55:04,691 DEBUG client.py Using USERNAME = qwerty123, PASSWD = qwerty123.
+2022-06-08 16:55:04,692 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: qwerty123
+2022-06-08 16:55:06,083 INFO cargo.py Connection attempt No №1
+2022-06-08 16:55:06,084 DEBUG cargo.py Server connection established
+2022-06-08 16:55:06,095 DEBUG cargo.py Passwd hash ready: b'120ac9f7fe616f898bf129fe7cdf4829ae156e8b18a6496802fea7027449e162e5f77e6bfd58b4db436ddffd165229bb3686d4a09955b49b7b368c6541598adf'
+2022-06-08 16:55:06,095 DEBUG cargo.py Presense message = {'action': 'presence', 'time': 1654696506.0957475, 'user': {'account_name': 'qwerty123', 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvkTiyq4VbXlzAfBsAwQ5\nJJhiUO7usnnfH1xPl/wefGJHDXHzkrMSTE/VqiDzyKxmdMj8GFUE25BBrixRxaYw\njql9nGTwCz95O9tWF+57i3uh87+YMngwDsuM/fscnc+HymzbbyNHWWcVm06px9YQ\nAEyasRDSyreXEI6yBY8bDX0wFLJou72V2xeITuVmyiiIM4TvVvp3KLd4Nuky9Y/8\nWKAE9V1cRmPBE3SYtE4N/tViuYpWbpmoHTDAv3DHkJm+u6SLt9m3VZ/xTt1T5vDw\nLfftPmpBkqByg3TMuXGaXBY12FS6E4dq1Ouctv/Mtd5DJVadtdjJrBpCYiOSXy59\nRQIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-06-08 16:55:11,096 DEBUG cargo.py Connection error.
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Client_server\chat_client\cargo.py", line 91, in connection_init
+    ans = get_message(self.transport)
+  File "C:\Users\User\PycharmProjects\Client_server\general\utilites.py", line 8, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-06-08 17:01:43,710 DEBUG client.py Using USERNAME = test, PASSWD = test1.
+2022-06-08 17:01:43,710 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: test
+2022-06-08 17:10:46,969 DEBUG client.py Using USERNAME = testtt, PASSWD = test2.
+2022-06-08 17:10:46,970 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: testtt
+2022-06-08 17:10:47,716 INFO cargo.py Connection attempt No №1
+2022-06-08 17:10:47,716 DEBUG cargo.py Server connection established
+2022-06-08 17:10:47,726 DEBUG cargo.py Passwd hash ready: b'35611a5856da04f11f4d2888dbfc58aa034328eb4763605629ababb0242a0bc708e8ffb37922cdf1d17ad8f36e69352d7c0e8a3a0072cef86587731892b2f11f'
+2022-06-08 17:10:47,726 DEBUG cargo.py Presense message = {'action': 'presence', 'time': 1654697447.726909, 'user': {'account_name': 'testtt', 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3XSWe4cpoaxdC1q/+XX5\nVt6F/wLg+nu2cndoTf1uFMhRzjmF9rgIODvjnmRBExcLDRox2nShlifY3FBlj8ir\nRsY/u5nhhj8nAP1tGWoFQHXXwMOnD+8pBFdgfdksxT4NfT/TwRpBtE5K9lq53yFx\n9+UpmP+ogoelDYONcVZZUXuOqOAuXatQeP3mu8N83X5qjHvaoFXWjbpkTZXXKgJe\nAeZJB2uv/Ekf32b6vO8cprLPgGjE6IKvYf/hlSrM6+TTPBFn0McDU9oKFA4StqUo\nU3BYELHVwku0+I0ManOUz24f0JPm6YxStzzJNjKTH2aR/i2kgF0AsoHiR0U/nXyo\n0QIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-06-08 17:10:52,726 DEBUG cargo.py Connection error.
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Client_server\chat_client\cargo.py", line 91, in connection_init
+    ans = get_message(self.transport)
+  File "C:\Users\User\PycharmProjects\Client_server\general\utilites.py", line 8, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-06-08 17:11:05,645 DEBUG client.py Using USERNAME = jhgjh, PASSWD = ,j,n.
+2022-06-08 17:11:05,645 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: jhgjh
+2022-06-08 17:11:06,935 INFO cargo.py Connection attempt No №1
+2022-06-08 17:11:06,936 DEBUG cargo.py Server connection established
+2022-06-08 17:11:06,945 DEBUG cargo.py Passwd hash ready: b'77877ab00eadc3f147f5055e297b12e5145bcc5b4db466bdefc249daa61684fd55b85d663bd756daa3b5006c975b564d4fe59f9d473b2247a985a013abb2eb48'
+2022-06-08 17:11:06,946 DEBUG cargo.py Presense message = {'action': 'presence', 'time': 1654697466.94677, 'user': {'account_name': 'jhgjh', 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAteN5g5MgsEA9iizNgbh3\nhQPQXhBmgr7vOeV4VHCqdK4AAG/Fi5Pe9TVu/gGqIp7RjTJ9kqcgj3QPV43TXWkG\ntnH+7gjk1tskM7Pw4TLr1zXQbu51pv8XOZV5SvTY4aHQSUqERb0CCBDGRdrSYUFg\nZlfyqoSf9ZXijTN/QiS/ZVKJ7MIt+onOmkNTrqQP2//lE+ytaEDt6zpXGbaHGa4w\ndJN1K6R4v/C04H9PsesDDR/vA5oDfABY123lP4fk2a57HuOdePxIvo415Do/MdL7\ngUkJmu7bQBbDaY3Ia9fqRjIwzGSjRbcnWOUgaodFgq28gFhSLvmM910r2sDeYWWF\ncQIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-06-08 17:11:11,946 DEBUG cargo.py Connection error.
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Client_server\chat_client\cargo.py", line 91, in connection_init
+    ans = get_message(self.transport)
+  File "C:\Users\User\PycharmProjects\Client_server\general\utilites.py", line 8, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-06-08 17:17:01,591 DEBUG client.py Using USERNAME = qwerty42, PASSWD = qwerty.
+2022-06-08 17:17:01,592 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: qwerty42
+2022-06-08 17:17:01,789 INFO cargo.py Connection attempt No №1
+2022-06-08 17:17:01,789 DEBUG cargo.py Server connection established
+2022-06-08 17:17:01,798 DEBUG cargo.py Passwd hash ready: b'1c22a19cf2e90d97327888a085736e9c95b4b899bb2d696dc438aead816ff3283d884d64e8967824716121bc00b69e33cf4e5c710624b963cb9421a3449ec051'
+2022-06-08 17:17:01,799 DEBUG cargo.py Presense message = {'action': 'presence', 'time': 1654697821.799374, 'user': {'account_name': 'qwerty42', 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuckQSzU22ATAA67x7z0M\nEiD2al2aCSmJecUARZKy52joFX9bH7Y0+KbWoQIhDDiMf+oZs5gdfPwqx5COOO7b\nH3saeAbmHonZKqgVpJfJIl+2ahfQDHGP1Zf7RCwVU/9ul2GLNp/A0CNZ7yMHKvC7\n732QowyKahLk7PM+QKxUYb1cue0ChDShpQi2+ZpmZMXHhotXnDXxkgXIx7SNH19O\n4AGsv9rxPoXaHqjgAcxPG9t8N5BrT/Rv6WEyOelkVBMYGgtmWq1f5UCNbgB/gOY2\nnRUif1EtYq2BjjM8WVMcGzcO5sQJt5boDCZyXWftwww7C6X2/tYTRJhblcsOK2WR\nXwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-06-08 17:17:06,799 DEBUG cargo.py Connection error.
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Client_server\chat_client\cargo.py", line 91, in connection_init
+    ans = get_message(self.transport)
+  File "C:\Users\User\PycharmProjects\Client_server\general\utilites.py", line 8, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-06-08 17:18:31,562 DEBUG client.py Using USERNAME = Anton, PASSWD = Anton.
+2022-06-08 17:18:31,562 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: Anton
+2022-06-08 17:18:34,349 INFO cargo.py Connection attempt No №1
+2022-06-08 17:18:34,362 DEBUG cargo.py Server connection established
+2022-06-08 17:18:34,378 DEBUG cargo.py Passwd hash ready: b'ac6145d902e0ab4947e4259d1d89280b62c35f5ce48a50f6002810f8d166267585fa1cf008ee10a530649ac067350e711424e9c431c09a7021fdc68c14e6794e'
+2022-06-08 17:18:34,379 DEBUG cargo.py Presense message = {'action': 'presence', 'time': 1654697914.3796577, 'user': {'account_name': 'Anton', 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6XjxuwZqVRSQVLOgKb4I\nCa8vge+xw/uDDNqgwIdY960LpOET3WP4kFINfQ/i+MmNWudBztIlvGHXv5vHuwcl\n5UzBsAANyv5CXksx8r128ceJjTxMHmjzvqe2BN8zBOPj4UwzssDpdZfIjKRycWlx\nqwvAnjR2YTHZKdemgyxklZMN6U7XK+mQUD7LPuKgMAY1OiQlGGeYeN6vR1wP0x+i\nNIRkh+VB73U/89KELnzENOyq9O1Owg4sKsxudnVxpZ5IY26tIY25A/ijra4z5jmS\ntjSuQXXcmKOygeaOSGlxycIVpZY10OibNKKc7P9O6krpfxdiLLboOF9Ey0tKEvm/\ncQIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-06-08 17:18:39,388 DEBUG cargo.py Connection error.
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Client_server\chat_client\cargo.py", line 91, in connection_init
+    ans = get_message(self.transport)
+  File "C:\Users\User\PycharmProjects\Client_server\general\utilites.py", line 8, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-06-08 17:21:03,613 DEBUG client.py Using USERNAME = Anton, PASSWD = Anton.
+2022-06-08 17:21:03,614 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: Anton
+2022-06-08 17:21:03,810 INFO cargo.py Connection attempt No №1
+2022-06-08 17:21:03,811 DEBUG cargo.py Server connection established
+2022-06-08 17:21:03,820 DEBUG cargo.py Passwd hash ready: b'ac6145d902e0ab4947e4259d1d89280b62c35f5ce48a50f6002810f8d166267585fa1cf008ee10a530649ac067350e711424e9c431c09a7021fdc68c14e6794e'
+2022-06-08 17:21:03,821 DEBUG cargo.py Presense message = {'action': 'presence', 'time': 1654698063.8218462, 'user': {'account_name': 'Anton', 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6XjxuwZqVRSQVLOgKb4I\nCa8vge+xw/uDDNqgwIdY960LpOET3WP4kFINfQ/i+MmNWudBztIlvGHXv5vHuwcl\n5UzBsAANyv5CXksx8r128ceJjTxMHmjzvqe2BN8zBOPj4UwzssDpdZfIjKRycWlx\nqwvAnjR2YTHZKdemgyxklZMN6U7XK+mQUD7LPuKgMAY1OiQlGGeYeN6vR1wP0x+i\nNIRkh+VB73U/89KELnzENOyq9O1Owg4sKsxudnVxpZ5IY26tIY25A/ijra4z5jmS\ntjSuQXXcmKOygeaOSGlxycIVpZY10OibNKKc7P9O6krpfxdiLLboOF9Ey0tKEvm/\ncQIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-06-08 17:21:35,813 DEBUG cargo.py Connection error.
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Client_server\chat_client\cargo.py", line 91, in connection_init
+    ans = get_message(self.transport)
+  File "C:\Users\User\PycharmProjects\Client_server\general\utilites.py", line 8, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
