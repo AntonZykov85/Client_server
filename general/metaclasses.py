@@ -1,7 +1,14 @@
+""" Метаклассы."""
 import dis
 
 
 class ServerVerifier(type):
+    """
+    Метакласс, проверяющий что в результирующем классе нет клиентских
+    вызовов таких как: connect. Также проверяется, что серверный
+    сокет является TCP и работает по IPv4 протоколу.
+    """
+
     def __init__(cls, clsname, bases, clsdict):
         methods = []
         attrs = []
@@ -20,12 +27,20 @@ class ServerVerifier(type):
                             attrs.append(i.argval)
         print(methods)
         if 'connect' in methods:
-            raise TypeError('Usung "connect" method invalid in server_module class')
+            raise TypeError(
+                'Usung "connect" method invalid in server_module class')
         if not ('SOCK_STREAM' in attrs and 'AF_INET' in attrs):
             raise TypeError('Incorrect socket initialization.')
         super().__init__(clsname, bases, clsdict)
 
+
 class ClientVerifier(type):
+    """
+    Метакласс, проверяющий что в результирующем классе нет серверных
+    вызовов таких как: accept, listen. Также проверяется, что сокет не
+    создаётся внутри конструктора класса.
+    """
+
     def __init__(cls, clsname, bases, clsdict):
         methods = []
         for func in clsdict:
@@ -40,10 +55,10 @@ class ClientVerifier(type):
                             methods.append(i.argval)
         for command in ('accept', 'listen', 'socket'):
             if command in methods:
-                raise TypeError('The use of a forbidden method was detected in a class')
+                raise TypeError(
+                    'The use of a forbidden method was detected in a class')
         if 'get_message' in methods or 'send_message' in methods:
             pass
         else:
             raise TypeError('There are no socket function calls')
         super().__init__(clsname, bases, clsdict)
-

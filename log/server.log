@@ -1,13 +1,11 @@
-2022-06-08 16:41:05,918 DEBUG server.py Arguments loads.
-2022-06-08 16:41:06,158 INFO core.py Server started, connection port: 7777 , address from which connections are accepted: . If the address is not specified, connections from any address are accepted..
-2022-06-08 16:54:44,602 DEBUG server.py Arguments loads.
-2022-06-08 16:54:44,651 INFO core.py Server started, connection port: 7777 , address from which connections are accepted: . If the address is not specified, connections from any address are accepted..
-2022-06-08 16:55:06,084 INFO core.py PC connection established ('127.0.0.1', 57362)
-2022-06-08 17:01:30,981 DEBUG server.py Arguments loads.
-2022-06-08 17:01:31,018 INFO core.py Server started, connection port: 7777 , address from which connections are accepted: . If the address is not specified, connections from any address are accepted..
-2022-06-08 17:01:45,576 INFO core.py PC connection established ('127.0.0.1', 57570)
-2022-06-08 17:10:47,716 INFO core.py PC connection established ('127.0.0.1', 57827)
-2022-06-08 17:11:06,936 INFO core.py PC connection established ('127.0.0.1', 57837)
-2022-06-08 17:17:01,789 INFO core.py PC connection established ('127.0.0.1', 58018)
-2022-06-08 17:18:34,350 INFO core.py PC connection established ('127.0.0.1', 58061)
-2022-06-08 17:21:03,811 INFO core.py PC connection established ('127.0.0.1', 58141)
+2022-06-23 15:11:17,660 DEBUG server.py Arguments loads.
+2022-06-23 15:11:17,760 INFO core.py Server started, connection port: 7777 , address from which connections are accepted: . If the address is not specified, connections from any address are accepted..
+2022-06-23 15:12:28,713 DEBUG server.py Arguments loads.
+2022-06-23 15:12:28,813 INFO core.py Server started, connection port: 7777 , address from which connections are accepted: . If the address is not specified, connections from any address are accepted..
+2022-06-23 15:12:55,130 DEBUG server.py Arguments loads.
+2022-06-23 15:12:55,250 INFO core.py Server started, connection port: 7777 , address from which connections are accepted: . If the address is not specified, connections from any address are accepted..
+2022-06-23 15:13:23,271 DEBUG server.py Arguments loads.
+2022-06-23 15:13:23,370 INFO core.py Server started, connection port: 7777 , address from which connections are accepted: . If the address is not specified, connections from any address are accepted..
+2022-06-23 15:13:32,271 INFO core.py PC connection established ('127.0.0.1', 60548)
+2022-06-23 15:13:32,779 DEBUG core.py Parsing a message from a client: {'action': 'presence', 'time': 1655986412.2973256, 'user': {'account_name': 'guest', 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiJ0NDOCZfifRHQucENgV\nUpSfTftpqWSQGysC951ARM3U3DEX4ynQWo+dJnYpmqmMTGNbab46XAw4yWmqWdxb\nxTUhF8MUQTOcnWdZc+KTBxdx6cRf+8um6an64l2Cjslnnf+cnLbGvVhVbLtSh1yr\nVg+/4eGhGe1h3L0jpeXynwVSiC62myULIbrNAVYPE3Uti/03WepoUonPFH7Xh7DM\nniSFGcJhMdLBhTO11F383LMwGjKEJ25RVh0KzvikOg/0cTGZkJAvC/fXssCUg2hT\nb0AIGvtRgYaMFQyBk2Fk/p7ZVV0L+KwNQjgGloUA4pkgaEviFfhEhCqkJr9MXa/T\nEwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-06-23 15:13:32,780 DEBUG core.py Start auth process for {'account_name': 'guest', 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiJ0NDOCZfifRHQucENgV\nUpSfTftpqWSQGysC951ARM3U3DEX4ynQWo+dJnYpmqmMTGNbab46XAw4yWmqWdxb\nxTUhF8MUQTOcnWdZc+KTBxdx6cRf+8um6an64l2Cjslnnf+cnLbGvVhVbLtSh1yr\nVg+/4eGhGe1h3L0jpeXynwVSiC62myULIbrNAVYPE3Uti/03WepoUonPFH7Xh7DM\nniSFGcJhMdLBhTO11F383LMwGjKEJ25RVh0KzvikOg/0cTGZkJAvC/fXssCUg2hT\nb0AIGvtRgYaMFQyBk2Fk/p7ZVV0L+KwNQjgGloUA4pkgaEviFfhEhCqkJr9MXa/T\nEwIDAQAB\n-----END PUBLIC KEY-----'}

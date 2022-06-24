@@ -1070,3 +1070,90 @@ Traceback (most recent call last):
   File "C:\Users\User\PycharmProjects\Client_server\general\utilites.py", line 8, in get_message
     encoded_response = client.recv(MAX_PACKAGE_LENGTH)
 socket.timeout: timed out
+2022-06-23 15:09:58,255 DEBUG client.py Using USERNAME = Guest, PASSWD = Guest.
+2022-06-23 15:09:58,291 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: Guest
+2022-06-23 15:10:01,201 INFO cargo.py Connection attempt No №1
+2022-06-23 15:10:04,249 INFO cargo.py Connection attempt No №2
+2022-06-23 15:10:07,288 INFO cargo.py Connection attempt No №3
+2022-06-23 15:10:10,329 INFO cargo.py Connection attempt No №4
+2022-06-23 15:10:13,368 INFO cargo.py Connection attempt No №5
+2022-06-23 15:10:16,408 CRITICAL cargo.py Failed to connect to server_module
+2022-06-23 15:13:32,089 DEBUG client.py Using USERNAME = guest, PASSWD = guest.
+2022-06-23 15:13:32,089 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: guest
+2022-06-23 15:13:32,270 INFO cargo.py Connection attempt No №1
+2022-06-23 15:13:32,271 DEBUG cargo.py Server connection established
+2022-06-23 15:13:32,296 DEBUG cargo.py Passwd hash ready: b'8c9b7339946b45fc3aee863733cf71b34f256c8940c835d5d35ea26f8082cd6532f0de4f5e56ce9210b60a36544bd453bd9468e5ec0e4225b8d06705c7b17ade'
+2022-06-23 15:13:32,297 DEBUG cargo.py Presense message = {'action': 'presence', 'time': 1655986412.2973256, 'user': {'account_name': 'guest', 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiJ0NDOCZfifRHQucENgV\nUpSfTftpqWSQGysC951ARM3U3DEX4ynQWo+dJnYpmqmMTGNbab46XAw4yWmqWdxb\nxTUhF8MUQTOcnWdZc+KTBxdx6cRf+8um6an64l2Cjslnnf+cnLbGvVhVbLtSh1yr\nVg+/4eGhGe1h3L0jpeXynwVSiC62myULIbrNAVYPE3Uti/03WepoUonPFH7Xh7DM\nniSFGcJhMdLBhTO11F383LMwGjKEJ25RVh0KzvikOg/0cTGZkJAvC/fXssCUg2hT\nb0AIGvtRgYaMFQyBk2Fk/p7ZVV0L+KwNQjgGloUA4pkgaEviFfhEhCqkJr9MXa/T\nEwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-06-23 15:13:37,297 DEBUG cargo.py Connection error.
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Client_server\chat_client\cargo.py", line 94, in connection_init
+    ans = get_message(self.transport)
+  File "C:\Users\User\PycharmProjects\Client_server\general\utilites.py", line 18, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-06-23 15:17:59,996 DEBUG client.py Using USERNAME = guest, PASSWD = guest.
+2022-06-23 15:17:59,997 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: guest
+2022-06-23 15:18:00,180 INFO cargo.py Connection attempt No №1
+2022-06-23 15:18:00,181 DEBUG cargo.py Server connection established
+2022-06-23 15:18:00,205 DEBUG cargo.py Passwd hash ready: b'8c9b7339946b45fc3aee863733cf71b34f256c8940c835d5d35ea26f8082cd6532f0de4f5e56ce9210b60a36544bd453bd9468e5ec0e4225b8d06705c7b17ade'
+2022-06-23 15:18:00,206 DEBUG cargo.py Presense message = {'action': 'presence', 'time': 1655986680.2065816, 'user': {'account_name': 'guest', 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiJ0NDOCZfifRHQucENgV\nUpSfTftpqWSQGysC951ARM3U3DEX4ynQWo+dJnYpmqmMTGNbab46XAw4yWmqWdxb\nxTUhF8MUQTOcnWdZc+KTBxdx6cRf+8um6an64l2Cjslnnf+cnLbGvVhVbLtSh1yr\nVg+/4eGhGe1h3L0jpeXynwVSiC62myULIbrNAVYPE3Uti/03WepoUonPFH7Xh7DM\nniSFGcJhMdLBhTO11F383LMwGjKEJ25RVh0KzvikOg/0cTGZkJAvC/fXssCUg2hT\nb0AIGvtRgYaMFQyBk2Fk/p7ZVV0L+KwNQjgGloUA4pkgaEviFfhEhCqkJr9MXa/T\nEwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-06-23 15:18:05,208 DEBUG cargo.py Connection error.
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Client_server\chat_client\cargo.py", line 94, in connection_init
+    ans = get_message(self.transport)
+  File "C:\Users\User\PycharmProjects\Client_server\general\utilites.py", line 18, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-06-23 15:20:25,596 DEBUG client.py Using USERNAME = guest, PASSWD = guest.
+2022-06-23 15:20:25,597 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: guest
+2022-06-23 15:20:25,763 INFO cargo.py Connection attempt No №1
+2022-06-23 15:20:28,814 INFO cargo.py Connection attempt No №2
+2022-06-23 15:20:31,854 INFO cargo.py Connection attempt No №3
+2022-06-23 15:20:34,894 INFO cargo.py Connection attempt No №4
+2022-06-23 15:20:37,934 INFO cargo.py Connection attempt No №5
+2022-06-23 15:20:40,967 CRITICAL cargo.py Failed to connect to server_module
+2022-06-23 15:21:30,441 DEBUG client.py Using USERNAME = guest, PASSWD = guest.
+2022-06-23 15:21:30,441 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: guest
+2022-06-23 15:21:30,622 INFO cargo.py Connection attempt No №1
+2022-06-23 15:21:30,623 DEBUG cargo.py Server connection established
+2022-06-23 15:21:30,647 DEBUG cargo.py Passwd hash ready: b'8c9b7339946b45fc3aee863733cf71b34f256c8940c835d5d35ea26f8082cd6532f0de4f5e56ce9210b60a36544bd453bd9468e5ec0e4225b8d06705c7b17ade'
+2022-06-23 15:21:30,648 DEBUG cargo.py Presense message = {'action': 'presence', 'time': 1655986890.6486816, 'user': {'account_name': 'guest', 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiJ0NDOCZfifRHQucENgV\nUpSfTftpqWSQGysC951ARM3U3DEX4ynQWo+dJnYpmqmMTGNbab46XAw4yWmqWdxb\nxTUhF8MUQTOcnWdZc+KTBxdx6cRf+8um6an64l2Cjslnnf+cnLbGvVhVbLtSh1yr\nVg+/4eGhGe1h3L0jpeXynwVSiC62myULIbrNAVYPE3Uti/03WepoUonPFH7Xh7DM\nniSFGcJhMdLBhTO11F383LMwGjKEJ25RVh0KzvikOg/0cTGZkJAvC/fXssCUg2hT\nb0AIGvtRgYaMFQyBk2Fk/p7ZVV0L+KwNQjgGloUA4pkgaEviFfhEhCqkJr9MXa/T\nEwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-06-23 15:21:35,649 DEBUG cargo.py Connection error.
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Client_server\chat_client\cargo.py", line 94, in connection_init
+    ans = get_message(self.transport)
+  File "C:\Users\User\PycharmProjects\Client_server\general\utilites.py", line 18, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-06-23 15:29:00,748 DEBUG client.py Using USERNAME = guest, PASSWD = guest.
+2022-06-23 15:29:00,749 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: guest
+2022-06-23 15:29:00,927 INFO cargo.py Connection attempt No №1
+2022-06-23 15:29:00,928 DEBUG cargo.py Server connection established
+2022-06-23 15:29:00,953 DEBUG cargo.py Passwd hash ready: b'8c9b7339946b45fc3aee863733cf71b34f256c8940c835d5d35ea26f8082cd6532f0de4f5e56ce9210b60a36544bd453bd9468e5ec0e4225b8d06705c7b17ade'
+2022-06-23 15:29:00,954 DEBUG cargo.py Presense message = {'action': 'presence', 'time': 1655987340.954556, 'user': {'account_name': 'guest', 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiJ0NDOCZfifRHQucENgV\nUpSfTftpqWSQGysC951ARM3U3DEX4ynQWo+dJnYpmqmMTGNbab46XAw4yWmqWdxb\nxTUhF8MUQTOcnWdZc+KTBxdx6cRf+8um6an64l2Cjslnnf+cnLbGvVhVbLtSh1yr\nVg+/4eGhGe1h3L0jpeXynwVSiC62myULIbrNAVYPE3Uti/03WepoUonPFH7Xh7DM\nniSFGcJhMdLBhTO11F383LMwGjKEJ25RVh0KzvikOg/0cTGZkJAvC/fXssCUg2hT\nb0AIGvtRgYaMFQyBk2Fk/p7ZVV0L+KwNQjgGloUA4pkgaEviFfhEhCqkJr9MXa/T\nEwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-06-23 15:29:01,440 DEBUG cargo.py Server response = {'response': 511, 'data': 'c70ff7053dc4f3ccb9ab645f03f4550213a40a64d2e223cbf1c43e354fb8babddcdb25e05e6a7891c823390724652e9562d1430b7727fe20022b8d9cbe9589ac'}.
+2022-06-23 15:29:01,440 DEBUG cargo.py Parsing a message from the server_module: {'response': 400, 'error': 'Неверный пароль.'}
+2022-06-23 15:29:15,028 DEBUG client.py Using USERNAME = guest, PASSWD = guest.
+2022-06-23 15:29:15,029 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: guest
+2022-06-23 15:29:15,205 INFO cargo.py Connection attempt No №1
+2022-06-23 15:29:15,206 DEBUG cargo.py Server connection established
+2022-06-23 15:29:15,230 DEBUG cargo.py Passwd hash ready: b'8c9b7339946b45fc3aee863733cf71b34f256c8940c835d5d35ea26f8082cd6532f0de4f5e56ce9210b60a36544bd453bd9468e5ec0e4225b8d06705c7b17ade'
+2022-06-23 15:29:15,231 DEBUG cargo.py Presense message = {'action': 'presence', 'time': 1655987355.2313416, 'user': {'account_name': 'guest', 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiJ0NDOCZfifRHQucENgV\nUpSfTftpqWSQGysC951ARM3U3DEX4ynQWo+dJnYpmqmMTGNbab46XAw4yWmqWdxb\nxTUhF8MUQTOcnWdZc+KTBxdx6cRf+8um6an64l2Cjslnnf+cnLbGvVhVbLtSh1yr\nVg+/4eGhGe1h3L0jpeXynwVSiC62myULIbrNAVYPE3Uti/03WepoUonPFH7Xh7DM\nniSFGcJhMdLBhTO11F383LMwGjKEJ25RVh0KzvikOg/0cTGZkJAvC/fXssCUg2hT\nb0AIGvtRgYaMFQyBk2Fk/p7ZVV0L+KwNQjgGloUA4pkgaEviFfhEhCqkJr9MXa/T\nEwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-06-23 15:29:15,714 DEBUG cargo.py Server response = {'response': 511, 'data': 'b04e5b81cdc196a3ed4ab0a10a0ce82fbf87aaad93731edc716759ca732b63433b50f1acb8f3ad9524930e845156bbfa7ec0baf4a463e88dee2c40bcf19df0f2'}.
+2022-06-23 15:29:15,715 DEBUG cargo.py Parsing a message from the server_module: {'response': 400, 'error': 'Неверный пароль.'}
+2022-06-23 15:30:17,049 DEBUG client.py Using USERNAME = guest, PASSWD = guest.
+2022-06-23 15:30:17,050 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: guest
+2022-06-23 15:30:17,196 INFO cargo.py Connection attempt No №1
+2022-06-23 15:30:17,197 DEBUG cargo.py Server connection established
+2022-06-23 15:30:17,212 DEBUG cargo.py Passwd hash ready: b'8c9b7339946b45fc3aee863733cf71b34f256c8940c835d5d35ea26f8082cd6532f0de4f5e56ce9210b60a36544bd453bd9468e5ec0e4225b8d06705c7b17ade'
+2022-06-23 15:30:17,213 DEBUG cargo.py Presense message = {'action': 'presence', 'time': 1655987417.2136772, 'user': {'account_name': 'guest', 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiJ0NDOCZfifRHQucENgV\nUpSfTftpqWSQGysC951ARM3U3DEX4ynQWo+dJnYpmqmMTGNbab46XAw4yWmqWdxb\nxTUhF8MUQTOcnWdZc+KTBxdx6cRf+8um6an64l2Cjslnnf+cnLbGvVhVbLtSh1yr\nVg+/4eGhGe1h3L0jpeXynwVSiC62myULIbrNAVYPE3Uti/03WepoUonPFH7Xh7DM\nniSFGcJhMdLBhTO11F383LMwGjKEJ25RVh0KzvikOg/0cTGZkJAvC/fXssCUg2hT\nb0AIGvtRgYaMFQyBk2Fk/p7ZVV0L+KwNQjgGloUA4pkgaEviFfhEhCqkJr9MXa/T\nEwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-06-23 15:30:17,712 DEBUG cargo.py Server response = {'response': 511, 'data': 'c5d78d226fd9b8066497b07d3b3d3e913f91c4d550e73972b00c0851601f24bf235e75e799b00e41d7732ce2d69b7c5e3eeafaa4a3582971aecd67a51947403d'}.
+2022-06-23 15:30:17,713 DEBUG cargo.py Parsing a message from the server_module: {'response': 400, 'error': 'Неверный пароль.'}
+2022-06-23 15:30:59,974 DEBUG client.py Using USERNAME = guest1, PASSWD = qwerty123.
+2022-06-23 15:30:59,974 INFO client.py Client running: server_module: 127.0.0.1 , port: 7777, username: guest1
+2022-06-23 15:31:00,964 INFO cargo.py Connection attempt No №1
+2022-06-23 15:31:00,965 DEBUG cargo.py Server connection established
+2022-06-23 15:31:00,989 DEBUG cargo.py Passwd hash ready: b'2c08b9ce8117c96b81e22635486c974981f725da2f80a43144c9c76385b839503ab577870a370549aa5b00230b3faaec2ca444ba41bb210a42989ea36ba2789b'
+2022-06-23 15:31:00,990 DEBUG cargo.py Presense message = {'action': 'presence', 'time': 1655987460.990651, 'user': {'account_name': 'guest1', 'public_key': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1Gc7OmyBgCFuW0Ya4X9V\n/M4igP5+nkSFzRGGA9/NiYZLaUpxz5tiNzE8lFmwjfMUC5iUshBlIaxVuTKCQ12d\nCdfiayxtPULRhRqqW5MVQnCQiiNxiy7yINnreFrtSRCcxHUALt3B3EY6drkSKybh\njiNUxH0cxxusNJ/OHl/mCfyUreZFHHeIQ/58ICHz970jzNuX2ITVGOdlhtjHORiF\n59wWX7xGugGc3Vp0iO+czfoqKt8FN1eB5Nxe+Z4h+QPSsYqbMjhSNhv7ZkSmZgrX\nRd2FJDRY3aSbQ4VzE8uTTo3pc7IfnzUxiwQFQ8bUdGv3ovzM1eUaUmSMf7n3xzxt\newIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-06-23 15:31:01,480 DEBUG cargo.py Server response = {'response': 511, 'data': '04b7069fe18e0dbb1c991f474c5c6862c397f7ff26733930652347d8d843eb0cd87c29f159221a2017b3f00eee2ffbbc4ad86c2b6fe9c4d004db0ec72348b144'}.
+2022-06-23 15:31:01,481 DEBUG cargo.py Parsing a message from the server_module: {'response': 400, 'error': 'Неверный пароль.'}

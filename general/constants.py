@@ -1,3 +1,5 @@
+""" Константы (постоянные переменные)."""
+
 import logging
 
 DEFAULT_PORT = 7777
@@ -36,7 +38,6 @@ RESPONSE_511 = {
 
 PUBLIC_KEY_REQUEST = 'pubkey'
 
-
 RESPONSE_200 = {RESPONSE: 200}
 
 RESPONSE_202 = {RESPONSE: 202,
@@ -45,7 +46,6 @@ RESPONSE_202 = {RESPONSE: 202,
 RESPONSE_205 = {
     RESPONSE: 205
 }
-
 
 RESPONSE_400 = {
     RESPONSE: 400,

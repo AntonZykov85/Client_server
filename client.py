@@ -1,3 +1,5 @@
+""" Запуск клиента! """
+
 import logging
 import os
 
@@ -15,10 +17,14 @@ from chat_client.main_window import ClientMainWindow
 from chat_client.start_dialog import UserNameDialog
 from Cryptodome.PublicKey import RSA
 
+# Инициализация клиентского логера
 logger = logging.getLogger('chat_client')
 
 
 def argument_parser():
+    """Парсер аргументов коммандной строки, возвращает кортеж из 4 элементов
+    адрес сервера, порт, имя пользователя, пароль.
+    Выполняет проверку на корректность номера порта."""
     parser = argparse.ArgumentParser()
     parser.add_argument('addr', default=DEFAULT_IP_ADDRESS, nargs='?')
     parser.add_argument('port', default=DEFAULT_PORT, type=int, nargs='?')
@@ -30,32 +36,45 @@ def argument_parser():
     client_name = namespace.name
     client_passwd = namespace.password
 
+    # проверим подходящий номер порта
     if not 1023 < server_port < 65536:
         logger.critical(
-            f'trying to run chat_client with wrong port number {server_port}. Ports nuber from 1024 to 65535 are avalible now.')
+            f'trying to run chat_client with wrong port number {server_port}.'
+            f' Ports nuber from 1024 to 65535 are avalible now.')
         exit(1)
 
     return server_address, server_port, client_name, client_passwd
 
 
+# Основная функция клиента
 if __name__ == '__main__':
+    # Загружаем параметы коммандной строки
     server_address, server_port, client_name, client_passwd = argument_parser()
+
+    # Создаём клиентокое приложение
     client_app = QApplication(sys.argv)
+
+    # Если имя пользователя не было указано в командной строке то запросим его
     start_dialog = UserNameDialog()
 
     if not client_name or not client_passwd:
         client_app.exec_()
+        # Если пользователь ввёл имя и нажал ОК, то сохраняем ведённое и
+        # удаляем объект, иначе выходим.
 
         if start_dialog.ok_pressed:
             client_name = start_dialog.client_name.text()
             client_passwd = start_dialog.client_passwd.text()
-            logger.debug(f'Using USERNAME = {client_name}, PASSWD = {client_passwd}.')
+            logger.debug(
+                f'Using USERNAME = {client_name}, PASSWD = {client_passwd}.')
         else:
             exit(0)
 
     logger.info(
-        f'Client running: server_module: {server_address} , port: {server_port}, username: {client_name}')
+        f'Client running: server_module: {server_address} , '
+        f'port: {server_port}, username: {client_name}')
 
+    # Загружаем ключи с файла, если же файла нет, то генерируем новую пару.
     dir_path = os.path.dirname(os.path.realpath(__file__))
     key_file = os.path.join(dir_path, f'{client_name}.key')
     if not os.path.exists(key_file):
@@ -66,10 +85,17 @@ if __name__ == '__main__':
         with open(key_file, 'rb') as key:
             keys = RSA.import_key(key.read())
 
+    # Создаём базы данных
     database = ClientDB(client_name)
-
+    # Создаём объект - транспорт и запускаем транспортный поток.
     try:
-        cargo = ClientTransport(server_port, server_address, database, client_name, client_passwd, keys)
+        cargo = ClientTransport(
+            server_port,
+            server_address,
+            database,
+            client_name,
+            client_passwd,
+            keys)
     except ServerError as error:
         message = QMessageBox()
         message.critical(start_dialog, 'Server error', error.text)
@@ -79,9 +105,11 @@ if __name__ == '__main__':
 
     del start_dialog
 
+    # Создаём GUI
     main_window = ClientMainWindow(database, cargo, keys)
     main_window.make_connection(cargo)
-    main_window.setWindowTitle(f'Chat application alpha release - {client_name}')
+    main_window.setWindowTitle(
+        f'Chat application alpha release - {client_name}')
     client_app.exec_()
     cargo.transport_shutdown()
     cargo.join()

@@ -1,6 +1,7 @@
 import sys
 import logging
-from PyQt5.QtWidgets import QDialog, QLabel, QComboBox, QPushButton, QApplication
+from PyQt5.QtWidgets import QDialog, QLabel, QComboBox, QPushButton, \
+    QApplication
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QStandardItemModel, QStandardItem
 
@@ -9,6 +10,9 @@ logger = logging.getLogger('chat_client')
 
 
 class DelContactDialog(QDialog):
+    """ Удаления контакта. Предлагает текущий список контактов,
+        не имеет обработчиков для действий."""
+
     def __init__(self, database):
         super().__init__()
         self.database = database
